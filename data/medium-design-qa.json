@@ -1,0 +1,1159 @@
+{
+  "success": true,
+  "payload": {
+    "value": {
+      "id": "e4628e630dab",
+      "versionId": "797b7a9b92d1",
+      "creatorId": "6c3c51488871",
+      "homeCollectionId": "",
+      "title": "My Best Practice of Design QA",
+      "detectedLanguage": "en",
+      "latestVersion": "797b7a9b92d1",
+      "latestPublishedVersion": "797b7a9b92d1",
+      "hasUnpublishedEdits": false,
+      "latestRev": 217,
+      "createdAt": 1661159957096,
+      "updatedAt": 1661163600905,
+      "acceptedAt": 0,
+      "firstPublishedAt": 1661160508755,
+      "latestPublishedAt": 1661163592984,
+      "vote": false,
+      "experimentalCss": "",
+      "displayAuthor": "",
+      "content": {
+        "subtitle": "Design QA is an important and indispensable part of the design process and here’s my best practice of design QA.",
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "88c2",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*Ri6cmSvrbWDRPkn9tP7_0Q.png",
+                "originalWidth": 2400,
+                "originalHeight": 1800,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "609e",
+              "type": 3,
+              "text": "My Best Practice of Design QA",
+              "markups": []
+            },
+            {
+              "name": "1481",
+              "type": 1,
+              "text": "As a designer, have you ever asked following questions on the product you designed:",
+              "markups": []
+            },
+            {
+              "name": "7c5e",
+              "type": 7,
+              "text": "“It doesn’t seem to be what I designed.”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 40
+                }
+              ]
+            },
+            {
+              "name": "a7fb",
+              "type": 7,
+              "text": "“This is different from what I thought.”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 40
+                }
+              ]
+            },
+            {
+              "name": "b3a3",
+              "type": 7,
+              "text": "“It should’ve used the library components, why it’s not the same?”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 66
+                }
+              ]
+            },
+            {
+              "name": "dac2",
+              "type": 1,
+              "text": "If you only have these doubts after product release, you may need design QA in your design process.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 65,
+                  "end": 75
+                }
+              ]
+            },
+            {
+              "name": "ef0f",
+              "type": 3,
+              "text": "Why Do We Need Design QA",
+              "markups": []
+            },
+            {
+              "name": "a8f2",
+              "type": 1,
+              "text": "Design QA is a key step in the design process. A designer’s responsibility is not just design and hand over to developers, but also to ensure that the details of the design have correctly implemented. Once the code is ready in the test environment, the designer should participate in the product test to ensure that the final product is consistent with the design, as well as spotting bugs and problems during the test process.",
+              "markups": []
+            },
+            {
+              "name": "9e81",
+              "type": 1,
+              "text": "We often find that the developed product is different from the design and our expectations. This is usually due to three reasons:",
+              "markups": []
+            },
+            {
+              "name": "a4e9",
+              "type": 1,
+              "text": "1. The developer’s brain works differently from designer’s",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 58
+                }
+              ]
+            },
+            {
+              "name": "0389",
+              "type": 1,
+              "text": "It is common that developers understand specifications differently from designers. Due to the misunderstanding, sometimes developers will develop it as what they feel right but not what designers intended to. Designers need to pick out these problems in the design QA process and fix them with developers so that the product is not just working but with good user experience.",
+              "markups": []
+            },
+            {
+              "name": "fbf5",
+              "type": 1,
+              "text": "2. Design Issues",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 16
+                }
+              ]
+            },
+            {
+              "name": "ebe9",
+              "type": 1,
+              "text": "Some design issues may be discovered after development, especially the subtle experience of micro interaction, or edge cases that are not considered. Although the designer are expected to avoid issues caused by the design before development, there is always a possibility that the actual performance is not what you expected. Design QA is a good opportunity to check design issues again.",
+              "markups": []
+            },
+            {
+              "name": "5c67",
+              "type": 1,
+              "text": "3. The developers didn’t follow the design",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 42
+                }
+              ]
+            },
+            {
+              "name": "c713",
+              "type": 1,
+              "text": "Sometimes, it may simply because that the developers do not pay attention to the details of the design. Developers have different focus from designers, thus developers are likely to involuntarily ignore some design details. This is also the reason why design QA is required.",
+              "markups": []
+            },
+            {
+              "name": "8e44",
+              "type": 1,
+              "text": "Due to the above reasons, there’s always a gap between developer’s implementation and the design. Design QA provides a chance for designers to find and fill the gap between them, and help find possible issues in the design.",
+              "markups": []
+            },
+            {
+              "name": "3917",
+              "type": 1,
+              "text": "If design QA is missing in the design process, it is likely to cause UX debt. This concept originated from Ward Cunningham’s concept of Technical Debt, a word used to describe the debt incurred in the later stage due to the simpler rather than a more perfect way of implementation in the development stage. Joshua Kerievsky applied it in the field of user experience. He believes that it is like technical debt. Whether it is to save time or because of technical constraints, we finally have to pay a price to repay UX debt.",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 136,
+                  "end": 150,
+                  "href": "https://en.wikipedia.org/wiki/Technical_debt",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                },
+                {
+                  "type": 3,
+                  "start": 307,
+                  "end": 323,
+                  "href": "https://uxpamagazine.org/ux-debt-in-the-enterprise/",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                }
+              ]
+            },
+            {
+              "name": "b0be",
+              "type": 3,
+              "text": "Design QA Process",
+              "markups": []
+            },
+            {
+              "name": "ed03",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*uVHaftiu9nEHdScOEuDRvw.png",
+                "originalWidth": 3126,
+                "originalHeight": 1149
+              }
+            },
+            {
+              "name": "3631",
+              "type": 1,
+              "text": "Design QA is preferably carried out in parallel with technical QA after development. Once the product is ready to test, you’ll have a functional demo to play with. Make it parallel with technical QA can avoid the entire process taking too long or causing repeated work for technical QA.",
+              "markups": []
+            },
+            {
+              "name": "b4c9",
+              "type": 1,
+              "text": "On the other hand, it is often said in medical science that prevention is better than cure. This is the same in product development.",
+              "markups": []
+            },
+            {
+              "name": "bd9f",
+              "type": 1,
+              "text": "To avoid problems being found only after the product release, we need to conduct QA before going online. In addition, to minimize problems in the demo we receive, we not only need to make a detailed specification in the design, but also participate in the test case review initiated by QA.",
+              "markups": []
+            },
+            {
+              "name": "606f",
+              "type": 1,
+              "text": "QA will write corresponding test cases for requirements to guide product testing. For some complicated requirements, QA will initiate test case review session with all stakeholders to review. This is a good opportunity for designers to understand how developers and QAs understand the design. Also, it helps expose any misunderstandings, and can be aligned immediately to avoid developers implement in a wrong way. When the requirements and business logic are complicated, test case review can help find and avoid many potential problems.",
+              "markups": []
+            },
+            {
+              "name": "aff5",
+              "type": 3,
+              "text": "How Design QA Works",
+              "markups": []
+            },
+            {
+              "name": "7ec0",
+              "type": 1,
+              "text": "Let’s get a test version or a test URL, enter the test environment, and then you can look for potential issues like a hunter looking for preys.",
+              "markups": []
+            },
+            {
+              "name": "9eec",
+              "type": 1,
+              "text": "I will generally focus on the following things during design QA:",
+              "markups": []
+            },
+            {
+              "name": "d708",
+              "type": 9,
+              "text": "Anything inconsistent with the design",
+              "markups": []
+            },
+            {
+              "name": "7db9",
+              "type": 9,
+              "text": "Detail experience and the implementation of animations",
+              "markups": []
+            },
+            {
+              "name": "c185",
+              "type": 9,
+              "text": "Edge cases",
+              "markups": []
+            },
+            {
+              "name": "e288",
+              "type": 1,
+              "text": "To complete design QA with least problems left, I normally use the following methods:",
+              "markups": []
+            },
+            {
+              "name": "936c",
+              "type": 1,
+              "text": "1. Compare and review",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 21
+                }
+              ]
+            },
+            {
+              "name": "fc9e",
+              "type": 1,
+              "text": "Compare the design document with the demo implementation. We are able to find the differences between the implementation and the design by comparing these two. As mentioned earlier, the misunderstanding between designers and developers and the negligence by developers can easily lead to the difference between the implementation and the design. Therefore, compare and review with the design document can help us find anything that is missing or wrongly implemented.",
+              "markups": []
+            },
+            {
+              "name": "d5be",
+              "type": 1,
+              "text": "2. Apply user scenarios",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 23
+                }
+              ]
+            },
+            {
+              "name": "e13f",
+              "type": 1,
+              "text": "Simulate user scenarios for design QA. We can write some user scenarios to reflect the steps and tasks that users will take. By getting into user’s role to complete the process, we can find possible issues in the real scenario. For example, the user may need to switch the app to view other information when entering text, and find out the entered content has been erased after switching apps, or the user may find that the text is not correctly displayed after entering a large amount of text.",
+              "markups": []
+            },
+            {
+              "name": "310c",
+              "type": 1,
+              "text": "3. Complete walk through",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 24
+                }
+              ]
+            },
+            {
+              "name": "f18f",
+              "type": 1,
+              "text": "Walk through all relevant elements and processes. The implementation is usually not an independent part from other features, it will interact with others. Therefore, in addition to test the designed features, it is also necessary to test other features that are not designed to be changed in this development, including unchanged features in the same page, as well as the upstream and downstream processes of the designed feature.",
+              "markups": []
+            },
+            {
+              "name": "036e",
+              "type": 3,
+              "text": "Creating a Design QA Document",
+              "markups": []
+            },
+            {
+              "name": "297f",
+              "type": 1,
+              "text": "It is seen that many designers are used to throwing problems into the IM after problems being identified. In that way, problems are often unnoticed, lost, and untraceable. Additionally, it makes design QA less official. Therefore, it is necessary for designers to create a well-formatted design QA document.",
+              "markups": []
+            },
+            {
+              "name": "7406",
+              "type": 1,
+              "text": "The design QA document should preferably support online collaborative editing, so that the problems can be synchronized to relevant stakeholders, and the business side are also able to record problems in the same document if they participant in the QA process (which is welcome). Further more, stakeholders can trace the solution to the problem, whether it is fixed and reviewed by designer again. For the format of the document, my best practice is to record in a form of spreadsheet. Each problem occupies a row, and each column consists relevant information of the problem.",
+              "markups": []
+            },
+            {
+              "name": "11a8",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*Xa9ykE6PggRXYwS7sUontg.png",
+                "originalWidth": 5694,
+                "originalHeight": 924
+              }
+            },
+            {
+              "name": "a136",
+              "type": 1,
+              "text": "1. Number",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 9
+                }
+              ]
+            },
+            {
+              "name": "11d3",
+              "type": 1,
+              "text": "Number every problem. it helps stakeholders quickly understand which problem they are talking about when communicating with each other.",
+              "markups": []
+            },
+            {
+              "name": "2895",
+              "type": 1,
+              "text": "2. Client",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 9
+                }
+              ]
+            },
+            {
+              "name": "d4fa",
+              "type": 1,
+              "text": "For multi-client requirement, we need to note which client the problem refers to, so the corresponding developers can fix it. You can also create separate documents for each client, then you don’t need this column in that case.",
+              "markups": []
+            },
+            {
+              "name": "1d57",
+              "type": 1,
+              "text": "3. Location",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 11
+                }
+              ]
+            },
+            {
+              "name": "c85c",
+              "type": 1,
+              "text": "Describe where the problem occurs, so the developers can locate the problem. Usually I will describe it in the format of “Page-Module”. For example, “home page — Recommended”, or “playing screen — progress control”, etc.",
+              "markups": []
+            },
+            {
+              "name": "3d8e",
+              "type": 1,
+              "text": "4. Current Behaviour/Expected Behaviour/Screenshot",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 50
+                }
+              ]
+            },
+            {
+              "name": "0bcc",
+              "type": 1,
+              "text": "A typical way to describe a bug. For each problem we found, describe what the current behaviour and problem is, and what the solution and behaviour we expect. With this description, the developer can understand what the problem is and what the final presentation the design wants to achieve, thus fix the problem correctly.",
+              "markups": []
+            },
+            {
+              "name": "98d6",
+              "type": 1,
+              "text": "When describing the problem, we may need to describe whether it is occasional or definite, how to trigger the problem and current behaviour, as well as client model. For complicated problems that are not easy to understand by text description, a screenshot or a screen recording can be helpful, compare the screenshot with the design would be easier to understand.",
+              "markups": []
+            },
+            {
+              "name": "e8c2",
+              "type": 1,
+              "text": "5. Priority",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 11
+                }
+              ]
+            },
+            {
+              "name": "348f",
+              "type": 1,
+              "text": "We can use the risk matrix to decide the priority of the problem based on its severity and likelihood (to happen) of the problem.",
+              "markups": []
+            },
+            {
+              "name": "c843",
+              "type": 1,
+              "text": "Severity refers to the impact of the problem on user experience and business requirements. Likelihood refers to whether the problem occurs occasionally or definite, whether it is in the main process or a branch that is rarely used. You can see the examples with different priorities listed below according to the risk matrix:",
+              "markups": []
+            },
+            {
+              "name": "7235",
+              "type": 9,
+              "text": "High: the function does not meet the requirement, there’re major experience problems, etc. (e.g. text or pictures are obviously misplaced, entering a dead end and unable to exit)",
+              "markups": []
+            },
+            {
+              "name": "0876",
+              "type": 9,
+              "text": "Medium: experience problems that won’t stop users to complete the task, or inconsistent behaviour (e.g. the exit animation is not consistent with other pages, or the coverage of hot spot is slightly small)",
+              "markups": []
+            },
+            {
+              "name": "3ebb",
+              "type": 9,
+              "text": "Low: problems that are not easy to trigger and do not affect the use of the feature, possible experience optimization, etc. (e.g. non-serious copywrite problems, optimization of animation)",
+              "markups": []
+            },
+            {
+              "name": "c2ab",
+              "type": 1,
+              "text": "A defined priority helps designers decide can we release the product with problems unsolved (due to cost and time) and how we deal with problems left after product release.",
+              "markups": []
+            },
+            {
+              "name": "d555",
+              "type": 1,
+              "text": "Generally speaking, high priorities should be fixed before going online. Medium priorities need to be fixed in the next one or two iterations. Low priority problems can be fixed when there’s opportunities to make it fixed in a certain iteration. I’ll also ask developers to add a difficulty dimension to understand the cost to fix the problem and take that into consideration .",
+              "markups": []
+            },
+            {
+              "name": "47bc",
+              "type": 4,
+              "text": "Risk Matrix",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*U-fRLPVkBIOeOhhU",
+                "originalWidth": 595,
+                "originalHeight": 584
+              }
+            },
+            {
+              "name": "65cf",
+              "type": 1,
+              "text": "6. Fixed Confirmation",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 21
+                }
+              ]
+            },
+            {
+              "name": "5294",
+              "type": 1,
+              "text": "It is better to provide a check-box for developers to tick a problem in one click. Developers can tick it after problems being fixed. Once designers see the problems is ticked, we can start second round QA.",
+              "markups": []
+            },
+            {
+              "name": "42ad",
+              "type": 1,
+              "text": "7. Note",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 7
+                }
+              ]
+            },
+            {
+              "name": "2781",
+              "type": 1,
+              "text": "If it is difficult for developers to fix or a different method is adopted, the reason for not fixing the problem, or downgrade plan can be mentioned in the Note column, and we can go offline communication after first round of bug fix.",
+              "markups": []
+            },
+            {
+              "name": "aee4",
+              "type": 1,
+              "text": "8. Design Check",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 15
+                }
+              ]
+            },
+            {
+              "name": "9f41",
+              "type": 1,
+              "text": "The fixed problems need a second round design QA by designers to ensure that the problems have been fixed as expected. If the result doesn’t meet the expectation, we should make a note here.",
+              "markups": []
+            },
+            {
+              "name": "9df4",
+              "type": 1,
+              "text": "9. Dev Name",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 11
+                }
+              ]
+            },
+            {
+              "name": "106c",
+              "type": 1,
+              "text": "Sometimes, there are multiple developers involved in a requirement. Developers should claim the problem they are responsible for. Designers can therefor know whom to communicate with offline and improve efficiency.",
+              "markups": []
+            },
+            {
+              "name": "2472",
+              "type": 3,
+              "text": "Design QA Problems and Solutions",
+              "markups": []
+            },
+            {
+              "name": "c31f",
+              "type": 1,
+              "text": "I have also encountered some problems in the process of design QA. The followings are common problems I’ve met and solutions of my best practice.",
+              "markups": []
+            },
+            {
+              "name": "40cf",
+              "type": 1,
+              "text": "1. If there’s no time to fix the problem, shall we delay the product release?",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 77
+                }
+              ]
+            },
+            {
+              "name": "34a9",
+              "type": 1,
+              "text": "Every designer may have the experience of arguing with the product owner about whether a problem should be fixed before release. For the team that adopts agile method through rapid iteration, one can use the priority I mentioned above to decide when to fix the problem. High priority problems are generally problems that must be fixed before going online, and other problems can be fixed later. Therefore, define the priority first with the product owner according to the nature of your product, and then apply it in the work.",
+              "markups": []
+            },
+            {
+              "name": "c5bb",
+              "type": 1,
+              "text": "2. How to push the fix in the following iteration?",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 50
+                }
+              ]
+            },
+            {
+              "name": "3afd",
+              "type": 1,
+              "text": "It is better to fix remaining problems in the following iterations otherwise the UX debt will eventually come to you. The unsolved problems should be recorded in one document. Each iteration should reserve some resources to fix the remaining problems, or fix them through other requirements. The designer also needs to actively ask the developer about the cost of the solution, it would help fix problems. For problems that do not require a standalone requirement, urging QA and developers regularly can also help push the problem to be fixed. For example, I once found a problem that depends on a pre-work of another team. As I asked regularly, when the pre-work was completed, QA informed me immediately and the problem was fixed soon. Anyhow, only by creating a system to fix the remaining problems can we better solve the UX debt.",
+              "markups": []
+            },
+            {
+              "name": "0098",
+              "type": 1,
+              "text": "3. Prevent product release without design QA",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 44
+                }
+              ]
+            },
+            {
+              "name": "9cb3",
+              "type": 1,
+              "text": "Primarily, we should create an official design QA process. Align design QA process with developers, QAs and product owner, make it official, and ensure that the designer has reviewed the product before going online. In addition to the process, it should also ensure that the designer is able to know the demo is ready and there’s a method to notify the designer. In Cloud Music, we have automated this process with every information that a designer needs to start design QA are automatically sent to us. We know what environment to use, what account to log in, how to load the mock data, and the most important information — when the product will be released. We can therefor avoid the delay of design QA due to other work and avoid insufficient time for developers to fix.",
+              "markups": []
+            },
+            {
+              "name": "f8e9",
+              "type": 3,
+              "text": "Summary",
+              "markups": []
+            },
+            {
+              "name": "f7e0",
+              "type": 1,
+              "text": "Design QA is an important and indispensable part of the design process. The above design QA process and follow-up procedure are effective methods for us in Cloud Music through communicating with many stakeholders. The design QA document, how to design QA and problem solving are the best practices in our work. The design QA document is designed after communicating and interviewing with developers and QAs, which is convenient for them and designers as well. As a UX designer, the user experience of developers as the user of the design QA document should also be considered.",
+              "markups": []
+            },
+            {
+              "name": "7364",
+              "type": 1,
+              "text": "A small tip to my designer fellows, when we describe the problems, it is better to use the word “unexpected behavior” instead of “bug”. It helps to maintain a better relationship with developers :).",
+              "markups": []
+            },
+            {
+              "name": "03ff",
+              "type": 3,
+              "text": "References",
+              "markups": []
+            },
+            {
+              "name": "fb93",
+              "type": 1,
+              "text": "A. Kaley , ‘UX Debt: How to Identify, Prioritize, and Resolve’, Nielsen Norman Group, 2018, https://www.nngroup.com/articles/ux-debt/, (2021–11–17).",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 92,
+                  "end": 133,
+                  "href": "https://www.nngroup.com/articles/ux-debt/",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                },
+                {
+                  "type": 2,
+                  "start": 64,
+                  "end": 84
+                }
+              ]
+            },
+            {
+              "name": "be74",
+              "type": 1,
+              "text": "K. Dunwoody, S. Rector , ‘UX Debt in the Enterprise: A Practical Approach’, UXPA Magazine, 2015, UX Debt in the Enterprise: A Practical Approach, (2021–11–17).",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 97,
+                  "end": 144,
+                  "href": "https://uxpamagazine.org/ux-debt-in-the-enterprise/",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                },
+                {
+                  "type": 2,
+                  "start": 76,
+                  "end": 89
+                }
+              ]
+            },
+            {
+              "name": "8857",
+              "type": 1,
+              "text": "J. Talbot , ‘What’s right with risk matrices?’, Success and Leadership, 2017, What’s right with risk matrices?, (2021–11–17).",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 78,
+                  "end": 110,
+                  "href": "https://www.juliantalbot.com/post/2018/07/31/whats-right-with-risk-matrices",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                },
+                {
+                  "type": 2,
+                  "start": 48,
+                  "end": 70
+                }
+              ]
+            },
+            {
+              "name": "5ca1",
+              "type": 1,
+              "text": "Redwerk. “QA Illustration.” dribbble, 23 Nov. 2021, QA Illustration.",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 52,
+                  "end": 67,
+                  "href": "https://dribbble.com/shots/5621781-QA-Illustration",
+                  "title": "",
+                  "rel": "",
+                  "anchorType": 0
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "27ba",
+              "startIndex": 0
+            }
+          ]
+        },
+        "postDisplay": {
+          "coverless": true
+        }
+      },
+      "virtuals": {
+        "allowNotes": true,
+        "previewImage": {
+          "imageId": "1*Ri6cmSvrbWDRPkn9tP7_0Q.png",
+          "filter": "",
+          "backgroundSize": "",
+          "originalWidth": 2400,
+          "originalHeight": 1800,
+          "strategy": "resample",
+          "height": 0,
+          "width": 0
+        },
+        "wordCount": 2413,
+        "imageCount": 4,
+        "readingTime": 9.80566037735849,
+        "subtitle": "Design QA is an important and indispensable part of the design process and here’s my best practice of design QA.",
+        "usersBySocialRecommends": [],
+        "noIndex": false,
+        "recommends": 3,
+        "isBookmarked": false,
+        "tags": [
+          {
+            "slug": "ux",
+            "name": "UX",
+            "postCount": 172462,
+            "metadata": {
+              "postCount": 172462,
+              "coverImage": {
+                "id": "1*K2kgTFTCXrfuT6iff0OrLA.png",
+                "originalWidth": 979,
+                "originalHeight": 591,
+                "alt": "Frog in a pot surrounded by butterflies"
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ux-design",
+            "name": "UX Design",
+            "postCount": 97279,
+            "metadata": {
+              "postCount": 97279,
+              "coverImage": {
+                "id": "0*3AEFmxcHuhVK8UVn",
+                "originalWidth": 3999,
+                "originalHeight": 2666,
+                "unsplashPhotoId": "tGBXiHcPKrM"
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "design-qa",
+            "name": "Design Qa",
+            "postCount": 13,
+            "metadata": {
+              "postCount": 13,
+              "coverImage": {
+                "id": "1*2IN412UFtwVe-HYr-ttINA.png",
+                "originalWidth": 1600,
+                "originalHeight": 960,
+                "isFeatured": true
+              }
+            },
+            "type": "Tag"
+          }
+        ],
+        "socialRecommendsCount": 0,
+        "responsesCreatedCount": 0,
+        "links": {
+          "entries": [
+            {
+              "url": "https://www.nngroup.com/articles/ux-debt/",
+              "alts": [],
+              "httpStatus": 200
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Technical_debt",
+              "alts": [],
+              "httpStatus": 200
+            },
+            {
+              "url": "https://dribbble.com/shots/5621781-QA-Illustration",
+              "alts": [],
+              "httpStatus": 200
+            },
+            {
+              "url": "https://uxpamagazine.org/ux-debt-in-the-enterprise/",
+              "alts": [],
+              "httpStatus": 200
+            },
+            {
+              "url": "https://www.juliantalbot.com/post/2018/07/31/whats-right-with-risk-matrices",
+              "alts": [
+                {
+                  "type": 1,
+                  "url": "https://cdn.ampproject.org/c/s/www.juliantalbot.com/amp/2018/07/31/whats-right-with-risk-matrices"
+                }
+              ],
+              "httpStatus": 200
+            }
+          ],
+          "version": "0.3",
+          "generatedAt": 1661163595457
+        },
+        "isLockedPreviewOnly": false,
+        "metaDescription": "",
+        "totalClapCount": 27,
+        "sectionCount": 1,
+        "readingList": 0,
+        "topics": [
+          {
+            "topicId": "55321ac40456",
+            "slug": "design",
+            "createdAt": 1536181929758,
+            "deletedAt": 0,
+            "image": {
+              "id": "1*1aLu20aptPeUTDg_E8KtmA@2x.jpeg",
+              "originalWidth": 6016,
+              "originalHeight": 4016
+            },
+            "name": "Design",
+            "description": "Below the surface.",
+            "relatedTopics": [],
+            "visibility": 1,
+            "relatedTags": [],
+            "relatedTopicIds": [],
+            "seoTitle": "Design Articles and News — Medium",
+            "type": "Topic"
+          }
+        ]
+      },
+      "coverless": true,
+      "slug": "my-best-practice-of-design-qa",
+      "translationSourcePostId": "",
+      "translationSourceCreatorId": "",
+      "isApprovedTranslation": false,
+      "inResponseToPostId": "",
+      "inResponseToRemovedAt": 0,
+      "isTitleSynthesized": false,
+      "allowResponses": true,
+      "importedUrl": "",
+      "importedPublishedAt": 0,
+      "visibility": 0,
+      "uniqueSlug": "my-best-practice-of-design-qa-e4628e630dab",
+      "previewContent": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "previewImage",
+              "type": 4,
+              "text": "",
+              "layout": 10,
+              "metadata": {
+                "id": "1*Ri6cmSvrbWDRPkn9tP7_0Q.png",
+                "originalWidth": 2400,
+                "originalHeight": 1800,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "previewTitle",
+              "type": 3,
+              "text": "My Best Practice of Design QA",
+              "alignment": 1
+            },
+            {
+              "name": "previewSubtitle",
+              "type": 13,
+              "text": "Design QA is an important and indispensable part of the design process…",
+              "alignment": 1
+            }
+          ],
+          "sections": [
+            {
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "Design QA is an important and indispensable part of the design process and here’s my best practice of design QA."
+      },
+      "license": 0,
+      "inResponseToMediaResourceId": "",
+      "canonicalUrl": "https://medium.com/@lukelyu/my-best-practice-of-design-qa-e4628e630dab",
+      "approvedHomeCollectionId": "",
+      "isNewsletter": false,
+      "newsletterId": "",
+      "webCanonicalUrl": "https://medium.com/@lukelyu/my-best-practice-of-design-qa-e4628e630dab",
+      "mediumUrl": "https://medium.com/@lukelyu/my-best-practice-of-design-qa-e4628e630dab",
+      "migrationId": "",
+      "notifyFollowers": true,
+      "notifyTwitter": false,
+      "notifyFacebook": false,
+      "responseHiddenOnParentPostAt": 0,
+      "isSeries": false,
+      "isSubscriptionLocked": false,
+      "seriesLastAppendedAt": 0,
+      "audioVersionDurationSec": 0,
+      "sequenceId": "",
+      "isEligibleForRevenue": false,
+      "isBlockedFromHightower": false,
+      "deletedAt": 0,
+      "lockedPostSource": 0,
+      "hightowerMinimumGuaranteeStartsAt": 0,
+      "hightowerMinimumGuaranteeEndsAt": 0,
+      "featureLockRequestAcceptedAt": 0,
+      "mongerRequestType": 1,
+      "layerCake": 0,
+      "socialTitle": "",
+      "socialDek": "",
+      "editorialPreviewTitle": "",
+      "editorialPreviewDek": "",
+      "curationEligibleAt": 0,
+      "isProxyPost": false,
+      "proxyPostFaviconUrl": "",
+      "proxyPostProviderName": "",
+      "proxyPostType": 0,
+      "isSuspended": false,
+      "isLimitedState": false,
+      "seoTitle": "",
+      "previewContent2": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "88c2",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*Ri6cmSvrbWDRPkn9tP7_0Q.png",
+                "originalWidth": 2400,
+                "originalHeight": 1800,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "609e",
+              "type": 3,
+              "text": "My Best Practice of Design QA",
+              "markups": []
+            },
+            {
+              "name": "1481",
+              "type": 1,
+              "text": "As a designer, have you ever asked following questions on the product you designed:",
+              "markups": []
+            },
+            {
+              "name": "7c5e",
+              "type": 7,
+              "text": "“It doesn’t seem to be what I designed.”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 40
+                }
+              ]
+            },
+            {
+              "name": "a7fb",
+              "type": 7,
+              "text": "“This is different from what I thought.”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 40
+                }
+              ]
+            },
+            {
+              "name": "b3a3",
+              "type": 7,
+              "text": "“It should’ve used the library components, why it’s not the same?”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 66
+                }
+              ]
+            },
+            {
+              "name": "dac2",
+              "type": 1,
+              "text": "If you only have these doubts after product release, you…",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 65,
+                  "end": 75
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "27ba",
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "Design QA is an important and indispensable part of the design process and here’s my best practice of design QA."
+      },
+      "cardType": 0,
+      "isDistributionAlertDismissed": false,
+      "isShortform": false,
+      "shortformType": 0,
+      "responsesLocked": false,
+      "isLockedResponse": false,
+      "isPublishToEmail": false,
+      "responseDistribution": 0,
+      "isMarkedPaywallOnly": false,
+      "type": "Post"
+    },
+    "mentionedUsers": [],
+    "collaborators": [],
+    "hideMeter": false,
+    "collectionUserRelations": [],
+    "mode": null,
+    "references": {
+      "User": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "name": "Ke Lyu",
+          "username": "lukelyu",
+          "createdAt": 1406604659459,
+          "imageId": "1*FfLXu1aEyCiK7QGoIBWsuA.jpeg",
+          "backgroundImageId": "",
+          "bio": "UX voyager. Lead Desinger at NetEase Cloud Music.",
+          "socialStats": {
+            "userId": "6c3c51488871",
+            "usersFollowedCount": 34,
+            "usersFollowedByCount": 101,
+            "type": "SocialStats"
+          },
+          "social": {
+            "userId": "lo_2c0a49ab0be0",
+            "targetUserId": "6c3c51488871",
+            "type": "Social"
+          },
+          "allowNotes": 1,
+          "mediumMemberAt": 0,
+          "isWriterProgramEnrolled": true,
+          "isSuspended": false,
+          "isMembershipTrialEligible": true,
+          "optInToIceland": true,
+          "hasCompletedProfile": false,
+          "userDismissableFlags": [
+            1,
+            2,
+            5,
+            8,
+            21,
+            29,
+            32,
+            33,
+            52,
+            53,
+            58,
+            70
+          ],
+          "hasSeenIcelandOnboarding": true,
+          "postSubscribeMembershipUpsellShownAt": 0,
+          "languageCode": "en",
+          "type": "User"
+        }
+      },
+      "Social": {
+        "6c3c51488871": {
+          "userId": "lo_2c0a49ab0be0",
+          "targetUserId": "6c3c51488871",
+          "type": "Social"
+        }
+      },
+      "SocialStats": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "usersFollowedCount": 34,
+          "usersFollowedByCount": 101,
+          "type": "SocialStats"
+        }
+      }
+    }
+  },
+  "v": 3,
+  "b": "20260710-1536-root"
+}

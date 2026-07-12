@@ -1,0 +1,3245 @@
+{
+  "success": true,
+  "payload": {
+    "value": {
+      "id": "8219985a48a1",
+      "versionId": "56d1cafdd753",
+      "creatorId": "6c3c51488871",
+      "homeCollectionId": "138adf9c44c",
+      "title": "When UX dad meets board games for kids",
+      "detectedLanguage": "en",
+      "latestVersion": "56d1cafdd753",
+      "latestPublishedVersion": "56d1cafdd753",
+      "hasUnpublishedEdits": false,
+      "latestRev": 2184,
+      "createdAt": 1756106135376,
+      "updatedAt": 1760039944294,
+      "acceptedAt": 0,
+      "firstPublishedAt": 1757498721150,
+      "latestPublishedAt": 1758784789909,
+      "vote": false,
+      "experimentalCss": "",
+      "displayAuthor": "",
+      "content": {
+        "subtitle": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play",
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "4d2f",
+              "type": 3,
+              "text": "When UX dad meets board games for kids",
+              "markups": []
+            },
+            {
+              "name": "70f0",
+              "type": 13,
+              "text": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play.",
+              "markups": []
+            },
+            {
+              "name": "2a52",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*V2ax_SnbRDA1vBgYM4v49g.jpeg",
+                "originalWidth": 1820,
+                "originalHeight": 1024,
+                "isFeatured": true,
+                "alt": "An Illustration of my kid with board game elements as a cover photo"
+              }
+            },
+            {
+              "name": "b063",
+              "type": 1,
+              "text": "As a father of a 5-year-old boy, I deeply understand the importance of productive/creative pleasure for children. It’s not the passive stimulation from cartoons, but the vibration he feels when his little hand pushes the wooden snail shell across the table in the board game Rouleboule l’Escargot; it’s the confident smile on his face when he answers a question card correctly in Journey to the West Encyclopedia; it’s also the thoughtful concentration as he clutches colorful travel tickets in My First Journey: Discover China, studying the best route on the map. The time spent with my child is thus filled with joy found in one exquisitely designed, colorful box of children’s board games after another.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 71,
+                  "end": 99
+                },
+                {
+                  "type": 2,
+                  "start": 275,
+                  "end": 296
+                },
+                {
+                  "type": 2,
+                  "start": 380,
+                  "end": 412
+                },
+                {
+                  "type": 2,
+                  "start": 495,
+                  "end": 527
+                }
+              ]
+            },
+            {
+              "name": "b173",
+              "type": 1,
+              "text": "Time and again, picking up scattered pieces, explaining the rules over and over, and witnessing those moments of growth from clumsy attempts to slightly strategic thinking, I’ve come to realize that excellent children’s board games are essentially tangible user experience journeys. They, too, are interactions between people and a system (rules, components). Players need to understand complex rules, process information, make decisions, and derive fun, challenge, and social satisfaction from it. And within this, I’ve glimpsed the vivid application of Nielsen’s 10 Usability Heuristics.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 248,
+                  "end": 281
+                },
+                {
+                  "type": 1,
+                  "start": 319,
+                  "end": 358
+                }
+              ]
+            },
+            {
+              "name": "74b1",
+              "type": 1,
+              "text": "Nielsen’s 10 Usability Heuristics are important reference standards in user experience design and a tool that has become second nature to me in my daily work. Yet, seeing this framework come to life vividly on the small tabletop has been a fascinating cross-disciplinary experience. Therefore, I want to combine my personal experiences as a father playing alongside my child with the perspective of a UX designer to discuss, based on these 10 heuristics, the UX design wisdom hidden within children’s board games. What exactly is it that allows little kids to pick up these games so easily and enjoy them?",
+              "markups": []
+            },
+            {
+              "name": "e51c",
+              "type": 3,
+              "text": "​​I. Visibility of System Status​​",
+              "markups": []
+            },
+            {
+              "name": "d9fb",
+              "type": 6,
+              "text": "The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "337e",
+              "type": 1,
+              "text": "The principle of visibility of system status emphasizes that systems should provide immediate feedback to communicate the current state of the system and prevent cognitive gaps. For children whose cognitive abilities are still developing, this principle directly impacts their gaming experience, learning outcomes, and emotional engagement. Its importance and application in board games can be analyzed in the following three ways:",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 130,
+                  "end": 176
+                }
+              ]
+            },
+            {
+              "name": "a5a4",
+              "type": 13,
+              "text": "1. Cognitive Support: Lowering the Barrier to Understanding and Reducing Memory Burden​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 88
+                }
+              ]
+            },
+            {
+              "name": "5d44",
+              "type": 1,
+              "text": "Children (especially those aged 3–8) have limited working memory capacity and underdeveloped abstract reasoning skills. Visibility of status transforms the game process into perceivable signals through physical feedback​​.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 42,
+                  "end": 73
+                }
+              ]
+            },
+            {
+              "name": "7dd1",
+              "type": 1,
+              "text": "This principle is widely applied in board games. Most score-based board games feature dedicated scorekeeping boards to record each player’s current status, allowing players to adjust their strategies based on scores.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 119,
+                  "end": 125
+                },
+                {
+                  "type": 1,
+                  "start": 140,
+                  "end": 154
+                }
+              ]
+            },
+            {
+              "name": "f412",
+              "type": 1,
+              "text": "For example, in Venture into Seasons, players can determine which solar term cards to exchange for points based on the number of solar term fragments they hold. In My First Journey: Discover China, the strong association between the colors of travel tickets and routes determines which cities players can access.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 119,
+                  "end": 149
+                },
+                {
+                  "type": 1,
+                  "start": 209,
+                  "end": 239
+                },
+                {
+                  "type": 2,
+                  "start": 16,
+                  "end": 36
+                },
+                {
+                  "type": 2,
+                  "start": 164,
+                  "end": 196
+                }
+              ]
+            },
+            {
+              "name": "7aee",
+              "type": 4,
+              "text": "In Venture into Seasons, solar term fragments can be exchanged for corresponding solar term cards; in My First Journey: Discover China, travel tickets must match the color of the routes on the map",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 23
+                },
+                {
+                  "type": 2,
+                  "start": 102,
+                  "end": 134
+                }
+              ],
+              "layout": 3,
+              "metadata": {
+                "id": "0*eBCcZK2MYJ655vOH",
+                "originalWidth": 1440,
+                "originalHeight": 540,
+                "alt": "A picture shows In Venture into Seasons, solar term fragments can be exchanged for corresponding solar term cards; in My First Journey: Discover China, travel tickets must match the color of the routes on the map"
+              }
+            },
+            {
+              "name": "3c18",
+              "type": 13,
+              "text": "2. Emotional Experience: Incremental Rewards & Immersive Engagement​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 69
+                }
+              ]
+            },
+            {
+              "name": "5f4b",
+              "type": 1,
+              "text": "The visibility of system status empowers children with a sense of control over the game’s progression, reducing anxiety and amplifying enjoyment. For my son, watching scores shift on the tracker — experiencing each round’s triumphs and comebacks — fills him with palpable excitement.. ​​Structuring ultimate victory into phased rewards​​, which transforms a single moment of joy into ​​multiple peaks of achievement​​, sustains children’s enthusiasm throughout the entire game.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 57,
+                  "end": 73
+                },
+                {
+                  "type": 1,
+                  "start": 102,
+                  "end": 119
+                },
+                {
+                  "type": 1,
+                  "start": 124,
+                  "end": 144
+                }
+              ]
+            },
+            {
+              "name": "e8af",
+              "type": 4,
+              "text": "The Solar Cycle Rotation uses the ​​edge of the game’s box as a score tracker​​, while Tiny Acrobats features both scoring and score measurement boards​​.",
+              "markups": [],
+              "layout": 3,
+              "metadata": {
+                "id": "0*LXxGt0FP8WaMEqob",
+                "originalWidth": 1440,
+                "originalHeight": 540,
+                "alt": "A picture show The Solar Cycle Rotation uses the ​​edge of the game’s box as a score tracker​​, while Tiny Acrobats features both scoring and score measurement boards​​."
+              }
+            },
+            {
+              "name": "1aec",
+              "type": 13,
+              "text": "​​3. Strategic Thinking: Breaking Visibility to Foster Skill Development​​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 74
+                }
+              ]
+            },
+            {
+              "name": "f499",
+              "type": 1,
+              "text": "To enhance challenge and engagement, some board games deliberately conceal certain game states. For example, in Polar Party, each player’s collected fish remain hidden. Players must ​​speculate and deduce opponents’ fish quantities​​ to decide whether their penguin should “hibernate” with the current catch. Similarly, games like Venture into Seasons incorporate ​​special scoring rules​​ in some cards, allowing players to seize last-minute opportunities for a dramatic comeback.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 112,
+                  "end": 123
+                },
+                {
+                  "type": 2,
+                  "start": 331,
+                  "end": 351
+                }
+              ]
+            },
+            {
+              "name": "3006",
+              "type": 4,
+              "text": "In Polar Party, what is on the reverse side of the tokens is concealed from players​​, while Venture into Seasons features ​​a set collection mechanic that grants bonus points for completing specific combinations​​.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 14
+                },
+                {
+                  "type": 2,
+                  "start": 93,
+                  "end": 114
+                }
+              ],
+              "layout": 3,
+              "metadata": {
+                "id": "0*9uyDPNRoC2Ggokef",
+                "originalWidth": 1440,
+                "originalHeight": 540,
+                "alt": "A picture shows In Polar Party, what is on the reverse side of the tokens is concealed from players​​, while Venture into Seasons features ​​a set collection mechanic that grants bonus points for completing specific combinations​​."
+              }
+            },
+            {
+              "name": "a1ea",
+              "type": 1,
+              "text": "In Bunny Boo, the designer intentionally conceals the sequence guidance for block stacking, encouraging children to complete structures through self-observation, thereby enhancing their spatial reasoning skills. In Monster Soup, the rules deliberately require children to ​​identify tactile features by touching concealed components​​ inside a drawstring bag, refining sensory recognition abilities. On the other hand, games like Gobblet Gobblers and Tim t’Aide à Ranger strengthen memory retention by ​​obscuring objectives​​, compelling children to recall and reconstruct hidden information.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 12
+                },
+                {
+                  "type": 2,
+                  "start": 215,
+                  "end": 227
+                },
+                {
+                  "type": 2,
+                  "start": 430,
+                  "end": 447
+                },
+                {
+                  "type": 2,
+                  "start": 451,
+                  "end": 471
+                }
+              ]
+            },
+            {
+              "name": "a938",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 3,
+              "metadata": {
+                "id": "0*7oTqb6VL57s5If6X",
+                "originalWidth": 1440,
+                "originalHeight": 543,
+                "alt": "A picture shows the example of Bunny Boo, Monster Soup, Gobblet Gobblers, and Tim t’Aide à Ranger."
+              }
+            },
+            {
+              "name": "b848",
+              "type": 3,
+              "text": "​​II.Match Between the System and the Real World",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 48
+                }
+              ]
+            },
+            {
+              "name": "dde9",
+              "type": 6,
+              "text": "The design should speak the users’ language. Use words, phrases, and concepts familiar to the user, rather than internal jargon. Follow real-world conventions, making information appear in a natural and logical order. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "f439",
+              "type": 1,
+              "text": "By connecting with the real world, board games often provide children with tangible and relatable experiences. Integrating gameplay with real-world operations enhances the ​​ease of learning​​. This approach fully leverages players’ existing knowledge and intuition, reducing errors and enabling rapid rule acquisition. Not only does this lower cognitive barriers, but it also serves educational purposes — many board games with common-sense educational value exemplify this connection to reality.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 75,
+                  "end": 109
+                },
+                {
+                  "type": 1,
+                  "start": 174,
+                  "end": 190
+                },
+                {
+                  "type": 1,
+                  "start": 233,
+                  "end": 241
+                },
+                {
+                  "type": 1,
+                  "start": 242,
+                  "end": 265
+                },
+                {
+                  "type": 1,
+                  "start": 339,
+                  "end": 363
+                }
+              ]
+            },
+            {
+              "name": "fd0b",
+              "type": 13,
+              "text": "1. Lowering Cognitive Barriers: Natural Transition from Known to Unknown​​",
+              "markups": []
+            },
+            {
+              "name": "1445",
+              "type": 1,
+              "text": "When we bring out the board game Shopping List, its components — shopping carts, checklists, and item cards (e.g., apple, milk, clothing, etc.) — instantly convey the gameplay and objectives to children. With only a brief explanation of win conditions, a three-year-old can directly grasp the “find-and-check” task based on prior supermarket experience, immediately understanding the game without needing to learn abstract symbols.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 33,
+                  "end": 46
+                }
+              ]
+            },
+            {
+              "name": "afa4",
+              "type": 4,
+              "text": "​​Draw a card — Check the list — Load the cart​",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*vNPzNRUx86n6YSShEqI0jQ.jpeg",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture of Shopping List game"
+              }
+            },
+            {
+              "name": "9ff0",
+              "type": 13,
+              "text": "​2. Igniting Learning Motivation & Reinforcing Knowledge Internalization​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 74
+                }
+              ]
+            },
+            {
+              "name": "e693",
+              "type": 1,
+              "text": "This is exactly why my wife and I adore board games — they seamlessly integrate knowledge into gameplay, embodying the popular educational philosophy of learning through play, where engaging activities naturally spark children’s curiosity and drive to learn.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 153,
+                  "end": 174
+                }
+              ]
+            },
+            {
+              "name": "0fc4",
+              "type": 1,
+              "text": "When my son plays My First Journey: Discover China, watching his fingertips trace rainbow-colored routes to locate cities on the map, I know he has become deeply familiar with the geography of China.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 18,
+                  "end": 50
+                }
+              ]
+            },
+            {
+              "name": "ac65",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*o4YEuV_G7BcDQRZ2HF6ayQ.jpeg",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture of My First Journey: Discover China game"
+              }
+            },
+            {
+              "name": "699b",
+              "type": 1,
+              "text": "Watching my son play Tiny Acrobats, I see his small hands gripping those tiny props, his eyes filled with focused determination. In the game, he must carefully place balls, elephants, horses, and other elements onto the balance beam, or they will fall. For him, this is more than just entertainment. He is gradually, bit by bit, grasping the concept of balance.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 21,
+                  "end": 34
+                }
+              ]
+            },
+            {
+              "name": "5de9",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*QiHsBEnJeUaHA7hnh3LzEQ.jpeg",
+                "originalWidth": 1440,
+                "originalHeight": 1057,
+                "alt": "A picture of Tiny Acrobats game, with blocks stacked"
+              }
+            },
+            {
+              "name": "8881",
+              "type": 1,
+              "text": "Alignment with the real world is particularly crucial in board games for kids because abstract rules are often challenging for young minds to comprehend. Outstanding board game designers, much like UX designers, leverage real-world elements to facilitate understanding and ​​translate children’s lived experiences into the language of play​​. When board games become “tangible stories they can touch and play” rather than a set of abstract rules, educational goals are quietly achieved through laughter and exploration.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 244,
+                  "end": 268
+                },
+                {
+                  "type": 1,
+                  "start": 368,
+                  "end": 408
+                }
+              ]
+            },
+            {
+              "name": "d502",
+              "type": 3,
+              "text": "​​III. User Control and Freedom",
+              "markups": []
+            },
+            {
+              "name": "a27b",
+              "type": 6,
+              "text": "Users often perform actions by mistake. They need a clearly marked “emergency exit” to leave the unwanted action without having to go through an extended process. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "316e",
+              "type": 1,
+              "text": "In UX design, the principle of ​​user control and freedom​​ gives users a sense of agency, preventing them from feeling trapped or frustrated. In children’s board games, this principle is central to fostering autonomy and decision-making skills, directly influencing their motivation and self-confidence.",
+              "markups": []
+            },
+            {
+              "name": "b2a7",
+              "type": 1,
+              "text": "Children crave a sense of control just as much as adults do. The principle empowers them with the initiative of “I can decide!” — a cornerstone of self-confidence. Thus, many excellent children’s board games deliberately place varying degrees of decision-making power in the hands of children.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 98,
+                  "end": 128
+                },
+                {
+                  "type": 1,
+                  "start": 147,
+                  "end": 162
+                },
+                {
+                  "type": 1,
+                  "start": 246,
+                  "end": 267
+                }
+              ]
+            },
+            {
+              "name": "8924",
+              "type": 1,
+              "text": "In Polar Party, rolling the dice earns players “fish tokens” (points), but landing on a “killer whale” space results in the loss of all accumulated tokens. The key design lies in the ​​hibernation mechanism​​: players can choose to put their penguin into hibernation to safely store their current fish tokens, avoiding the threat of the killer whale. However, hibernating also means forfeiting an additional dice roll each round to potentially gain more tokens. This creates an ongoing decision point where players must weigh their options: ​​risk pursuing more rewards, or play it safe to secure existing gains?​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 185,
+                  "end": 206
+                },
+                {
+                  "type": 1,
+                  "start": 478,
+                  "end": 501
+                },
+                {
+                  "type": 1,
+                  "start": 520,
+                  "end": 539
+                },
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 14
+                }
+              ]
+            },
+            {
+              "name": "5d18",
+              "type": 1,
+              "text": "After a few rounds of gameplay, my son began observing opponents, assessing his own position, and actively making judgments — “Time to hibernate now!” Even though sometimes his plans were thwarted just before he could act, the process of making his own choices and bearing the consequences (whether success or failure) brought him a profound sense of accomplishment and joy. Faced with failure, he no longer became easily discouraged but instead eagerly said, “Let’s play another round!”",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 45,
+                  "end": 64
+                },
+                {
+                  "type": 1,
+                  "start": 238,
+                  "end": 264
+                },
+                {
+                  "type": 1,
+                  "start": 265,
+                  "end": 289
+                }
+              ]
+            },
+            {
+              "name": "cbe8",
+              "type": 4,
+              "text": "The killer whale in the distance has already taken a heavy toll, while the player below has chosen to start hibernating with one of their penguins.",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*muuCuy_adylsxslFbgliBg.jpeg",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture shows in Polar Party game, the killer whale in the distance has already taken a heavy toll, while the player below has chosen to start hibernating with one of their penguins."
+              }
+            },
+            {
+              "name": "f483",
+              "type": 1,
+              "text": "What’s even more fascinating is how my son sometimes invents new rules. While playing Dog Bingo, he modified the rules to: “Flip a card, and whoever finds the matching dog first scores a point!” His declaration — “Play by my rules!” — was a bold assertion of independence. Through board games, he grasped the ​​scepter of control​​ for the first time — no longer just a passive participant, but a ​​creator of the game itself​​.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 52,
+                  "end": 70
+                },
+                {
+                  "type": 2,
+                  "start": 86,
+                  "end": 95
+                },
+                {
+                  "type": 2,
+                  "start": 123,
+                  "end": 124
+                },
+                {
+                  "type": 2,
+                  "start": 193,
+                  "end": 195
+                }
+              ]
+            },
+            {
+              "name": "06ff",
+              "type": 1,
+              "text": "Truly exceptional designs genuinely respect children’s autonomy and intentionally ​​leave room for rule innovation​​. They encourage children to move beyond basic gameplay, make their own decisions about how to play, and ultimately enhance their creativity.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 99,
+                  "end": 114
+                }
+              ]
+            },
+            {
+              "name": "2909",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*YZ-TCqD1-_34eDNjNMX_GQ.png",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture of Dog Bingo game"
+              }
+            },
+            {
+              "name": "106f",
+              "type": 1,
+              "text": "“You have the right to explore, the right to make mistakes, and the right to reach your destination in your own way.” This is especially true when designing for children, whether in interaction design or board game design. True freedom lies in entrusting children to navigate their own starship through the galaxy of rules.",
+              "markups": []
+            },
+            {
+              "name": "5b8c",
+              "type": 3,
+              "text": "​​IV. Consistency and Standards",
+              "markups": []
+            },
+            {
+              "name": "5c00",
+              "type": 6,
+              "text": "Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "bf6c",
+              "type": 1,
+              "text": "The consistency and standards principle plays a foundational role in children’s board game design, serving as a cognitive efficiency cornerstone that significantly lowers learning costs through clear design language.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 112,
+                  "end": 132
+                },
+                {
+                  "type": 1,
+                  "start": 171,
+                  "end": 185
+                }
+              ]
+            },
+            {
+              "name": "4fd1",
+              "type": 1,
+              "text": "​​Color consistency is the first key for children to grasp complex rules​​. Take My First Journey: Discover China as an example: its rigorous ​​color-mapping system​​ — green tickets only work on green paths, red tickets on red routes — transforms abstract rules into ​​visual intuition​​. Children can navigate routes without memorizing complex symbols. This consistency extends to symbolic systems: in Great Explorers, the pickaxe icon represents mineral collection, the camera symbol marks animal spotting, and the specimen bag indicates plant gathering. The strong association between tools and functions creates a ​​visualized operating manual​​. This consistency is a core part of the game’s design.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 19
+                },
+                {
+                  "type": 1,
+                  "start": 144,
+                  "end": 164
+                },
+                {
+                  "type": 1,
+                  "start": 619,
+                  "end": 650
+                },
+                {
+                  "type": 2,
+                  "start": 81,
+                  "end": 114
+                },
+                {
+                  "type": 2,
+                  "start": 404,
+                  "end": 419
+                }
+              ]
+            },
+            {
+              "name": "5458",
+              "type": 4,
+              "text": "​​The tools on the right correspond to the cards obtained below.",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*lnuyFKGkUfV-uKD4",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture shows that in the game, ​​the tools on the right correspond to the cards obtained below."
+              }
+            },
+            {
+              "name": "f8d0",
+              "type": 1,
+              "text": "​​A series of games turns children into “skill transfer experts”.​​ After playing My First Journey: Discover China, when my son tried Globetrotter: Discover the World, he discovered both games retained the core rule of ​​ “Color-ticket for color-path redemption”​​, with only the map differing (Chinese cities → world landmarks). This is exactly like how Microsoft Office suites share a unified interface. The way to complete tasks remains consistent, significantly reducing the learning curve for new tools. Children can embark on new adventures without needing to relearn game mechanics.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 82,
+                  "end": 114
+                },
+                {
+                  "type": 2,
+                  "start": 134,
+                  "end": 166
+                }
+              ]
+            },
+            {
+              "name": "7bad",
+              "type": 4,
+              "text": "Microsoft suite consistency",
+              "markups": [],
+              "layout": 3,
+              "metadata": {
+                "id": "0*k5D2rJNkganKBZXj",
+                "originalWidth": 1440,
+                "originalHeight": 396,
+                "alt": "A picture shows the tool bar of Microsoft Word, PowerPoint and Excel to show the design consistency"
+              }
+            },
+            {
+              "name": "d622",
+              "type": 4,
+              "text": "Core Ticket Mechanics of My First Journey: Discover China and Globetrotter: Discover the World",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 25,
+                  "end": 94
+                }
+              ],
+              "layout": 3,
+              "metadata": {
+                "id": "0*lddc8ah1WAEbbFwn",
+                "originalWidth": 1440,
+                "originalHeight": 510,
+                "alt": "A picture shows in both My First Journey: Discover China and Globetrotter: Discover the World, the core Ticket Mechanics are the same"
+              }
+            },
+            {
+              "name": "30e8",
+              "type": 3,
+              "text": "V. Error Prevention​​",
+              "markups": []
+            },
+            {
+              "name": "989d",
+              "type": 6,
+              "text": "Good error messages are important, but the best designs carefully prevent problems from occurring in the first place. Either eliminate error-prone conditions, or check for them and present users with a confirmation option before they commit to the action. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "1a0c",
+              "type": 1,
+              "text": "In board game design for kids, frequent mistakes can lead to frustration, feelings of inadequacy, anxiety, and even anger — ultimately causing children to resist the game. This principle is not merely a technical consideration; it is a gentle shield guarding the innocence of childhood against the sting of failure.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 61,
+                  "end": 105
+                },
+                {
+                  "type": 1,
+                  "start": 116,
+                  "end": 121
+                },
+                {
+                  "type": 1,
+                  "start": 155,
+                  "end": 170
+                }
+              ]
+            },
+            {
+              "name": "919b",
+              "type": 13,
+              "text": "​​Physical Error-Proofing: Building Safe Tracks for Curiosity​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 63
+                }
+              ]
+            },
+            {
+              "name": "8dbd",
+              "type": 1,
+              "text": "Children’s motor coordination is still developing, requiring structural designs to mitigate risks. For example, while playing Tim t’Aide à Ranger, I often watched my son try to fit a card into the wrong slot. After a few attempts, he naturally understood it wasn’t the right match. Error prevention in children’s board games isn’t about restricting exploration — it’s about creating ​​safe tracks for enthusiastic yet clumsy little hands​​.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 126,
+                  "end": 145
+                }
+              ]
+            },
+            {
+              "name": "65c7",
+              "type": 1,
+              "text": "In Rouleboule L’escargot, the playing area is enclosed by a barrier. When a child throws the ball too forcefully, the barrier blocks it from flying out, preventing the game from devolving into a frustrating “search for the ball all over the floor” scenario. I’m reminded of an episode of Peppa Pig where George ends up as a ball retriever for his sister and Suzy Sheep — constantly fetching balls until he bursts into tears. The barrier in Rouleboule L’escargot avoids this exact frustration by minimizing time wasted on retrieving stray balls.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 24
+                },
+                {
+                  "type": 2,
+                  "start": 288,
+                  "end": 298
+                },
+                {
+                  "type": 2,
+                  "start": 440,
+                  "end": 462
+                }
+              ]
+            },
+            {
+              "name": "a086",
+              "type": 4,
+              "text": "Left: Tim t’Aide à Ranger, Right: Rouleboule L’escargot",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 6,
+                  "end": 27
+                },
+                {
+                  "type": 2,
+                  "start": 34,
+                  "end": 55
+                }
+              ],
+              "layout": 3,
+              "metadata": {
+                "id": "0*CZGYc8RiAhX3Bm1s",
+                "originalWidth": 1440,
+                "originalHeight": 540,
+                "alt": "A picture shows the game of Tim t’Aide à Ranger and Rouleboule L’escargot"
+              }
+            },
+            {
+              "name": "a271",
+              "type": 13,
+              "text": "​​Inclusive Design​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 19
+                }
+              ]
+            },
+            {
+              "name": "9adf",
+              "type": 1,
+              "text": "Often, the absence of inclusive design itself is the most critical error. In the board game My First Journey: Discover China, the extensive use of green and red immediately struck me as a potential disaster for children with red-green color blindness. The core mechanic of the game relies on matching travel tickets to accessible routes based on color. This system would render paths indistinguishable as “a gray path” for colorblind players. This issue is not unique to board games; it reflects a broader oversight in many digital product designs, where accessibility is frequently neglected.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 22,
+                  "end": 38
+                },
+                {
+                  "type": 2,
+                  "start": 92,
+                  "end": 124
+                }
+              ]
+            },
+            {
+              "name": "f536",
+              "type": 4,
+              "text": "Left: board as seen by normal vision, Right: board as seen by red-green colorblindness",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*14quFxlgfXe0Eg_A",
+                "originalWidth": 1440,
+                "originalHeight": 940,
+                "alt": "A picture shows the game as seen by normal vision and when it is seen by red-green colorblindness"
+              }
+            },
+            {
+              "name": "2c7b",
+              "type": 13,
+              "text": "​​The Fun from Mistakes​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 25
+                }
+              ]
+            },
+            {
+              "name": "8ed3",
+              "type": 1,
+              "text": "To enhance gameplay engagement, some board games intentionally incorporate controllable mistakes into their design. These features act like built-in “airbags” — preserving space for adventure within an error-proof framework, allowing children to experience the thrill of risk-aware decision-making within safe boundaries.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 75,
+                  "end": 96
+                }
+              ]
+            },
+            {
+              "name": "f5d6",
+              "type": 1,
+              "text": "In Rouleboule L’escargot, players often inevitably bump into each other’s counters, but this typically leads to shared laughter rather than post-mistake embarrassment. Similarly, in Tiny Acrobats, the collapse of poorly balanced blocks doesn’t frustrate children — instead, it motivates them to try again eagerly. The intentionally non-reinforced structure transforms “the collapse” from a failure into a lesson in engineering thinking: through repeated collapses, children intuitively grasp principles like “triangles are the most stable shape” and “a wider base improves balance.”",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 318,
+                  "end": 356
+                },
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 24
+                },
+                {
+                  "type": 2,
+                  "start": 182,
+                  "end": 195
+                },
+                {
+                  "type": 2,
+                  "start": 368,
+                  "end": 369
+                },
+                {
+                  "type": 2,
+                  "start": 381,
+                  "end": 383
+                },
+                {
+                  "type": 2,
+                  "start": 508,
+                  "end": 509
+                },
+                {
+                  "type": 2,
+                  "start": 544,
+                  "end": 546
+                },
+                {
+                  "type": 2,
+                  "start": 550,
+                  "end": 551
+                },
+                {
+                  "type": 2,
+                  "start": 581,
+                  "end": 582
+                }
+              ]
+            },
+            {
+              "name": "6e7c",
+              "type": 1,
+              "text": "Such designs deeply understand child psychology: a sense of controlled chaos can actually strengthen the desire for mastery. When children know that mistakes won’t lead to harsh consequences but are instead transformed into fun challenges or opportunities for exploration, they become more willing to take risks. This is precisely the growth value that “controllable mistakes” bring.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 49,
+                  "end": 123
+                },
+                {
+                  "type": 2,
+                  "start": 353,
+                  "end": 354
+                },
+                {
+                  "type": 2,
+                  "start": 375,
+                  "end": 377
+                }
+              ]
+            },
+            {
+              "name": "c718",
+              "type": 4,
+              "text": "Knock them all down!",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*1a5PQaYB3h7ivS5qIkZ9tA.gif",
+                "originalWidth": 800,
+                "originalHeight": 450,
+                "alt": "A gif picture shows how the game Rouleboule L’escargot works"
+              }
+            },
+            {
+              "name": "f6b7",
+              "type": 3,
+              "text": "VI. Recognition Rather than Recall",
+              "markups": []
+            },
+            {
+              "name": "eae3",
+              "type": 6,
+              "text": "Minimize the user’s memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design should be visible or easily retrievable when needed. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "9802",
+              "type": 1,
+              "text": "While the rules of children’s board games are relatively simple, and the “burden of recall” may seem insignificant, this is precisely where design wisdom shines. In the games my son and I have played, we rarely need to refer to the instruction manual after the first playthrough — because the principle of ​​“recognition rather than recall”​​ is deeply embedded in their design: they use environmental cues to trigger intuitive responses, transforming fragile memory reliance into solid sensory cognition.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 388,
+                  "end": 406
+                },
+                {
+                  "type": 1,
+                  "start": 418,
+                  "end": 437
+                }
+              ]
+            },
+            {
+              "name": "f190",
+              "type": 1,
+              "text": "Cognitive psychology reveals that ​​recognition​​ is like answering a true/false question — it activates familiarity through external cues, requiring far less cognitive effort than ​​recall​​ (which is like filling in blanks and demands active retrieval of details).",
+              "markups": []
+            },
+            {
+              "name": "49cc",
+              "type": 1,
+              "text": "Children under seven are in the ​​preoperational stage​​ of Piaget’s theory, where abstract thinking is underdeveloped but concrete perception is keen. Excellent board games convert recall into recognition through three key design strategies:",
+              "markups": []
+            },
+            {
+              "name": "232f",
+              "type": 13,
+              "text": "​​1. Visual Symbol Systems​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 28
+                }
+              ]
+            },
+            {
+              "name": "5b87",
+              "type": 1,
+              "text": "My First Journey: Discover China employs ​​color-matching rules​​ (green tickets → green paths), transforming abstract route selection into intuitive color matching. Globetrotter: Discover the World establishes an ​​icon dictionary​​ — a pickaxe for minerals, a camera for animals — enabling players to understand corresponding actions without consulting the manual.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 41,
+                  "end": 65
+                },
+                {
+                  "type": 1,
+                  "start": 216,
+                  "end": 231
+                },
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 33
+                },
+                {
+                  "type": 2,
+                  "start": 166,
+                  "end": 199
+                }
+              ]
+            },
+            {
+              "name": "dddb",
+              "type": 13,
+              "text": "​​2. Physical Guidance Mechanisms​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 35
+                }
+              ]
+            },
+            {
+              "name": "15d0",
+              "type": 1,
+              "text": "Tim t’Aide à Ranger uses ​​geometric error-proof slots​​ that only allow corresponding shapes to be inserted, allowing children to complete puzzles through ​​tactile feedback​​ rather than memorization. In Dog Bingo, blue discs are used to cover completed content, ​​visually distinguishing finished and unfinished tasks​​ through physical coverage.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 19,
+                  "end": 20
+                },
+                {
+                  "type": 1,
+                  "start": 158,
+                  "end": 174
+                },
+                {
+                  "type": 1,
+                  "start": 331,
+                  "end": 348
+                },
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 19
+                },
+                {
+                  "type": 2,
+                  "start": 206,
+                  "end": 215
+                }
+              ]
+            },
+            {
+              "name": "8748",
+              "type": 1,
+              "text": "​​3. Environmental Dynamic Feedback​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 37
+                }
+              ]
+            },
+            {
+              "name": "7614",
+              "type": 1,
+              "text": "In The Origin of Everything, rivers and grasslands are spatially arranged to ​​concretize the impact of the environment​​ on animals and scoring. Spotlight utilizes ​​light and shadow effects​​: by inserting a paper “flashlight” into the dark board layers, hidden patterns are instantly revealed, creating an “illuminate-to-discover” visual feedback​​. When searching for characters, the dynamic shift from blurred to vivid colors intensifies the suspense and sense of accomplishment in exploration.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 55,
+                  "end": 73
+                },
+                {
+                  "type": 1,
+                  "start": 167,
+                  "end": 191
+                },
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 27
+                },
+                {
+                  "type": 2,
+                  "start": 146,
+                  "end": 156
+                }
+              ]
+            },
+            {
+              "name": "cacd",
+              "type": 4,
+              "text": "Left: terrain tiles from The Origins of Everything, Right: visual feedback in Spotlight",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 29,
+                  "end": 52
+                },
+                {
+                  "type": 2,
+                  "start": 78,
+                  "end": 87
+                }
+              ],
+              "layout": 1,
+              "metadata": {
+                "id": "0*aQ8oU371SOirvHs-",
+                "originalWidth": 1440,
+                "originalHeight": 893,
+                "alt": "A picture shows terrain tiles from The Origins of Everything, and visual feedback in Spotlight"
+              }
+            },
+            {
+              "name": "8217",
+              "type": 1,
+              "text": "I remember my mother always used to say, “The palest ink is better than the sharpest memory.” When I entered the field of UX design, I came to understand that the mission of UX is to evolve every “writing tool” into a ​​sensory bridge​​ — unfolding before us as something visible, tangible, and audible.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 93,
+                  "end": 94
+                }
+              ]
+            },
+            {
+              "name": "6cb4",
+              "type": 3,
+              "text": "VII. Flexibility and Efficiency of Use",
+              "markups": []
+            },
+            {
+              "name": "fe61",
+              "type": 6,
+              "text": "Shortcuts — hidden from novice users — may speed up the interaction for the expert user so that the design can cater to both inexperienced and experienced users. Allow users to tailor frequent actions. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "0573",
+              "type": 1,
+              "text": "Flexibility and efficiency serve as a core mechanism in children’s board game design, balancing gameplay objectives with cognitive load. Together, they create a dynamic learning space where “entry barriers are low and skill ceilings are high.”​​ In digital product design, this principle is often implemented through shortcuts or customizable settings, while in board games, it can be broken down into two key approaches:",
+              "markups": []
+            },
+            {
+              "name": "a8b2",
+              "type": 13,
+              "text": "1. Reducing Redundant Actions to Focus on Core Skills",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 53
+                }
+              ]
+            },
+            {
+              "name": "4bdf",
+              "type": 1,
+              "text": "By simplifying processes and strengthening feedback, cognitive load is reduced, allowing children to quickly engage with core challenges. For example, My First Journey: Discover China uses ​​color-matching between paths and tickets​​, eliminating the need to memorize rules — players can intuitively match colors without consulting a manual. Similarly, Tim t’Aide à Ranger employs a ​​uniquely matching design​​ between cards and cutout shapes, making results instantly visible.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 189,
+                  "end": 234
+                },
+                {
+                  "type": 1,
+                  "start": 394,
+                  "end": 443
+                },
+                {
+                  "type": 2,
+                  "start": 151,
+                  "end": 184
+                },
+                {
+                  "type": 2,
+                  "start": 353,
+                  "end": 373
+                }
+              ]
+            },
+            {
+              "name": "80e6",
+              "type": 1,
+              "text": "Such designs significantly minimize unnecessary steps, allowing players to focus rapidly on the game’s core mechanics and objectives.",
+              "markups": []
+            },
+            {
+              "name": "ec06",
+              "type": 13,
+              "text": "2. Dynamic adaptability that leaves room for creativity",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 55
+                }
+              ]
+            },
+            {
+              "name": "d06a",
+              "type": 1,
+              "text": "Children’s cognitive development varies widely, and outstanding board games should function like ​​“trees that grow”​​ — using modular design or rule switches to accommodate different age groups and skill levels. For instance, Tim t’Aide à Ranger offers ​​age-specific challenges​​ through varied use of clothing cards:",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 127,
+                  "end": 141
+                },
+                {
+                  "type": 1,
+                  "start": 145,
+                  "end": 158
+                },
+                {
+                  "type": 1,
+                  "start": 256,
+                  "end": 279
+                },
+                {
+                  "type": 2,
+                  "start": 227,
+                  "end": 247
+                }
+              ]
+            },
+            {
+              "name": "2bd9",
+              "type": 9,
+              "text": "Toddlers can simply sort cards by color.",
+              "markups": []
+            },
+            {
+              "name": "d3b2",
+              "type": 9,
+              "text": "Young children can categorize by item function.",
+              "markups": []
+            },
+            {
+              "name": "ef03",
+              "type": 9,
+              "text": "Older children can flip the card to hide colors and items, relying solely on card shapes to guess content and complete tasks.",
+              "markups": []
+            },
+            {
+              "name": "83a1",
+              "type": 1,
+              "text": "In Tiny Acrobats, the scoring system allows players to earn points based on either ​​action difficulty or stack height​​. Players can choose to focus solely on height or complexity, enabling personalized gameplay.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 16
+                }
+              ]
+            },
+            {
+              "name": "5475",
+              "type": 1,
+              "text": "Through expandable rules and open-ended components, these games support multi-age and multi-skill engagement. This ​​“growth-with-the-child”​​ model prevents younger players from frustration with overly complex rules while reserving deeper exploration space for older children.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 118,
+                  "end": 139
+                }
+              ]
+            },
+            {
+              "name": "4df5",
+              "type": 4,
+              "text": "In Tim t’Aide à Ranger, players can either look at the card faces or flip them over and choose by shape alone; in Tiny Acrobats they can chase a high score by stacking tall or opt for trickier shapes to earn extra points.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 22
+                },
+                {
+                  "type": 2,
+                  "start": 114,
+                  "end": 127
+                }
+              ],
+              "layout": 1,
+              "metadata": {
+                "id": "0*-N3RFYomgwKmv9bq",
+                "originalWidth": 1440,
+                "originalHeight": 1204,
+                "alt": "The picture shows In Tim t’Aide à Ranger, players can either look at the card faces or flip them over and choose by shape alone; in Tiny Acrobats they can chase a high score by stacking tall or opt for trickier shapes to earn extra points."
+              }
+            },
+            {
+              "name": "3449",
+              "type": 3,
+              "text": "VIII. Aesthetic and Minimalist Design",
+              "markups": []
+            },
+            {
+              "name": "542c",
+              "type": 6,
+              "text": "Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "c8ac",
+              "type": 1,
+              "text": "Compared to adults, young children’s attention is scarce and easily distracted, and their cognitive processing abilities are still developing. Outstanding board game designs for kids employ ​​visual and interactive “subtraction”​​ to create a pure, focused playground for young players — stripping away all redundant information unrelated to the core gameplay — making objectives, rules, and key action points crystal clear.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 37,
+                  "end": 78
+                }
+              ]
+            },
+            {
+              "name": "5933",
+              "type": 1,
+              "text": "In Bunny Boo, the entire game consists of just three primary-colored (red, yellow, blue) geometric blocks and a series of minimalist challenge cards. These cards clearly outline the target structure against a plain background free of decorative borders or distracting patterns. There are no extraneous character backstories, no flashy frames, and no attention-stealing background details. All of the child’s cognitive resources are naturally directed toward one clear task: observe, think, and manually recreate the spatial structure. This extreme visual subtraction ensures that no unnecessary elements interfere with spatial reasoning, allowing the core experience — ​​spatial cognitive training​​ — to proceed efficiently and without distraction.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 432,
+                  "end": 450
+                },
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 12
+                }
+              ]
+            },
+            {
+              "name": "f97a",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*UcmVI17erq0DlzfG",
+                "originalWidth": 1219,
+                "originalHeight": 1080,
+                "alt": "A picture shows the task card along with the actual blocks stacked as the illustration in the card"
+              }
+            },
+            {
+              "name": "ab25",
+              "type": 1,
+              "text": "​​“Designing with White Space”​​ does not refer to physical emptiness, but rather to creating a “breathing room”​​ in information presentation and interaction design to prevent cognitive overload. It manifests through removing distractions, simplifying visual language, and emphasizing critical information.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 33
+                },
+                {
+                  "type": 1,
+                  "start": 97,
+                  "end": 111
+                }
+              ]
+            },
+            {
+              "name": "70c6",
+              "type": 1,
+              "text": "Spotlight achieves dynamic “white space” through a clever physical interaction design. While the game’s scene boards are rich with detailed content, the designers did not expect children to process the entire image at once. Instead, they provided a flashlight prop with a ​​“spotlight”​​. When the child moves the flashlight, only a small illuminated area remains clearly visible, while the surrounding environment naturally recedes into “darkness” (visual white space). This design ​​forces the child’s visual attention and cognitive focus​​ precisely onto the key details needed for the search, blocking out surrounding elements that could cause confusion or distraction. It cleverly leverages physical constraints to create a dynamic, highly focused ​​“attention zone”​​, perfectly aligning with the core objective of “finding specific items” and significantly reducing the complexity of information processing.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 696,
+                  "end": 716
+                },
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 10
+                }
+              ]
+            },
+            {
+              "name": "8f45",
+              "type": 4,
+              "text": "The flashlight in Spotlight",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*JbFU7_zL0e-zY-cp",
+                "originalWidth": 640,
+                "originalHeight": 312,
+                "alt": "A gif shows how the flashlight in Spotlight works"
+              }
+            },
+            {
+              "name": "736d",
+              "type": 1,
+              "text": "These two examples vividly demonstrate the power of UX design principles in board games for kids: By eliminating noise and creating focused spaces, the design effectively protects children’s precious attention resources, directing cognitive energy precisely toward core game mechanics and learning objectives. This not only lowers the barrier to entry and enhances smoothness and fun but, more importantly, provides a structurally clear and appropriately challenging environment for children developing executive functions and information processing abilities. It allows them to focus on exploration, thinking, and problem-solving without being overwhelmed by irrelevant design details. This essentially builds a pure and efficient stage for children’s valuable cognitive development.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 98,
+                  "end": 309
+                }
+              ]
+            },
+            {
+              "name": "8122",
+              "type": 3,
+              "text": "IX. Help Users Recognize, Diagnose, and Recover from Errors",
+              "markups": []
+            },
+            {
+              "name": "7bc1",
+              "type": 6,
+              "text": "Error messages should be expressed in plain language, precisely indicate the problem, and constructively suggest a solution. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "b5ff",
+              "type": 1,
+              "text": "In children’s board games, making mistakes is not only common but also a crucial opportunity for learning. However, how can we ensure that young children, when faced with errors, avoid falling into frustration and instead learn from them, regroup, and try again? This is precisely where the UX design principle of “Help Users Recognize, Diagnose, and Recover from Errors” comes into play. For young players whose cognitive and emotional abilities are still developing, well-designed error-handling mechanisms can help build confidence, cultivate resilience, and protect their enthusiasm for learning.​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 469,
+                  "end": 508
+                }
+              ]
+            },
+            {
+              "name": "357a",
+              "type": 13,
+              "text": "​​1. Clear and Immediate Error Recognition​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 44
+                }
+              ]
+            },
+            {
+              "name": "f523",
+              "type": 1,
+              "text": "Children need to intuitively “sense” when an error occurs, rather than relying on abstract explanations or others’ instructions. For example, in Gobblet Gobblers, the physical limitation that prevents a large piece from being placed inside a smaller one allows children to instantly understand the underlying logic. In Bunny Boo, if a child’s structure does not match the challenge card, the obvious visual and structural differences intuitively indicate that “something is wrong.” This kind of direct physical or visual cause-and-effect feedback is the most natural and effective language for children to understand errors.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 502,
+                  "end": 546
+                },
+                {
+                  "type": 2,
+                  "start": 145,
+                  "end": 161
+                },
+                {
+                  "type": 2,
+                  "start": 319,
+                  "end": 328
+                }
+              ]
+            },
+            {
+              "name": "a038",
+              "type": 13,
+              "text": "​​2. Diagnosing and Understanding the Problem​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 47
+                }
+              ]
+            },
+            {
+              "name": "1cf3",
+              "type": 1,
+              "text": "Simply knowing that something is “wrong” is not enough — children need to understand why it is wrong. This is where diagnosing the problem becomes valuable. Well-designed games make the cause of errors obvious and tightly linked to core mechanics. In Tim t’Aide à Ranger, if a child tries to force a mismatched furniture card into a room board, the physical “jamming” or “inability to fit” clearly diagnoses the problem: “The shape is wrong!” The cause of the error directly points to the game’s core mechanic: shape recognition and matching. Spotlight uses its unique flashlight mechanism: if the child fails to find the target within the illuminated area, the game cannot progress. This naturally guides the child to diagnose the issue — perhaps the target is not there, and they need to move the light more carefully to search. The mechanism itself limits the scope of errors, preventing aimless confusion.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 85,
+                  "end": 100
+                },
+                {
+                  "type": 1,
+                  "start": 116,
+                  "end": 138
+                },
+                {
+                  "type": 1,
+                  "start": 177,
+                  "end": 246
+                },
+                {
+                  "type": 2,
+                  "start": 251,
+                  "end": 270
+                },
+                {
+                  "type": 2,
+                  "start": 543,
+                  "end": 553
+                }
+              ]
+            },
+            {
+              "name": "fa2e",
+              "type": 13,
+              "text": "​​3. Effortless Error Resolution​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 34
+                }
+              ]
+            },
+            {
+              "name": "bb96",
+              "type": 1,
+              "text": "However, the most human-centered design lies in creating a stress-free recovery process. Children’s board games should eliminate punitive consequences, making it simple, quick, and full of hope to try again. Bunny Boo and Gobblet Gobblers are perfect examples: built something wrong? Just dismantle and rebuild! Placed something incorrectly? Pick it up and try again! There are no point deductions or forced pauses, let alone blame. The cost of recovery is minimized, encouraging children to experiment boldly and explore repeatedly. In memory games like Shopping List, if a child flips the wrong card, they simply cover it again, leaving the game state almost unaffected, allowing them to immediately engage in the next attempt. Even in Tiny Acrobats, the collapse of the circus members is designed as a thrilling climax, with the joy of rebuilding following closely behind, cleverly transforming “failure” into the starting point of a new round of play.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 59,
+                  "end": 87
+                },
+                {
+                  "type": 1,
+                  "start": 119,
+                  "end": 150
+                },
+                {
+                  "type": 1,
+                  "start": 433,
+                  "end": 532
+                },
+                {
+                  "type": 2,
+                  "start": 208,
+                  "end": 218
+                },
+                {
+                  "type": 2,
+                  "start": 222,
+                  "end": 239
+                },
+                {
+                  "type": 2,
+                  "start": 555,
+                  "end": 568
+                },
+                {
+                  "type": 2,
+                  "start": 738,
+                  "end": 751
+                }
+              ]
+            },
+            {
+              "name": "038d",
+              "type": 13,
+              "text": "​​4. Reversal as a Form of Error Recovery​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 43
+                }
+              ]
+            },
+            {
+              "name": "3709",
+              "type": 1,
+              "text": "For board games, I find one of the most interesting forms of “error recovery” to be the element of ​​serendipitous reversal​​. Reversal mechanisms essentially provide players with a systematic compensation for dynamic error correction and balance restoration. When players fall behind due to strategic mistakes, poor resource allocation, or plain bad luck, the game offers specific rules or events that transform their disadvantaged state into a new strategic opportunity.",
+              "markups": []
+            },
+            {
+              "name": "7822",
+              "type": 1,
+              "text": "For example, the special opportunities in the shop in Venture into Seasons. When players fall behind due to suboptimal early-game strategies or other reasons, the in-game shop provides nonlinear comeback opportunities. Although the shop may also pose risks of losing points, for players already significantly behind, the potential rewards far outweigh the risks. Through the shop, players can quickly catch up on scores and rejoin the competitive race. This effectively serves as a systematic recovery for errors caused by earlier strategic missteps, bad luck, or opponent pressure.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 54,
+                  "end": 74
+                }
+              ]
+            },
+            {
+              "name": "37b7",
+              "type": 4,
+              "text": "​​Serendipity Shop Card​",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*-ofpwcEQNkJVNZ5k",
+                "originalWidth": 1080,
+                "originalHeight": 1440,
+                "alt": "A picture of ​​Shop Card​s in Venture into Seasons"
+              }
+            },
+            {
+              "name": "9174",
+              "type": 1,
+              "text": "In Great Explorers, players may occasionally ​​stumble upon bonus cards​​ or draw ​​event cards​​, which can provide an immediate catch-up effect for those who are falling behind. Compare to the shop opportunities in Venture into Seasons, the surprises in Great Explorers rely more on ​​luck rather than strategy​​. From a design perspective, the strategic choice of higher-risk but higher-reward opportunities in Venture into Seasons tends to be ​​less frustrating for leading players​​ and more acceptable than purely luck-based opportunities.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 449,
+                  "end": 485
+                },
+                {
+                  "type": 2,
+                  "start": 3,
+                  "end": 18
+                },
+                {
+                  "type": 2,
+                  "start": 217,
+                  "end": 237
+                },
+                {
+                  "type": 2,
+                  "start": 256,
+                  "end": 272
+                },
+                {
+                  "type": 2,
+                  "start": 414,
+                  "end": 435
+                }
+              ]
+            },
+            {
+              "name": "6ff4",
+              "type": 4,
+              "text": "Fortune smiles!",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*uQ6A385UTNL-WIRi",
+                "originalWidth": 1080,
+                "originalHeight": 1440,
+                "alt": "A picture shows Great Explorers‘ bonus cards"
+              }
+            },
+            {
+              "name": "0754",
+              "type": 1,
+              "text": "In board games for kids, carefully designed ​​“comeback mechanisms”​​ are far more than clever tricks to enhance fun. They represent a gameplay extension of the UX design principle: ​​“helping users recover from errors or disadvantages.”​​ These mechanisms ensure that temporary setbacks do not push young players into the abyss of despair but instead pave a hopeful path for them to catch up. By providing clear and visible opportunities for reversal — whether through strategic reserves or moderate luck — designers effectively safeguard the game’s fairness, suspense, and every young player’s positive experience. This allows them to play with anticipation and smiles until the very end, even through the twists and turns of the game.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 135,
+                  "end": 153
+                }
+              ]
+            },
+            {
+              "name": "7ce4",
+              "type": 3,
+              "text": "X. Help and Documentation",
+              "markups": []
+            },
+            {
+              "name": "c9d6",
+              "type": 6,
+              "text": "It’s best if the system doesn’t need any additional explanation. However, it may be necessary to provide documentation to help users understand how to complete their tasks. — Jakob Nielsen",
+              "markups": []
+            },
+            {
+              "name": "0401",
+              "type": 1,
+              "text": "An effective instruction manual for children’s board games is a critical component of UX design, directly determining whether players — especially parents responsible for teaching and the children themselves — can smoothly and enjoyably enter the world of the game. An outstanding manual not only clearly communicates the rules but also lowers the learning barrier, sparks interest, and even immerses users in the game’s atmosphere.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 296,
+                  "end": 327
+                }
+              ]
+            },
+            {
+              "name": "12ea",
+              "type": 1,
+              "text": "Excellent board game manuals for kids avoid being a dry list of rules. Instead, they address the core needs of both young players and their guides (parents), transforming rule-learning into a smooth and enjoyable experience through the following key features:",
+              "markups": []
+            },
+            {
+              "name": "6d8c",
+              "type": 13,
+              "text": "​​1. Clear Information Hierarchy and Visual Guidance​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 54
+                }
+              ]
+            },
+            {
+              "name": "ef55",
+              "type": 1,
+              "text": "A well-structured information hierarchy and visual guidance form the optimal cognitive pathway when encountering a new board game. An excellent instruction manual helps children and parents avoid information overload during their first interaction with the game. Through careful visual architecture, complex rules are broken down and reorganized, using icons, colors, typography, and illustrations to establish a clear information flow that guides the eye naturally and makes key points immediately understandable.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 77,
+                  "end": 95
+                },
+                {
+                  "type": 1,
+                  "start": 196,
+                  "end": 216
+                }
+              ]
+            },
+            {
+              "name": "8167",
+              "type": 1,
+              "text": "For example, the manual for The Origin of Everything relies almost entirely on vivid imagery: children can instantly see how to set up the game board, place cards, perform actions, and earn points, with step-by-step numbering to clarify procedures. This allows even young children with limited literacy to imitate and understand gameplay through visuals, significantly enhancing their sense of autonomous participation.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 28,
+                  "end": 53
+                }
+              ]
+            },
+            {
+              "name": "32d2",
+              "type": 4,
+              "text": "The instruction manual for The Origin of Everything directly utilizes in-game visuals as explanatory content",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 27,
+                  "end": 52
+                }
+              ],
+              "layout": 1,
+              "metadata": {
+                "id": "0*U2whs9b5rWJb-2_N",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "The instruction manual for The Origin of Everything"
+              }
+            },
+            {
+              "name": "02b5",
+              "type": 1,
+              "text": "For board games like Polar Party designed for young children, the instruction manual only requires a small section at the bottom of the packaging box. It uses large, contextual illustrations and brief text, allowing children to imitate actions just by looking at the images, so literacy is no longer a barrier to understanding the gameplay.",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 21,
+                  "end": 33
+                }
+              ]
+            },
+            {
+              "name": "353f",
+              "type": 4,
+              "text": "The instructions for Polar Party are succinctly explained on the back of the packaging box",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 21,
+                  "end": 33
+                }
+              ],
+              "layout": 1,
+              "metadata": {
+                "id": "0*4UA4KcPP2EPaTAoa",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "The instructions for Polar Party on the back of the packaging box"
+              }
+            },
+            {
+              "name": "5160",
+              "type": 13,
+              "text": "​​2. Layering of Gameplay and Educational Content​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 51
+                }
+              ]
+            },
+            {
+              "name": "fa61",
+              "type": 1,
+              "text": "Many board games for kids carry the dual mission of being both entertaining and educational. However, forcibly inserting knowledge into rule explanations often backfires. Excellent instruction manuals strategically separate and blend the ​​core gameplay rules​​ (“how to play”) with ​​educational content​​ (“what to learn”), ensuring that fun takes priority while knowledge is seamlessly integrated.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 201,
+                  "end": 259
+                }
+              ]
+            },
+            {
+              "name": "1ba8",
+              "type": 1,
+              "text": "Most board game manuals distinguish between ​​rule-based content​​ and ​​knowledge-based content​​:",
+              "markups": []
+            },
+            {
+              "name": "c220",
+              "type": 9,
+              "text": "Core game mechanics are explained in detail through ​​clear rule modules​​ and rich contextual illustrations, ensuring smooth gameplay.",
+              "markups": []
+            },
+            {
+              "name": "787c",
+              "type": 9,
+              "text": "Educational content (e.g., seasonal climate features, animal habits, historical backgrounds of wonders) is primarily presented in ​​independent card descriptions​​, detailed map illustrations, or dedicated “Knowledge Tips” sections in the manual. This content is designed for exploration during breaks or for interested players.",
+              "markups": []
+            },
+            {
+              "name": "0390",
+              "type": 1,
+              "text": "This layered approach allows parents to easily focus on teaching the rules during gameplay, while educational elements naturally emerge as surprises or topics for extended discussion, which never interfere with the core flow.",
+              "markups": []
+            },
+            {
+              "name": "2863",
+              "type": 4,
+              "text": "Solar-Term Knowledge Cards from Venture into Seasons, the stand-alone character brochure in Journey to the West Encyclopedia, and the City Knowledge Cards in My First Journey: Discover China",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 32,
+                  "end": 53
+                },
+                {
+                  "type": 2,
+                  "start": 92,
+                  "end": 112
+                },
+                {
+                  "type": 2,
+                  "start": 158,
+                  "end": 190
+                }
+              ],
+              "layout": 1,
+              "metadata": {
+                "id": "0*krGYyyczJE4EikY9",
+                "originalWidth": 1440,
+                "originalHeight": 841,
+                "alt": "A picture shows the extra knowledge in the game of Venture into Seasons, Journey to the West Encyclopedia, and My First Journey: Discover China"
+              }
+            },
+            {
+              "name": "c8fa",
+              "type": 13,
+              "text": "​​3. Multimedia Assistance​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 28
+                }
+              ]
+            },
+            {
+              "name": "d06f",
+              "type": 1,
+              "text": "Building on paper-based instructions, many board games now incorporate digital multimedia resources, opening new doors for rule learning and knowledge exploration. While not essential, when used effectively, these tools significantly enhance the experience — particularly for explaining complex rules or abstract concepts and fostering immersive play. For example, Journey to the West Encyclopedia allows players to scan a QR code to access officially produced, lively demonstrations packed with educational content. This multimedia extension does not disrupt the logical flow of the physical manual but serves as an on-demand supplementary resource. It simultaneously supports rule comprehension and enriches knowledge delivery, achieving educational goals in a more vivid and engaging manner.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 462,
+                  "end": 515
+                },
+                {
+                  "type": 2,
+                  "start": 365,
+                  "end": 398
+                }
+              ]
+            },
+            {
+              "name": "23cd",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*itEZAzehZMqm6jZv",
+                "originalWidth": 1080,
+                "originalHeight": 810,
+                "alt": "A picture of QR code attached in the game that you can download the app and see the content"
+              }
+            },
+            {
+              "name": "a4a1",
+              "type": 1,
+              "text": "Tiny Acrobats, on the other hand, leverages a carefully composed, joy-filled circus-themed soundtrack to intensely amplify the game’s thematic atmosphere. This approach:",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 115,
+                  "end": 153
+                },
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 13
+                }
+              ]
+            },
+            {
+              "name": "4a26",
+              "type": 10,
+              "text": "Instantly immerses children in an exciting circus setting;",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 9,
+                  "end": 18
+                }
+              ]
+            },
+            {
+              "name": "9136",
+              "type": 10,
+              "text": "Establishes a ​​sense of ritual​​, marking the official start of gameplay and helping children transition and focus their attention;",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 33
+                }
+              ]
+            },
+            {
+              "name": "c907",
+              "type": 10,
+              "text": "Serves a practical function: players must complete corresponding circus performance actions before the music ends. The music acts as a timer, much like real circus acts requiring timed performances, thereby heightening the game’s excitement and immersion.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 9,
+                  "end": 27
+                }
+              ]
+            },
+            {
+              "name": "cbf1",
+              "type": 1,
+              "text": "This use of sound for emotional warm-up and atmosphere building is a powerful complement to traditional paper manuals in terms of “first impressions” and “emotional connection.”",
+              "markups": []
+            },
+            {
+              "name": "8701",
+              "type": 1,
+              "text": "A truly outstanding board game manual for kids demonstrates its design wisdom by transforming complex information into an experience easily understood by both children and parents. It’s not just about accurately conveying rules — it’s about using thoughtful design strategies to reduce cognitive load, ignite enthusiasm for participation, and skillfully balance fun with learning objectives. Unlike digital product design, where interactive guidance can be embedded during use, board games rarely allow in-game prompts, making clear instructions and documentation even more critical.",
+              "markups": []
+            },
+            {
+              "name": "1a55",
+              "type": 3,
+              "text": "​​Conclusion: Board Games — A Child’s First “Well-Designed Product”​​",
+              "markups": []
+            },
+            {
+              "name": "3764",
+              "type": 1,
+              "text": "Nielsen’s 10 Usability Principles have been a key, unlocking my understanding of the design secrets behind children’s board games. Board games are likely the first complex “products” children encounter in their lives. A well-designed game, grounded in solid UX principles, doesn’t just bring joy — it subtly teaches children how to understand rules (systems), make choices (control), face setbacks (error tolerance), and seek help (documentation). It shapes a positive, confident, and exploration-driven “user experience.”",
+              "markups": []
+            },
+            {
+              "name": "9072",
+              "type": 1,
+              "text": "As a UX designer, my greatest joy lies in discovering the nuances of user experience in everyday life. Beyond digital products, the colorful cards and exquisitely crafted wooden components reflect the essence of our UX pursuits: understanding user motivations, helping users achieve goals, and creating “Aha moments.” This matters equally — whether for adults facing screens or children playing on the floor.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 304,
+                  "end": 316
+                }
+              ]
+            },
+            {
+              "name": "4a93",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*GGoGwkCyygySi0KG",
+                "originalWidth": 1440,
+                "originalHeight": 1080,
+                "alt": "A picture of my board game collections"
+              }
+            },
+            {
+              "name": "6ec6",
+              "type": 3,
+              "text": "Bonus: My Recommendations of Board Games​​ for Kids",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 41
+                }
+              ]
+            },
+            {
+              "name": "42a1",
+              "type": 1,
+              "text": "1. Dog Bingo (Age 3+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 22
+                }
+              ]
+            },
+            {
+              "name": "03cc",
+              "type": 1,
+              "text": "Highlights: Memory-matching gameplay; children can create their own rules to practice reaction skills and rule awareness.",
+              "markups": []
+            },
+            {
+              "name": "53ac",
+              "type": 1,
+              "text": "2. Shopping List (Age 3+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 26
+                }
+              ]
+            },
+            {
+              "name": "b7b7",
+              "type": 1,
+              "text": "Highlights: Simulates supermarket shopping; develops categorization skills through “find-and-check” tasks.",
+              "markups": []
+            },
+            {
+              "name": "ef25",
+              "type": 1,
+              "text": "3. Spotlight (Age 4+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 22
+                }
+              ]
+            },
+            {
+              "name": "5e6c",
+              "type": 1,
+              "text": "Highlights: Innovative “flashlight focusing” mechanism; dynamic white space design protects attention span and enhances observation and patience.",
+              "markups": []
+            },
+            {
+              "name": "a095",
+              "type": 1,
+              "text": "4. Polar Party (Age 5+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 24
+                }
+              ]
+            },
+            {
+              "name": "fd5b",
+              "type": 1,
+              "text": "Highlights: Risk-based decision-making design; fosters strategic thinking and emotional management.",
+              "markups": []
+            },
+            {
+              "name": "39cb",
+              "type": 1,
+              "text": "5. Rouleboule L’escargot (Age 3+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 34
+                }
+              ]
+            },
+            {
+              "name": "d3af",
+              "type": 1,
+              "text": "Highlights: Helps understand how height affects speed; improves hand-eye coordination.",
+              "markups": []
+            },
+            {
+              "name": "a0fd",
+              "type": 1,
+              "text": "6. Tim t’Aide à Ranger (Age 3+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 32
+                }
+              ]
+            },
+            {
+              "name": "5444",
+              "type": 1,
+              "text": "Highlights: Age-tiered play that grows with developing skills (color → shape → memory challenges).",
+              "markups": []
+            },
+            {
+              "name": "b60a",
+              "type": 1,
+              "text": "7. Bunny Boo (Age 3+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 22
+                }
+              ]
+            },
+            {
+              "name": "b887",
+              "type": 1,
+              "text": "Highlights: Minimalist blocks and target cards focus on spatial cognition training; visual guidance for self-correction.",
+              "markups": []
+            },
+            {
+              "name": "b07f",
+              "type": 1,
+              "text": "8. Gobblet Gobblers (Age 4+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 29
+                }
+              ]
+            },
+            {
+              "name": "3566",
+              "type": 1,
+              "text": "Highlights: Physical error prevention with piece sizes; hidden objectives exercise memory and strategy; simple rules with deep gameplay.",
+              "markups": []
+            },
+            {
+              "name": "c58c",
+              "type": 1,
+              "text": "9. My First Journey: Discover China (Age 4+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 45
+                }
+              ]
+            },
+            {
+              "name": "12d1",
+              "type": 1,
+              "text": "Highlights: Intuitive color-bound paths and tickets; integrates Chinese geography knowledge; combines strategy and education.",
+              "markups": []
+            },
+            {
+              "name": "60a2",
+              "type": 1,
+              "text": "10. Journey to the West Encyclopedia (Age 4+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 46
+                }
+              ]
+            },
+            {
+              "name": "ffa2",
+              "type": 1,
+              "text": "Highlights: Card-based Q&A + multimedia knowledge extension; seamlessly integrates traditional culture learning into gameplay.",
+              "markups": []
+            },
+            {
+              "name": "9922",
+              "type": 1,
+              "text": "11. Tiny Acrobats (Age 4+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 27
+                }
+              ]
+            },
+            {
+              "name": "a03a",
+              "type": 1,
+              "text": "Highlights: Combines balance building with musical timer; collapses transform into engineering thinking lessons.",
+              "markups": []
+            },
+            {
+              "name": "ff17",
+              "type": 1,
+              "text": "12. Venture into Seasons (Age 5+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 34
+                }
+              ]
+            },
+            {
+              "name": "f5a6",
+              "type": 1,
+              "text": "Highlights: Explore the magical world of the 24 solar terms.",
+              "markups": []
+            },
+            {
+              "name": "f75f",
+              "type": 1,
+              "text": "13. Great Explorers (Age 5+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 29
+                }
+              ]
+            },
+            {
+              "name": "8bd7",
+              "type": 1,
+              "text": "Highlights: Tour the world’s classic four natural wonders from home.",
+              "markups": []
+            },
+            {
+              "name": "1ddd",
+              "type": 1,
+              "text": "14. The Origin of Everything (Age 5+)​​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 38
+                }
+              ]
+            },
+            {
+              "name": "dad0",
+              "type": 1,
+              "text": "Highlights: Play as Gaia’s little helper in Greek mythology to restore ecosystems and revitalize wastelands.",
+              "markups": []
+            }
+          ],
+          "sections": [
+            {
+              "name": "b59c",
+              "startIndex": 0
+            }
+          ]
+        },
+        "postDisplay": {
+          "coverless": true
+        }
+      },
+      "virtuals": {
+        "statusForCollection": "APPROVED",
+        "allowNotes": true,
+        "previewImage": {
+          "imageId": "1*V2ax_SnbRDA1vBgYM4v49g.jpeg",
+          "filter": "",
+          "backgroundSize": "",
+          "originalWidth": 1820,
+          "originalHeight": 1024,
+          "strategy": "resample",
+          "height": 0,
+          "width": 0
+        },
+        "wordCount": 5854,
+        "imageCount": 27,
+        "readingTime": 24.190566037735852,
+        "subtitle": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play",
+        "publishedInCount": 1,
+        "usersBySocialRecommends": [],
+        "noIndex": false,
+        "recommends": 140,
+        "isBookmarked": false,
+        "tags": [
+          {
+            "slug": "ux",
+            "name": "UX",
+            "postCount": 172462,
+            "metadata": {
+              "postCount": 172462,
+              "coverImage": {
+                "id": "1*K2kgTFTCXrfuT6iff0OrLA.png",
+                "originalWidth": 979,
+                "originalHeight": 591,
+                "alt": "Frog in a pot surrounded by butterflies"
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "board-games",
+            "name": "Board Games",
+            "postCount": 5640,
+            "metadata": {
+              "postCount": 5640,
+              "coverImage": {
+                "id": "1*YhkLNDZp_w1yRYzCgzY_MQ.png",
+                "originalWidth": 1469,
+                "originalHeight": 1669
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ux-design",
+            "name": "UX Design",
+            "postCount": 97279,
+            "metadata": {
+              "postCount": 97279,
+              "coverImage": {
+                "id": "0*3AEFmxcHuhVK8UVn",
+                "originalWidth": 3999,
+                "originalHeight": 2666,
+                "unsplashPhotoId": "tGBXiHcPKrM"
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "board-game-design",
+            "name": "Board Game Design",
+            "postCount": 543,
+            "metadata": {
+              "postCount": 543,
+              "coverImage": {
+                "id": "1*9IxpxDuajGWHZeExfBvPLw.png",
+                "originalWidth": 1024,
+                "originalHeight": 1536
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ep",
+            "name": "Ep",
+            "postCount": 418,
+            "metadata": {
+              "postCount": 418,
+              "coverImage": {
+                "id": "1*ZVJDFNWlH0yAqc9lmsxHAg.png",
+                "originalWidth": 5001,
+                "originalHeight": 2614
+              }
+            },
+            "type": "Tag"
+          }
+        ],
+        "socialRecommendsCount": 0,
+        "responsesCreatedCount": 32,
+        "links": {
+          "entries": [],
+          "version": "0.3",
+          "generatedAt": 1758784790077
+        },
+        "isLockedPreviewOnly": false,
+        "metaDescription": "",
+        "totalClapCount": 1186,
+        "sectionCount": 1,
+        "readingList": 0,
+        "topics": []
+      },
+      "coverless": true,
+      "slug": "when-ux-dad-meets-board-games-for-kids",
+      "translationSourcePostId": "",
+      "translationSourceCreatorId": "",
+      "isApprovedTranslation": false,
+      "inResponseToPostId": "",
+      "inResponseToRemovedAt": 0,
+      "isTitleSynthesized": false,
+      "allowResponses": true,
+      "importedUrl": "",
+      "importedPublishedAt": 0,
+      "visibility": 0,
+      "uniqueSlug": "when-ux-dad-meets-board-games-for-kids-8219985a48a1",
+      "previewContent": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "previewImage",
+              "type": 4,
+              "text": "",
+              "layout": 10,
+              "metadata": {
+                "id": "1*V2ax_SnbRDA1vBgYM4v49g.jpeg",
+                "originalWidth": 1820,
+                "originalHeight": 1024,
+                "isFeatured": true,
+                "alt": "An Illustration of my kid with board game elements as a cover photo"
+              }
+            },
+            {
+              "name": "4d2f",
+              "type": 3,
+              "text": "When UX dad meets board games for kids",
+              "markups": [],
+              "alignment": 1
+            },
+            {
+              "name": "70f0",
+              "type": 13,
+              "text": "Great kids’ board games are tangible UX journeys. Using…",
+              "markups": [],
+              "alignment": 1
+            }
+          ],
+          "sections": [
+            {
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play"
+      },
+      "license": 0,
+      "inResponseToMediaResourceId": "",
+      "canonicalUrl": "https://uxdesign.cc/when-ux-dad-meets-board-games-for-kids-8219985a48a1",
+      "approvedHomeCollectionId": "138adf9c44c",
+      "isNewsletter": false,
+      "newsletterId": "c1b141ff2d7e",
+      "webCanonicalUrl": "https://uxdesign.cc/when-ux-dad-meets-board-games-for-kids-8219985a48a1",
+      "mediumUrl": "https://uxdesign.cc/when-ux-dad-meets-board-games-for-kids-8219985a48a1",
+      "migrationId": "",
+      "notifyFollowers": true,
+      "notifyTwitter": false,
+      "notifyFacebook": false,
+      "responseHiddenOnParentPostAt": 0,
+      "isSeries": false,
+      "isSubscriptionLocked": false,
+      "seriesLastAppendedAt": 0,
+      "audioVersionDurationSec": 0,
+      "sequenceId": "",
+      "isEligibleForRevenue": false,
+      "isBlockedFromHightower": false,
+      "deletedAt": 0,
+      "lockedPostSource": 0,
+      "hightowerMinimumGuaranteeStartsAt": 0,
+      "hightowerMinimumGuaranteeEndsAt": 0,
+      "featureLockRequestAcceptedAt": 0,
+      "mongerRequestType": 1,
+      "layerCake": 1,
+      "socialTitle": "",
+      "socialDek": "",
+      "editorialPreviewTitle": "",
+      "editorialPreviewDek": "",
+      "curationEligibleAt": 0,
+      "isProxyPost": false,
+      "proxyPostFaviconUrl": "",
+      "proxyPostProviderName": "",
+      "proxyPostType": 0,
+      "isSuspended": false,
+      "isLimitedState": false,
+      "seoTitle": "",
+      "previewContent2": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "4d2f",
+              "type": 3,
+              "text": "When UX dad meets board games for kids",
+              "markups": []
+            },
+            {
+              "name": "70f0",
+              "type": 13,
+              "text": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play.",
+              "markups": []
+            },
+            {
+              "name": "2a52",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*V2ax_SnbRDA1vBgYM4v49g.jpeg",
+                "originalWidth": 1820,
+                "originalHeight": 1024,
+                "isFeatured": true,
+                "alt": "An Illustration of my kid with board game elements as a cover photo"
+              }
+            },
+            {
+              "name": "b063",
+              "type": 1,
+              "text": "As a father of a 5-year-old boy, I deeply understand the importance of productive/creative pleasure for children. It’s not the passive stimulation from cartoons, but the vibration he feels when his little hand pushes the wooden snail shell across the table in the board game Rouleboule l’Escargot; it’s the confident…",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 71,
+                  "end": 99
+                },
+                {
+                  "type": 2,
+                  "start": 275,
+                  "end": 296
+                },
+                {
+                  "type": 2,
+                  "start": 380,
+                  "end": 412
+                },
+                {
+                  "type": 2,
+                  "start": 495,
+                  "end": 527
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "b59c",
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "Great kids’ board games are tangible UX journeys. Using Nielsen’s principles, they teach control, learning & social joy through play"
+      },
+      "cardType": 0,
+      "isDistributionAlertDismissed": false,
+      "isShortform": false,
+      "shortformType": 0,
+      "responsesLocked": false,
+      "isLockedResponse": false,
+      "isPublishToEmail": true,
+      "responseDistribution": 0,
+      "isMarkedPaywallOnly": false,
+      "type": "Post"
+    },
+    "mentionedUsers": [],
+    "collaborators": [],
+    "hideMeter": false,
+    "collectionUserRelations": [],
+    "mode": null,
+    "references": {
+      "User": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "name": "Ke Lyu",
+          "username": "lukelyu",
+          "createdAt": 1406604659459,
+          "imageId": "1*FfLXu1aEyCiK7QGoIBWsuA.jpeg",
+          "backgroundImageId": "",
+          "bio": "UX voyager. Lead Desinger at NetEase Cloud Music.",
+          "socialStats": {
+            "userId": "6c3c51488871",
+            "usersFollowedCount": 34,
+            "usersFollowedByCount": 101,
+            "type": "SocialStats"
+          },
+          "social": {
+            "userId": "lo_42ba0cdd5323",
+            "targetUserId": "6c3c51488871",
+            "type": "Social"
+          },
+          "allowNotes": 1,
+          "mediumMemberAt": 0,
+          "isWriterProgramEnrolled": true,
+          "isSuspended": false,
+          "isMembershipTrialEligible": true,
+          "optInToIceland": true,
+          "hasCompletedProfile": false,
+          "userDismissableFlags": [
+            1,
+            2,
+            5,
+            8,
+            21,
+            29,
+            32,
+            33,
+            52,
+            53,
+            58,
+            70
+          ],
+          "hasSeenIcelandOnboarding": true,
+          "postSubscribeMembershipUpsellShownAt": 0,
+          "languageCode": "en",
+          "type": "User"
+        }
+      },
+      "Collection": {
+        "138adf9c44c": {
+          "id": "138adf9c44c",
+          "name": "UX Collective",
+          "slug": "user-experience-design-1",
+          "tags": [
+            "UX",
+            "DESIGN",
+            "ARTIFICIAL INTELLIGENCE",
+            "TECHNOLOGY",
+            "PRODUCT"
+          ],
+          "creatorId": "50e39baefa55",
+          "description": "We believe designers are thinkers as much as they are makers. https://linktr.ee/uxc",
+          "shortDescription": "We believe designers are thinkers as much as they are…",
+          "image": {
+            "imageId": "1*mDhF9X4VO0rCrJvWFatyxg.png",
+            "filter": "",
+            "backgroundSize": "",
+            "originalWidth": 180,
+            "originalHeight": 180,
+            "strategy": "resample",
+            "height": 0,
+            "width": 0
+          },
+          "metadata": {
+            "followerCount": 614457,
+            "activeAt": 1783848615692
+          },
+          "virtuals": {
+            "permissions": {
+              "canPublish": false,
+              "canPublishAll": false,
+              "canRepublish": false,
+              "canRemove": false,
+              "canManageAll": false,
+              "canSubmit": false,
+              "canEditPosts": false,
+              "canAddWriters": false,
+              "canViewStats": false,
+              "canSendNewsletter": false,
+              "canViewLockedPosts": false,
+              "canViewCloaked": false,
+              "canEditOwnPosts": false,
+              "canBeAssignedAuthor": false,
+              "canEnrollInHightower": false,
+              "canLockPostsForMediumMembers": false,
+              "canLockOwnPostsForMediumMembers": false,
+              "canCreateNewsletterV3": false
+            },
+            "isSubscribed": false,
+            "isEnrolledInHightower": false,
+            "isEligibleForHightower": false,
+            "isSubscribedToCollectionEmails": false,
+            "isMuted": false,
+            "isWriter": false
+          },
+          "logo": {
+            "imageId": "1*9V9oqYyYnfP5yy7cb7YTMQ.png",
+            "filter": "",
+            "backgroundSize": "",
+            "originalWidth": 612,
+            "originalHeight": 102,
+            "strategy": "resample",
+            "height": 0,
+            "width": 0
+          },
+          "twitterUsername": "uxdesigncc",
+          "publicEmail": "hello@uxdesign.cc",
+          "collectionMastheadId": "91711cb9ae5",
+          "domain": "uxdesign.cc",
+          "sections": [
+            {
+              "type": 2,
+              "collectionHeaderMetadata": {
+                "title": "UX Collective",
+                "description": "Stories for designers—thinkers and makers. linktr.ee/uxc",
+                "backgroundImage": {},
+                "logoImage": {},
+                "alignment": 2,
+                "layout": 4
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 4,
+                "number": 3,
+                "postIds": [],
+                "tagSlug": "UX"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 4,
+                "number": 3,
+                "postIds": [],
+                "tagSlug": "Editor Picks",
+                "sectionHeader": "Editor Picks"
+              }
+            },
+            {
+              "type": 3,
+              "promoMetadata": {
+                "sectionHeader": "",
+                "promoId": "4e4f54ad93fd"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 4,
+                "number": 6,
+                "postIds": [],
+                "tagSlug": "Editor Picks"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 3,
+                "layout": 4,
+                "number": 6,
+                "postIds": [
+                  "44b73c807081",
+                  "c04cc4779d94",
+                  "dafc08bd1d66",
+                  "7c8dd466d753",
+                  "a30025c0f432",
+                  "bc89c0f084b7"
+                ],
+                "sectionHeader": "Timeless Gems"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 4,
+                "number": 9,
+                "postIds": [],
+                "tagSlug": "UX",
+                "sectionHeader": "New & Noteworthy"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 5,
+                "number": 25,
+                "postIds": [],
+                "tagSlug": "UX"
+              }
+            },
+            {
+              "type": 1,
+              "postListMetadata": {
+                "source": 4,
+                "layout": 5,
+                "number": 25,
+                "postIds": [],
+                "tagSlug": "UX"
+              }
+            }
+          ],
+          "tintColor": "#FF000000",
+          "lightText": true,
+          "favicon": {
+            "imageId": "1*dn6MbbIIlwobt0jnUcrt_Q.png",
+            "filter": "",
+            "backgroundSize": "",
+            "originalWidth": 256,
+            "originalHeight": 256,
+            "strategy": "resample",
+            "height": 0,
+            "width": 0
+          },
+          "colorPalette": {
+            "defaultBackgroundSpectrum": {
+              "colorPoints": [
+                {
+                  "color": "#FF868484",
+                  "point": 0
+                },
+                {
+                  "color": "#FF7C7B7A",
+                  "point": 0.1
+                },
+                {
+                  "color": "#FF737171",
+                  "point": 0.2
+                },
+                {
+                  "color": "#FF696867",
+                  "point": 0.3
+                },
+                {
+                  "color": "#FF5F5E5E",
+                  "point": 0.4
+                },
+                {
+                  "color": "#FF555454",
+                  "point": 0.5
+                },
+                {
+                  "color": "#FF4A4949",
+                  "point": 0.6
+                },
+                {
+                  "color": "#FF3F3E3E",
+                  "point": 0.7
+                },
+                {
+                  "color": "#FF343333",
+                  "point": 0.8
+                },
+                {
+                  "color": "#FF272727",
+                  "point": 0.9
+                },
+                {
+                  "color": "#FF1A1A1A",
+                  "point": 1
+                }
+              ],
+              "backgroundColor": "#FFFFFFFF"
+            },
+            "tintBackgroundSpectrum": {
+              "colorPoints": [
+                {
+                  "color": "#FF000000",
+                  "point": 0
+                },
+                {
+                  "color": "#FF1E1D1D",
+                  "point": 0.1
+                },
+                {
+                  "color": "#FF3C3B3B",
+                  "point": 0.2
+                },
+                {
+                  "color": "#FF565555",
+                  "point": 0.3
+                },
+                {
+                  "color": "#FF6F6D6D",
+                  "point": 0.4
+                },
+                {
+                  "color": "#FF868484",
+                  "point": 0.5
+                },
+                {
+                  "color": "#FF9C9A99",
+                  "point": 0.6
+                },
+                {
+                  "color": "#FFB1AEAE",
+                  "point": 0.7
+                },
+                {
+                  "color": "#FFC5C3C2",
+                  "point": 0.8
+                },
+                {
+                  "color": "#FFD9D6D6",
+                  "point": 0.9
+                },
+                {
+                  "color": "#FFECE9E9",
+                  "point": 1
+                }
+              ],
+              "backgroundColor": "#FF000000"
+            },
+            "highlightSpectrum": {
+              "colorPoints": [
+                {
+                  "color": "#FFF5F2F1",
+                  "point": 0
+                },
+                {
+                  "color": "#FFF3F0EF",
+                  "point": 0.1
+                },
+                {
+                  "color": "#FFF1EEED",
+                  "point": 0.2
+                },
+                {
+                  "color": "#FFEFECEC",
+                  "point": 0.3
+                },
+                {
+                  "color": "#FFEDEAEA",
+                  "point": 0.4
+                },
+                {
+                  "color": "#FFEBE8E8",
+                  "point": 0.5
+                },
+                {
+                  "color": "#FFE9E6E6",
+                  "point": 0.6
+                },
+                {
+                  "color": "#FFE7E5E4",
+                  "point": 0.7
+                },
+                {
+                  "color": "#FFE5E3E2",
+                  "point": 0.8
+                },
+                {
+                  "color": "#FFE4E1E0",
+                  "point": 0.9
+                },
+                {
+                  "color": "#FFE2DFDE",
+                  "point": 1
+                }
+              ],
+              "backgroundColor": "#FFFFFFFF"
+            },
+            "darkBackgroundSpectrum": {
+              "colorPoints": [
+                {
+                  "color": "#FF9E9C9C",
+                  "point": 0
+                },
+                {
+                  "color": "#FFA7A5A4",
+                  "point": 0.1
+                },
+                {
+                  "color": "#FFAFADAD",
+                  "point": 0.2
+                },
+                {
+                  "color": "#FFB8B5B5",
+                  "point": 0.3
+                },
+                {
+                  "color": "#FFC0BEBD",
+                  "point": 0.4
+                },
+                {
+                  "color": "#FFC8C6C5",
+                  "point": 0.5
+                },
+                {
+                  "color": "#FFD1CECD",
+                  "point": 0.6
+                },
+                {
+                  "color": "#FFD9D6D5",
+                  "point": 0.7
+                },
+                {
+                  "color": "#FFE1DEDD",
+                  "point": 0.8
+                },
+                {
+                  "color": "#FFE9E6E5",
+                  "point": 0.9
+                },
+                {
+                  "color": "#FFF1EEED",
+                  "point": 1
+                }
+              ],
+              "backgroundColor": "#FF000000"
+            }
+          },
+          "navItems": [
+            {
+              "type": 1,
+              "title": "Editor Picks",
+              "tagSlug": "editor-picks",
+              "url": "https://uxdesign.cc/tagged/editor-picks",
+              "source": "tagSlug"
+            },
+            {
+              "type": 6,
+              "title": "About",
+              "url": "https://uxdesign.cc/about"
+            },
+            {
+              "type": 4,
+              "title": "Publish a Story",
+              "url": "https://uxdesign.cc/publish/home",
+              "topicId": "280a7723865c",
+              "source": "topicId"
+            },
+            {
+              "type": 3,
+              "title": "Receive our Newsletter",
+              "url": "http://newsletter.uxdesign.cc/"
+            }
+          ],
+          "colorBehavior": 2,
+          "googleAnalyticsId": "UA-41116679-1",
+          "collectionFeatures": [
+            25,
+            27,
+            30
+          ],
+          "ampLogo": {
+            "imageId": "",
+            "filter": "",
+            "backgroundSize": "",
+            "originalWidth": 0,
+            "originalHeight": 0,
+            "strategy": "resample",
+            "height": 0,
+            "width": 0
+          },
+          "header": {
+            "title": "UX Collective",
+            "description": "Stories for designers—thinkers and makers. linktr.ee/uxc",
+            "backgroundImage": {},
+            "logoImage": {},
+            "alignment": 2,
+            "layout": 4
+          },
+          "subscriberCount": 614457,
+          "tagline": "We believe designers are thinkers as much as they are makers.",
+          "instagramUsername": "doc.cc_",
+          "isOptedIntoAurora": false,
+          "newsletterV3": {
+            "newsletterV3Id": "5fb308046049",
+            "type": 1,
+            "name": "The UX Collective Newsletter",
+            "description": "A weekly resourceful newsletter that helps designers stay in the know, be productive, and think more critically about their work.",
+            "collectionId": "138adf9c44c",
+            "newsletterSlug": "the-ux-collective-newsletter",
+            "isSubscribed": false,
+            "showPromo": true,
+            "avatarImageId": "1*-G-bB63PVXw4WIIPxPibtw.png",
+            "creatorId": "50e39baefa55",
+            "showNewsletterPostsInCollectionHome": false,
+            "exportableSubscribersCount": 23128,
+            "subscribersCount": 142627,
+            "promoHeadline": "",
+            "promoBody": "",
+            "replyToEmail": ""
+          },
+          "isCurationAllowedByDefault": false,
+          "polarisCoverImage": {
+            "imageId": "1*4qZD3VhzQ5SKG8yGpCMiUQ.png",
+            "filter": "",
+            "backgroundSize": "",
+            "originalWidth": 1080,
+            "originalHeight": 240,
+            "strategy": "resample",
+            "height": 0,
+            "width": 0
+          },
+          "ptsQualifiedAt": 1616092952635,
+          "type": "Collection"
+        }
+      },
+      "Social": {
+        "6c3c51488871": {
+          "userId": "lo_42ba0cdd5323",
+          "targetUserId": "6c3c51488871",
+          "type": "Social"
+        }
+      },
+      "SocialStats": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "usersFollowedCount": 34,
+          "usersFollowedByCount": 101,
+          "type": "SocialStats"
+        }
+      }
+    }
+  },
+  "v": 3,
+  "b": "20260710-1536-root"
+}

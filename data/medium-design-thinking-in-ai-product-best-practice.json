@@ -1,0 +1,1519 @@
+{
+  "success": true,
+  "payload": {
+    "value": {
+      "id": "84bf8fd3e130",
+      "versionId": "9d5cf1a12d18",
+      "creatorId": "6c3c51488871",
+      "homeCollectionId": "",
+      "title": "Design Thinking in AI Product Best Practice",
+      "detectedLanguage": "en",
+      "latestVersion": "9d5cf1a12d18",
+      "latestPublishedVersion": "9d5cf1a12d18",
+      "hasUnpublishedEdits": false,
+      "latestRev": 548,
+      "createdAt": 1753863972893,
+      "updatedAt": 1753867781216,
+      "acceptedAt": 0,
+      "firstPublishedAt": 1753865556078,
+      "latestPublishedAt": 1753865556078,
+      "vote": false,
+      "experimentalCss": "",
+      "displayAuthor": "",
+      "content": {
+        "subtitle": "My hands-on experience with AI projects at NetEase Cloud Music on how to solve real creator pain points using human-centered AI approach",
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "563c",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*kscvi1OAyVZh5wg4fkPVhQ.png",
+                "originalWidth": 1365,
+                "originalHeight": 1024,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "ebed",
+              "type": 3,
+              "text": "Design Thinking in AI Product Best Practice",
+              "markups": []
+            },
+            {
+              "name": "288f",
+              "type": 1,
+              "text": "As a music platform, music podcasts are a key focus and a distinctive feature in NetEase Cloud Music’s podcast business. However, we’ve faced three major challenges in producing these podcasts:",
+              "markups": []
+            },
+            {
+              "name": "1d77",
+              "type": 10,
+              "text": "Low Pass Rates: Few podcasts meet platform standards due to low spoken-word ratio, and there are insufficient podcasts suitable for distribution.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 14
+                }
+              ]
+            },
+            {
+              "name": "c8ba",
+              "type": 10,
+              "text": "Low Hit song Coverage: New content often fails to align with trending songs, leaving users with fewer appealing options.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 21
+                }
+              ]
+            },
+            {
+              "name": "583d",
+              "type": 10,
+              "text": "Slow Creator Workflow: Despite providing efficiency tools, hosts spend 4–5 hours producing a single music podcast episode due to creative bottlenecks.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 21
+                }
+              ]
+            },
+            {
+              "name": "a17c",
+              "type": 1,
+              "text": "In the age of AI, our platform is equipped to provide hosts with a fast, all-in-one program production service. We are excited to introduce an AI music podcast production tool designed to assist users throughout the entire production process, from song selection and scriptwriting to final audio synthesis.",
+              "markups": []
+            },
+            {
+              "name": "1bf9",
+              "type": 1,
+              "text": "However, users are primarily focused on whether their pain points are addressed, rather than the technology we employ. They want to know if our product offers superior solutions and enhanced value compared to other offerings. Therefore, we began by mapping the host’s creative journey to deeply address their needs.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 54,
+                  "end": 65
+                },
+                {
+                  "type": 1,
+                  "start": 168,
+                  "end": 177
+                },
+                {
+                  "type": 1,
+                  "start": 191,
+                  "end": 196
+                }
+              ]
+            },
+            {
+              "name": "d912",
+              "type": 3,
+              "text": "Where Does AI Fit In?",
+              "markups": []
+            },
+            {
+              "name": "7f4b",
+              "type": 1,
+              "text": "When designing program production tools for hosts, it’s essential to thoroughly understand their creative workflow, including the challenges and issues they encounter during content creation. Only by mastering their workflow can we accurately identify areas where AI can make a meaningful impact, ensuring that AI technology delivers tangible and valuable support.",
+              "markups": []
+            },
+            {
+              "name": "aa1d",
+              "type": 4,
+              "text": "Music Podcast Host ​User Journey Map",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*NFcClzzirbNkzpotmri0zA.png",
+                "originalWidth": 7054,
+                "originalHeight": 5897
+              }
+            },
+            {
+              "name": "5f1e",
+              "type": 1,
+              "text": "The diagram above illustrates the typical user journey of our major hosts in podcast production. The main challenges for users lie in selecting a specific program theme and managing time-consuming operations across various production stages. AI technology steps in with notable benefits in the following areas:",
+              "markups": []
+            },
+            {
+              "name": "455d",
+              "type": 9,
+              "text": "Speeding up tasks",
+              "markups": []
+            },
+            {
+              "name": "c559",
+              "type": 9,
+              "text": "Simplifying task processes",
+              "markups": []
+            },
+            {
+              "name": "e44d",
+              "type": 9,
+              "text": "Unleashing creative potential",
+              "markups": []
+            },
+            {
+              "name": "bae6",
+              "type": 1,
+              "text": "Based on the identified pain points and opportunity areas in the diagram, we have pinpointed specific stages that can be enhanced through AI, automated, or simplified. Recent discussions with our internal team and technical experts confirm that third-party Generative AI and Prompt Engineering can facilitate:",
+              "markups": []
+            },
+            {
+              "name": "8719",
+              "type": 9,
+              "text": "Music podcast theme generation",
+              "markups": []
+            },
+            {
+              "name": "7b07",
+              "type": 9,
+              "text": "Script drafting and refinement",
+              "markups": []
+            },
+            {
+              "name": "115d",
+              "type": 9,
+              "text": "Program synopsis creation",
+              "markups": []
+            },
+            {
+              "name": "11b9",
+              "type": 1,
+              "text": "Additionally, NetEase Cloud Music’s proprietary Miyue model — leveraging big-data analytics and deep music domain expertise — provides theme-specific song recommendations.",
+              "markups": []
+            },
+            {
+              "name": "d6af",
+              "type": 1,
+              "text": "Building on these AI capabilities, we have focused our product’s core functionality on three critical steps: theme ideation, music curation, and scriptwriting. We have clearly defined both the input required from users and the AI-generated deliverables at each stage.”",
+              "markups": []
+            },
+            {
+              "name": "ac03",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*DPAlUeLolxRHKTiarXb-iA.png",
+                "originalWidth": 25680,
+                "originalHeight": 7104
+              }
+            },
+            {
+              "name": "8da8",
+              "type": 3,
+              "text": "Product Design",
+              "markups": []
+            },
+            {
+              "name": "2596",
+              "type": 3,
+              "text": "1. ChoosingTrending Keywords",
+              "markups": []
+            },
+            {
+              "name": "de9b",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*hmh87w9SZR3-eDKKJWy6jw.png",
+                "originalWidth": 4504,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "c072",
+              "type": 1,
+              "text": "When leveraging large language models (LLMs) or other NLP AI tools to achieve effective outcomes, users often face challenges in identifying suitable prompts. Although the final program requires well-defined themes (e.g., “Rhythm Revolution: The Dance Empire of Bruno Mars”), we prioritize guiding users to select ​​trending keywords​​ as prompts. This approach enables multi-angle thematic exploration",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 141,
+                  "end": 157
+                },
+                {
+                  "type": 2,
+                  "start": 222,
+                  "end": 223
+                },
+                {
+                  "type": 2,
+                  "start": 272,
+                  "end": 273
+                }
+              ]
+            },
+            {
+              "name": "dc43",
+              "type": 1,
+              "text": "When we started to design the product, we pondered the potential of harnessing AI to aggregate trending themes across the web, aiming to inspire hosts to craft the episode around the latest music trends. Yet, we settled on trending words that are less covered in our platform as prompts. This approach, particularly in the nascent stages of our music podcast, helps guide hosts to produce more podcasts covering popular tracks and singers, thereby increasing the host’s exposure and allowing the podcast to gain more traffic in the short term, while also securing a more enduring distribution footprint beyond fleeting trends.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 366,
+                  "end": 378
+                },
+                {
+                  "type": 1,
+                  "start": 470,
+                  "end": 478
+                },
+                {
+                  "type": 1,
+                  "start": 512,
+                  "end": 524
+                },
+                {
+                  "type": 1,
+                  "start": 571,
+                  "end": 592
+                }
+              ]
+            },
+            {
+              "name": "bc3b",
+              "type": 1,
+              "text": "This case reaffirms that AI adoption hinges not on technological sophistication, but on ​​aligning with user needs and platform objectives​​. Consequently, we utilize existing platform data for recommendations instead of generating entirely new AI content",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 44,
+                  "end": 79
+                },
+                {
+                  "type": 1,
+                  "start": 104,
+                  "end": 108
+                },
+                {
+                  "type": 1,
+                  "start": 109,
+                  "end": 114
+                },
+                {
+                  "type": 1,
+                  "start": 119,
+                  "end": 140
+                }
+              ]
+            },
+            {
+              "name": "99f7",
+              "type": 1,
+              "text": "Additionally, if hosts already have predefined themes or content in mind, they can build the episode themselves and use our tools later for polishing, or simply tell us their preset theme and let the music-podcast creation tool recommend matching tracks.",
+              "markups": []
+            },
+            {
+              "name": "561e",
+              "type": 1,
+              "text": "This embodies our user-centric control principle: users may either use the end-to-end workflow or selectively skip steps to access only the functionalities they need.",
+              "markups": []
+            },
+            {
+              "name": "0c81",
+              "type": 3,
+              "text": "2. Generating Theme",
+              "markups": []
+            },
+            {
+              "name": "b750",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*OijnC0BuqubwxBg4bibxgA.png",
+                "originalWidth": 4504,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "7ed1",
+              "type": 1,
+              "text": "Once a user selects a trending keyword, the AI expands it into multiple thematic directions, ranging from genre, vocal style, signature works, lyrical depth, backstory, and historical accolades to more. Thus, hosts can pick the direction they prefer.",
+              "markups": []
+            },
+            {
+              "name": "160e",
+              "type": 1,
+              "text": "As noted earlier, choosing an episode theme is a major pain point in production. By selecting trending keywords, hosts receive a selection of AI-generated theme ideas that enable them to lock on exactly what they want to explore, slashing both time and effort.",
+              "markups": []
+            },
+            {
+              "name": "a349",
+              "type": 1,
+              "text": "Throughout the process, the AI offers options and room for adjustment rather than a single finished result. This keeps users in control, boosts creative flexibility, and ensures each episode remains personal and distinctive.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 59,
+                  "end": 69
+                },
+                {
+                  "type": 1,
+                  "start": 125,
+                  "end": 135
+                }
+              ]
+            },
+            {
+              "name": "d80f",
+              "type": 3,
+              "text": "3. Generating Content",
+              "markups": []
+            },
+            {
+              "name": "7cfe",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*MWRVz3KYAM40R8eOVsRJrA.png",
+                "originalWidth": 4504,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "6f5a",
+              "type": 1,
+              "text": "With AI, we can now deliver end-to-end content generation. By precisely matching tracks to the user-chosen theme and automatically crafting contextual scripts​​, we save users hours of writing time.",
+              "markups": []
+            },
+            {
+              "name": "47cf",
+              "type": 1,
+              "text": "In the initial version, we split the workflow into two independent steps for maximize flexibility: after receiving music recommendations, users could either self-write the script or leverage AI generation. Post-launch data showed, however, that nearly everyone opted to have the AI-generated scripts followed by fine-tuning. Accordingly, the next iteration simultaneously produces matched tracks and contextual scripts upon theme confirmation​​.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 86,
+                  "end": 97
+                }
+              ]
+            },
+            {
+              "name": "c422",
+              "type": 1,
+              "text": "While preserving users’ flexibility remains valuable, we unhesitatingly optimize defaults when they demonstrably enhance efficiency.",
+              "markups": []
+            },
+            {
+              "name": "d435",
+              "type": 3,
+              "text": "4. Episode Recording",
+              "markups": []
+            },
+            {
+              "name": "274c",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*BpCK_6AAmBQ5wjzJA9lWhw.png",
+                "originalWidth": 7024,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "2922",
+              "type": 1,
+              "text": "Users can record episodes directly on our platform. While veteran hosts may prefer professional external tools, our integrated recorder specifically targets non-experts seeking an all-in-one workflow solution. It supports fundamental features including basic recording, audio trimming, and background music integration, augmented by text-to-speech (TTS) and voice-cloning capabilities that transform scripts into audio delivered in the user’s authentic voice. Experienced hosts retain the flexibility to export scripts prior to the recording and use their preferred tools to record.",
+              "markups": []
+            },
+            {
+              "name": "3dd2",
+              "type": 1,
+              "text": "Once recording is completed, users can proceed directly to the publishing page for immediate platform release. While we have now established the full workflow of the AI music-podcast builder, opportunities remain to refine design details that optimize user experience more holistically.",
+              "markups": []
+            },
+            {
+              "name": "a8f9",
+              "type": 3,
+              "text": "AI Experience in Details",
+              "markups": []
+            },
+            {
+              "name": "86a7",
+              "type": 3,
+              "text": "1. Onboarding for New Users",
+              "markups": []
+            },
+            {
+              "name": "7752",
+              "type": 1,
+              "text": "For a tool-based product, onboarding proves critical. The core design challenge for AI products lies in clearly conveying capabilities and benefits while preventing user overwhelm or confusion.",
+              "markups": []
+            },
+            {
+              "name": "aaea",
+              "type": 1,
+              "text": "To address this, we deploy a concise yet comprehensive tutorial video upon initial launch. This video systematically guides users through the AI-powered music-podcast creation workflow while spotlighting unique AI functionalities. When users subsequently reach the content-editing interface, context-aware interactive walkthrough activates to demonstrate exactly what to do next and how the tool will help them reach their goals.",
+              "markups": []
+            },
+            {
+              "name": "6c70",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*MVDyall3RrdBcHFrXGHVMw.png",
+                "originalWidth": 4717,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "cd1b",
+              "type": 3,
+              "text": "2. Optimize Creativity and Control",
+              "markups": []
+            },
+            {
+              "name": "dd36",
+              "type": 1,
+              "text": "When designing a creative experience, the foremost concern is to balance the user’s need for both creativity and control, ensuring they have the final say in the output. As noted earlier, one of AI’s greatest strengths is its ability to spark human creativity — especially in content creation, where igniting that spark is central to a product’s success. Yet we must never forget that AI is only an assistive tool: the tool is meant to be wielded by people, not the other way around. Therefore, every design choice should leave users feeling that everything is within their grasp and that they can adjust course at any moment.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 237,
+                  "end": 259
+                }
+              ]
+            },
+            {
+              "name": "02f6",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*nFTf52Solxy7Tx7xfSuX1w.png",
+                "originalWidth": 5400,
+                "originalHeight": 3114
+              }
+            },
+            {
+              "name": "5cb2",
+              "type": 1,
+              "text": "As shown in the above picture, we provide users with a suite of tools to spark creativity and give them more control over their content. Due to limited resources, we have not yet been able to deliver a fully comprehensive service. We will outline our plans to expand and refine these offerings in a later section.",
+              "markups": []
+            },
+            {
+              "name": "1df7",
+              "type": 3,
+              "text": "3. Waiting Time",
+              "markups": []
+            },
+            {
+              "name": "aa30",
+              "type": 1,
+              "text": "Generative AI requires time to compute results, so crafting a strategy that keeps users engaged and informed during this interval is crucial.",
+              "markups": []
+            },
+            {
+              "name": "4c65",
+              "type": 4,
+              "text": "Version History",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*DG3AB3mwRIRZ5fgxOKKBoA.png",
+                "originalWidth": 4504,
+                "originalHeight": 2574
+              }
+            },
+            {
+              "name": "2121",
+              "type": 1,
+              "text": "For tasks that take more than one minute, we prioritize implementing asynchronous processing. This allows users to proceed with other tasks while processing occurs on the server, with immediate notifications upon completion.",
+              "markups": []
+            },
+            {
+              "name": "fac1",
+              "type": 3,
+              "text": "Data & Feedback",
+              "markups": []
+            },
+            {
+              "name": "f6f8",
+              "type": 1,
+              "text": "Since the music-podcast creation tool launched on 21 May 2024, it has helped produce more than 200 episodes per month. During this period, we have gathered the following insights:",
+              "markups": []
+            },
+            {
+              "name": "8a76",
+              "type": 4,
+              "text": "Statistic Performance",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*y9ohRfscw4m6TJeKL_L3gg.png",
+                "originalWidth": 4335,
+                "originalHeight": 1556
+              }
+            },
+            {
+              "name": "8e42",
+              "type": 1,
+              "text": "After launch, we gathered invaluable feedback via user interviews",
+              "markups": []
+            },
+            {
+              "name": "4a55",
+              "type": 4,
+              "text": "User Feedbacks",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*yAUa4jHFa2ruUkdGtjCmgw.png",
+                "originalWidth": 1695,
+                "originalHeight": 899
+              }
+            },
+            {
+              "name": "e52d",
+              "type": 1,
+              "text": "We have received overwhelmingly positive feedback from hosts, alongside notable suggestions — particularly regarding infusing AI-generated scripts with greater personality, diversifying writing styles, and enhancing recording tools, as noted in the first user comment. These points will be prioritized in the next product cycle.",
+              "markups": []
+            },
+            {
+              "name": "8499",
+              "type": 1,
+              "text": "Beyond addressing specific pain points, we have established a long-term roadmap focused on continuously elevating performance and user experience. This ensures our tools evolve alongside rising expectations.",
+              "markups": []
+            },
+            {
+              "name": "283d",
+              "type": 3,
+              "text": "Future Outlook: Next Steps and Roadmap",
+              "markups": []
+            },
+            {
+              "name": "6413",
+              "type": 1,
+              "text": "Since the MVP version launched, we have rolled out background music, TTS, voice cloning, style and quality alerts, and numerous UX refinements based on user feedback. Looking ahead, we will focus on the following key areas:",
+              "markups": []
+            },
+            {
+              "name": "b466",
+              "type": 3,
+              "text": "1. Enhancing Content Diversity to Counter Homogeneity​",
+              "markups": []
+            },
+            {
+              "name": "010a",
+              "type": 1,
+              "text": "While we previously highlighted AI’s strength in sparking user creativity, our current tool still struggles to deliver distinctly varied outcomes across content generation sessions. This necessitates ongoing refinement of our data model and the introduction of expanded creative controls to diversify expressive options.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 270,
+                  "end": 287
+                },
+                {
+                  "type": 1,
+                  "start": 291,
+                  "end": 319
+                }
+              ]
+            },
+            {
+              "name": "d5ce",
+              "type": 1,
+              "text": "Take Adobe Firefly and similar AI tools, which let users tailor outputs through a variety of adjustable settings. Therefore, we plan to equip the AI with expanded configuration options, empowering users to craft more personalized content. This involves learning expression patterns from hosts’ historical content, enabling them to embed unique insights and perspectives into script generation styles. The system will thereby ensure outputs authentically reflect hosts’ intellectual depth and align with their distinctive personality.​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 217,
+                  "end": 237
+                }
+              ]
+            },
+            {
+              "name": "2954",
+              "type": 4,
+              "text": "Users can edit and refine the generated images directly within Adobe Firefly",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*mZZLC35Lz1JtZbP3AZWmEg.gif",
+                "originalWidth": 1024,
+                "originalHeight": 666
+              }
+            },
+            {
+              "name": "1249",
+              "type": 3,
+              "text": "2. Contextual Assistance",
+              "markups": []
+            },
+            {
+              "name": "c079",
+              "type": 1,
+              "text": "Given that today’s AI models can already understand language, context, and user behavior, we can leverage these capabilities to deliver more precise, in-the-moment suggestions, guidance, and recommendations.",
+              "markups": []
+            },
+            {
+              "name": "8a3e",
+              "type": 1,
+              "text": "For example, Grammarly Go surfaces relevant actions — such as “shorten” or “improve” — when a user selects text. Yet this is only an early step. Our goal is to personalize these suggestions even further, aligning them tightly with each user’s specific needs and preferences.",
+              "markups": []
+            },
+            {
+              "name": "26ec",
+              "type": 4,
+              "text": "Grammarly’s context-aware suggestions",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*wLmAfVV31IlmxQGM.jpg",
+                "originalWidth": 1440,
+                "originalHeight": 636
+              }
+            },
+            {
+              "name": "ed5f",
+              "type": 1,
+              "text": "GitHub Co-pilot exemplifies exceptional contextual understanding. It seamlessly integrates intelligent suggestions into the coding workflow, enabling users to efficiently complete programming tasks without interrupting their current workflow or switching windows to search for solutions.​",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 198,
+                  "end": 218
+                }
+              ]
+            },
+            {
+              "name": "765c",
+              "type": 4,
+              "text": "Github Co-pilot Experience",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*27cVRaxVg2eFYb6aiBdmpw.gif",
+                "originalWidth": 1024,
+                "originalHeight": 600
+              }
+            },
+            {
+              "name": "f5bf",
+              "type": 1,
+              "text": "For our music podcast production tool, we currently offer only video tutorials and pre-set interactive onboarding guides, underutilizing AI’s potential for personalized guidance. For instance, when users input an artist’s name, the system could automatically provide relevant artist information and related songs. Similarly, after song selection, it should recommend additional tracks aligned with user preferences.",
+              "markups": []
+            },
+            {
+              "name": "27bd",
+              "type": 1,
+              "text": "However, designing such contextual experiences requires AI models to deeply comprehend users’ current workflows and past content interactions. Without this contextual understanding, we can only deliver generic pre-set recommendations. Therefore, technological capabilities must be validated before implementing these designs.",
+              "markups": []
+            },
+            {
+              "name": "ff36",
+              "type": 3,
+              "text": "3. Agentic UX",
+              "markups": []
+            },
+            {
+              "name": "8730",
+              "type": 1,
+              "text": "Several months ago, I was fortunate to come across Professor Andrew Ng’s presentation “Agentic Reasoning” at Sequoia Capital’s AI Ascent summit, which offered fascinating insights.",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 86,
+                  "end": 105,
+                  "href": "https://www.youtube.com/watch?v=sal78ACtGTc",
+                  "title": "",
+                  "rel": "noopener",
+                  "anchorType": 0
+                }
+              ]
+            },
+            {
+              "name": "8e71",
+              "type": 1,
+              "text": "Professor Ng shared forward-looking perspectives on AI agent evolution, emphasizing AI agent and agentic workflows. His talk has provided a deep exploration of these concepts, which you can find in the video. I firmly believe future AI product experiences will be built upon this agentic workflow.",
+              "markups": [
+                {
+                  "type": 3,
+                  "start": 202,
+                  "end": 207,
+                  "href": "https://www.youtube.com/watch?v=sal78ACtGTc",
+                  "title": "",
+                  "rel": "noopener",
+                  "anchorType": 0
+                },
+                {
+                  "type": 1,
+                  "start": 84,
+                  "end": 92
+                },
+                {
+                  "type": 1,
+                  "start": 97,
+                  "end": 114
+                }
+              ]
+            },
+            {
+              "name": "8a8c",
+              "type": 4,
+              "text": "Zero Shot Workflow vs Agentic Workflows",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "0*NWLTL7oobdpPohMO.jpg",
+                "originalWidth": 1400,
+                "originalHeight": 783
+              }
+            },
+            {
+              "name": "5f4f",
+              "type": 1,
+              "text": "The ideal User Experience Flow for the AI music podcast production tool will be: I (the user) would instruct the AI:",
+              "markups": []
+            },
+            {
+              "name": "99da",
+              "type": 6,
+              "text": "“I want to create a CityPop-style music podcast episode. It should include classic songs and representative artists of the genre, while also recommending relevant tracks based on recent trends — cleverly integrating song emotions with trending events. The tone should be light and enjoyable, with a total duration capped at 45 minutes.”",
+              "markups": [
+                {
+                  "type": 2,
+                  "start": 0,
+                  "end": 336
+                }
+              ]
+            },
+            {
+              "name": "a3b9",
+              "type": 1,
+              "text": "The AI would then assist me in producing the episode content.",
+              "markups": []
+            },
+            {
+              "name": "b244",
+              "type": 1,
+              "text": "Most existing tools merely provide fragmented inspiration or generic suggestions after users input parameters, failing to deliver fully personalized, end-to-end content customization. ​​Agentic workflows​​ can bridge this gap. Future AI will exhibit full autonomy, real-time web information synthesis, personalized service delivery, multimodal planning capabilities, and rich interactive content generation",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 136,
+                  "end": 148
+                },
+                {
+                  "type": 1,
+                  "start": 169,
+                  "end": 182
+                }
+              ]
+            },
+            {
+              "name": "a3eb",
+              "type": 1,
+              "text": "Therefore, as technological advancements now enable the realization of AI agents, the design field must enter a new era of Agentic UX. Leveraging these capabilities, we need to reimagine user journeys — holistically supporting task execution through AI while enabling iterative refinement of outputs via conversational co-creation.",
+              "markups": []
+            },
+            {
+              "name": "2aee",
+              "type": 3,
+              "text": "Summary",
+              "markups": []
+            },
+            {
+              "name": "1b14",
+              "type": 1,
+              "text": "I’d like to summarize my hands-on experience with AI projects from two perspectives: the design process and the design principles.",
+              "markups": []
+            },
+            {
+              "name": "6a3a",
+              "type": 13,
+              "text": "Human-Centered AI Product ​​Design Process",
+              "markups": []
+            },
+            {
+              "name": "7420",
+              "type": 1,
+              "text": "User experience designers universally adopt ​​Human-Centered Design (HCD)​​. For AI products, we adhere to this principle with a ​​user-centric approach​​, refining a five-phase framework.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 131,
+                  "end": 152
+                }
+              ]
+            },
+            {
+              "name": "b02a",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*n_Fplv3RbepK_TeoI_Ejhg.png",
+                "originalWidth": 1798,
+                "originalHeight": 498
+              }
+            },
+            {
+              "name": "3c6b",
+              "type": 1,
+              "text": "​​1. Explore User Needs​​s​\nThe essence of user experience design lies in serving users, solving problems, and helping achieve goals. Therefore, our starting point must be users’ actual needs. Just as we deeply understood user needs and pain points before launching the project, this enables us to precisely identify which technologies can bring substantial help to users when exploring AI technology.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 172,
+                  "end": 191
+                }
+              ]
+            },
+            {
+              "name": "7bca",
+              "type": 1,
+              "text": "​​2. Define AI Capabilities​​\nCollaborate with the development team to clarify AI’s current capabilities and identify which AI technologies we can leverage to achieve breakthrough innovative solutions. This provides a solid technical foundation for subsequent discussions on the specific implementation of AI solutions.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 167,
+                  "end": 200
+                }
+              ]
+            },
+            {
+              "name": "5084",
+              "type": 1,
+              "text": "3. Pinpoint AI Intervention Points​​\nDeeply analyze user needs, examine user journeys and scenarios, seek suitable opportunities to solve user pain points, and evaluate the unique value of AI solutions compared to traditional technologies. Simultaneously, consider how to translate user needs into actionable data inputs and ensure AI outputs meet user requirements. The user journey map helps us identify potential areas where AI can be implemented during this process, seeking ways to leverage AI’s unique capabilities to support user tasks at each stage, and vividly demonstrating the entire workflow through design.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 115,
+                  "end": 128
+                },
+                {
+                  "type": 1,
+                  "start": 143,
+                  "end": 154
+                },
+                {
+                  "type": 1,
+                  "start": 173,
+                  "end": 185
+                },
+                {
+                  "type": 1,
+                  "start": 406,
+                  "end": 421
+                }
+              ]
+            },
+            {
+              "name": "3bf4",
+              "type": 1,
+              "text": "​​4. Interpret Product Capabilities​​\nAs a new technology, AI requires us to clarify user expectations for the product and build trust. We need to clearly communicate the product’s capabilities and the outputs it can provide. Simultaneously, empower users with autonomy and control, enabling them to steer the AI’s output.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 85,
+                  "end": 102
+                },
+                {
+                  "type": 1,
+                  "start": 123,
+                  "end": 134
+                },
+                {
+                  "type": 1,
+                  "start": 261,
+                  "end": 281
+                }
+              ]
+            },
+            {
+              "name": "408e",
+              "type": 1,
+              "text": "5. Ignite User Creativity​​\nDuring continuous product iteration, a key optimization is igniting user creativity. As one of AI’s core advantages, we should continuously explore AI opportunities to maximize its capabilities. This is also built upon a deep exploration of user needs and understanding of AI capabilities. Through user feedback, enable AI models to learn from data and optimize, providing users with more personalized choices. The ability to ignite user creativity is a core competitive advantage of AI products.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 326,
+                  "end": 339
+                },
+                {
+                  "type": 1,
+                  "start": 417,
+                  "end": 437
+                }
+              ]
+            },
+            {
+              "name": "e0ab",
+              "type": 1,
+              "text": "These five phases constitute the human-centered AI product design process.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 33,
+                  "end": 73
+                }
+              ]
+            },
+            {
+              "name": "639e",
+              "type": 1,
+              "text": "​​AI Product Design Principles​​\nDuring the design process, I referenced numerous AI products such as Atlassian’s Loom, Notion, Grammarly Go, and Kimi. Combining their experiences with my project reflections, I’ve summarized the following ten AI product design principles:",
+              "markups": []
+            },
+            {
+              "name": "9387",
+              "type": 3,
+              "text": "AI Product Design Principles​​",
+              "markups": []
+            },
+            {
+              "name": "2357",
+              "type": 1,
+              "text": "During the design process, I referenced numerous AI products such as Loom from Atlassian, Notion, Grammarly Go, Kimi, and others. Combining their experiences with my project reflections, I’ve summarized the following ten AI product design principles:",
+              "markups": []
+            },
+            {
+              "name": "bcf4",
+              "type": 10,
+              "text": "​​Clarify AI’s Added Value​​: Ensure AI adoption solves user problems more effectively than traditional methods, not just for using AI itself.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 2,
+                  "end": 28
+                }
+              ]
+            },
+            {
+              "name": "4ba1",
+              "type": 10,
+              "text": "​​Manage User Expectations​​: Clearly indicate which features use AI and transparently communicate expected outcomes. For AI-generated content loading times, provide users with clear time estimates or a draft function that saves users’ work.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 2,
+                  "end": 28
+                }
+              ]
+            },
+            {
+              "name": "dd9f",
+              "type": 10,
+              "text": "​​Emphasize Value Over Technology​​: When introducing AI features, focus on how they help users achieve goals, improve efficiency, solve problems, or enhance experiences — not technical details.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 33
+                }
+              ]
+            },
+            {
+              "name": "54c4",
+              "type": 10,
+              "text": "​​Maintain Familiarity​​: Avoid “innovative” unfamiliar UIs just to showcase AI’s “magic.” Use established UI patterns to reduce learning costs, keep users task-focused, and build system trust.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 22
+                }
+              ]
+            },
+            {
+              "name": "fd72",
+              "type": 10,
+              "text": "​​Add Real-World Context​​: Providing contextual information with AI outputs helps users evaluate content value (e.g., including music reviews and encyclopedic references when generating songs/scripts).",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 26
+                }
+              ]
+            },
+            {
+              "name": "a5d9",
+              "type": 10,
+              "text": "​​Comprehensive Function Guide​​: Offer detailed guides to help users understand AI’s effectiveness and how AI helps achieve the goal. Keep this information outside core workflows to avoid distractions. The onboarding process prior to system entry serves as the ideal moment to deliver this information.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 2,
+                  "end": 30
+                }
+              ]
+            },
+            {
+              "name": "c129",
+              "type": 10,
+              "text": "​​Immersive Prompts​​: Offer contextual prompts/suggestions when users engage AI features. Focus on decision-making and task-completion information — not technical explanations.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 21
+                }
+              ]
+            },
+            {
+              "name": "48bf",
+              "type": 10,
+              "text": "​​Automate Low-Risk Tasks​​: Prioritize high automation in low-risk scenarios while allowing user adjustments (e.g., our automating combined text/song recommendations in later iterations).",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 27
+                }
+              ]
+            },
+            {
+              "name": "96b7",
+              "type": 10,
+              "text": "​​Always Provide Manual Overrides​​: If systems fail or output quality is poor, offer manual alternatives. Users should seamlessly continue workflows from where AI left off (e.g., manual editing alongside AI generation).",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 35
+                }
+              ]
+            },
+            {
+              "name": "d340",
+              "type": 10,
+              "text": "​​Phased Automation Approach​​: Balance automation and user control. Provide one-stop automation services where possible, while allowing step-by-step automation. For example, we can deliver final results all at once, or meet separate AI automation needs at each phase — such as track selection, text generation, and text polishing.",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 28
+                }
+              ]
+            },
+            {
+              "name": "69db",
+              "type": 1,
+              "text": "Following these principles ensures user-centric designs that fully unleash AI’s potential, creating solutions that meet user expectations while aligning with platform objectives.",
+              "markups": []
+            },
+            {
+              "name": "b402",
+              "type": 1,
+              "text": "In the end, we extend my sincere gratitude to the ​​NetEase Cloud Music Long Audio Technology Team​​ for their expert technical support throughout this project, and to the ​​Innovative Algorithms Department of NetEase’s Data Intelligence Center​​ for providing the AI Miyue Algorithm capabilities. Special thanks are due to ​​Zou Min​​ from the Product Center, who not only spearheaded this initiative but also led the team in exploring future directions for AI-assisted production, navigating numerous obstacles during R&D, and ultimately driving the project to successful implementation.",
+              "markups": []
+            }
+          ],
+          "sections": [
+            {
+              "name": "7869",
+              "startIndex": 0
+            },
+            {
+              "name": "44ab",
+              "startIndex": 112
+            }
+          ]
+        },
+        "postDisplay": {
+          "coverless": true
+        }
+      },
+      "virtuals": {
+        "allowNotes": true,
+        "previewImage": {
+          "imageId": "1*kscvi1OAyVZh5wg4fkPVhQ.png",
+          "filter": "",
+          "backgroundSize": "",
+          "originalWidth": 1365,
+          "originalHeight": 1024,
+          "strategy": "resample",
+          "height": 0,
+          "width": 0
+        },
+        "wordCount": 3008,
+        "imageCount": 17,
+        "readingTime": 12.950943396226414,
+        "subtitle": "My hands-on experience with AI projects at NetEase Cloud Music on how to solve real creator pain points using human-centered AI approach",
+        "usersBySocialRecommends": [],
+        "noIndex": false,
+        "recommends": 3,
+        "isBookmarked": false,
+        "tags": [
+          {
+            "slug": "ux",
+            "name": "UX",
+            "postCount": 172462,
+            "metadata": {
+              "postCount": 172462,
+              "coverImage": {
+                "id": "1*K2kgTFTCXrfuT6iff0OrLA.png",
+                "originalWidth": 979,
+                "originalHeight": 591,
+                "alt": "Frog in a pot surrounded by butterflies"
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ai",
+            "name": "AI",
+            "postCount": 492912,
+            "metadata": {
+              "postCount": 492912,
+              "coverImage": {
+                "id": "1*ol3okoHo2eTaDJSKZgGR_Q.jpeg",
+                "originalWidth": 4593,
+                "originalHeight": 3062,
+                "alt": "Elderly man sitting at a wooden table, working on a laptop indoors."
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "generative-ai-tools",
+            "name": "Generative Ai Tools",
+            "postCount": 37683,
+            "metadata": {
+              "postCount": 37683,
+              "coverImage": {
+                "id": "1*KfocTse2x3LLsp2gdCkKOA.png",
+                "originalWidth": 741,
+                "originalHeight": 567
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ai-technology",
+            "name": "Ai Technology",
+            "postCount": 1497,
+            "metadata": {
+              "postCount": 1497,
+              "coverImage": {
+                "id": "0*q1WT2A3yMO_4V0g5.jpg",
+                "originalWidth": 1024,
+                "originalHeight": 683,
+                "isFeatured": true
+              }
+            },
+            "type": "Tag"
+          },
+          {
+            "slug": "ux-design",
+            "name": "UX Design",
+            "postCount": 97279,
+            "metadata": {
+              "postCount": 97279,
+              "coverImage": {
+                "id": "0*3AEFmxcHuhVK8UVn",
+                "originalWidth": 3999,
+                "originalHeight": 2666,
+                "unsplashPhotoId": "tGBXiHcPKrM"
+              }
+            },
+            "type": "Tag"
+          }
+        ],
+        "socialRecommendsCount": 0,
+        "responsesCreatedCount": 0,
+        "links": {
+          "entries": [
+            {
+              "url": "https://www.youtube.com/watch?v=sal78ACtGTc",
+              "alts": [],
+              "httpStatus": 429
+            }
+          ],
+          "version": "0.3",
+          "generatedAt": 1753865556617
+        },
+        "isLockedPreviewOnly": false,
+        "metaDescription": "",
+        "totalClapCount": 79,
+        "sectionCount": 2,
+        "readingList": 0,
+        "topics": [
+          {
+            "topicId": "1af65db9c2f8",
+            "slug": "artificial-intelligence",
+            "createdAt": 1487916832419,
+            "deletedAt": 0,
+            "image": {
+              "id": "1*A28aHchbaA8zNVXraBq0Ug@2x.jpeg",
+              "originalWidth": 4866,
+              "originalHeight": 3244
+            },
+            "name": "Artificial Intelligence",
+            "description": "Born to be bot.",
+            "relatedTopics": [],
+            "visibility": 1,
+            "relatedTags": [],
+            "relatedTopicIds": [],
+            "seoTitle": "AI News and Artificial Intelligence Articles — Medium",
+            "type": "Topic"
+          },
+          {
+            "topicId": "55321ac40456",
+            "slug": "design",
+            "createdAt": 1536181929758,
+            "deletedAt": 0,
+            "image": {
+              "id": "1*1aLu20aptPeUTDg_E8KtmA@2x.jpeg",
+              "originalWidth": 6016,
+              "originalHeight": 4016
+            },
+            "name": "Design",
+            "description": "Below the surface.",
+            "relatedTopics": [],
+            "visibility": 1,
+            "relatedTags": [],
+            "relatedTopicIds": [],
+            "seoTitle": "Design Articles and News — Medium",
+            "type": "Topic"
+          }
+        ]
+      },
+      "coverless": true,
+      "slug": "design-thinking-in-ai-product-best-practice",
+      "translationSourcePostId": "",
+      "translationSourceCreatorId": "",
+      "isApprovedTranslation": false,
+      "inResponseToPostId": "",
+      "inResponseToRemovedAt": 0,
+      "isTitleSynthesized": false,
+      "allowResponses": true,
+      "importedUrl": "",
+      "importedPublishedAt": 0,
+      "visibility": 0,
+      "uniqueSlug": "design-thinking-in-ai-product-best-practice-84bf8fd3e130",
+      "previewContent": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "previewImage",
+              "type": 4,
+              "text": "",
+              "layout": 10,
+              "metadata": {
+                "id": "1*kscvi1OAyVZh5wg4fkPVhQ.png",
+                "originalWidth": 1365,
+                "originalHeight": 1024,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "previewTitle",
+              "type": 3,
+              "text": "Design Thinking in AI Product Best Practice",
+              "alignment": 1
+            },
+            {
+              "name": "previewSubtitle",
+              "type": 13,
+              "text": "My hands-on experience with AI projects at NetEase Cloud…",
+              "alignment": 1
+            }
+          ],
+          "sections": [
+            {
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "My hands-on experience with AI projects at NetEase Cloud Music on how to solve real creator pain points using human-centered AI approach"
+      },
+      "license": 0,
+      "inResponseToMediaResourceId": "",
+      "canonicalUrl": "https://medium.com/@lukelyu/design-thinking-in-ai-product-best-practice-84bf8fd3e130",
+      "approvedHomeCollectionId": "",
+      "isNewsletter": false,
+      "newsletterId": "",
+      "webCanonicalUrl": "https://medium.com/@lukelyu/design-thinking-in-ai-product-best-practice-84bf8fd3e130",
+      "mediumUrl": "https://medium.com/@lukelyu/design-thinking-in-ai-product-best-practice-84bf8fd3e130",
+      "migrationId": "",
+      "notifyFollowers": true,
+      "notifyTwitter": false,
+      "notifyFacebook": false,
+      "responseHiddenOnParentPostAt": 0,
+      "isSeries": false,
+      "isSubscriptionLocked": false,
+      "seriesLastAppendedAt": 0,
+      "audioVersionDurationSec": 0,
+      "sequenceId": "",
+      "isEligibleForRevenue": false,
+      "isBlockedFromHightower": false,
+      "deletedAt": 0,
+      "lockedPostSource": 0,
+      "hightowerMinimumGuaranteeStartsAt": 0,
+      "hightowerMinimumGuaranteeEndsAt": 0,
+      "featureLockRequestAcceptedAt": 0,
+      "mongerRequestType": 1,
+      "layerCake": 0,
+      "socialTitle": "",
+      "socialDek": "",
+      "editorialPreviewTitle": "",
+      "editorialPreviewDek": "",
+      "curationEligibleAt": 0,
+      "isProxyPost": false,
+      "proxyPostFaviconUrl": "",
+      "proxyPostProviderName": "",
+      "proxyPostType": 0,
+      "isSuspended": false,
+      "isLimitedState": false,
+      "seoTitle": "Design Thinking in AI Product Best Practice",
+      "previewContent2": {
+        "bodyModel": {
+          "paragraphs": [
+            {
+              "name": "563c",
+              "type": 4,
+              "text": "",
+              "markups": [],
+              "layout": 1,
+              "metadata": {
+                "id": "1*kscvi1OAyVZh5wg4fkPVhQ.png",
+                "originalWidth": 1365,
+                "originalHeight": 1024,
+                "isFeatured": true
+              }
+            },
+            {
+              "name": "ebed",
+              "type": 3,
+              "text": "Design Thinking in AI Product Best Practice",
+              "markups": []
+            },
+            {
+              "name": "288f",
+              "type": 1,
+              "text": "As a music platform, music podcasts are a key focus and a distinctive feature in NetEase Cloud Music’s podcast business. However, we’ve faced three major challenges in producing these podcasts:",
+              "markups": []
+            },
+            {
+              "name": "1d77",
+              "type": 10,
+              "text": "Low Pass Rates: Few podcasts meet platform standards due to low spoken-word ratio, and there are insufficient podcasts suitable for…",
+              "markups": [
+                {
+                  "type": 1,
+                  "start": 0,
+                  "end": 14
+                }
+              ]
+            }
+          ],
+          "sections": [
+            {
+              "name": "7869",
+              "startIndex": 0
+            }
+          ]
+        },
+        "isFullContent": false,
+        "subtitle": "My hands-on experience with AI projects at NetEase Cloud Music on how to solve real creator pain points using human-centered AI approach"
+      },
+      "cardType": 0,
+      "isDistributionAlertDismissed": false,
+      "isShortform": false,
+      "shortformType": 0,
+      "responsesLocked": false,
+      "isLockedResponse": false,
+      "isPublishToEmail": false,
+      "responseDistribution": 0,
+      "isMarkedPaywallOnly": false,
+      "type": "Post"
+    },
+    "mentionedUsers": [],
+    "collaborators": [],
+    "hideMeter": false,
+    "collectionUserRelations": [],
+    "mode": null,
+    "references": {
+      "User": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "name": "Ke Lyu",
+          "username": "lukelyu",
+          "createdAt": 1406604659459,
+          "imageId": "1*FfLXu1aEyCiK7QGoIBWsuA.jpeg",
+          "backgroundImageId": "",
+          "bio": "UX voyager. Lead Desinger at NetEase Cloud Music.",
+          "socialStats": {
+            "userId": "6c3c51488871",
+            "usersFollowedCount": 34,
+            "usersFollowedByCount": 101,
+            "type": "SocialStats"
+          },
+          "social": {
+            "userId": "lo_2a7751747079",
+            "targetUserId": "6c3c51488871",
+            "type": "Social"
+          },
+          "allowNotes": 1,
+          "mediumMemberAt": 0,
+          "isWriterProgramEnrolled": true,
+          "isSuspended": false,
+          "isMembershipTrialEligible": true,
+          "optInToIceland": true,
+          "hasCompletedProfile": false,
+          "userDismissableFlags": [
+            1,
+            2,
+            5,
+            8,
+            21,
+            29,
+            32,
+            33,
+            52,
+            53,
+            58,
+            70
+          ],
+          "hasSeenIcelandOnboarding": true,
+          "postSubscribeMembershipUpsellShownAt": 0,
+          "languageCode": "en",
+          "type": "User"
+        }
+      },
+      "Social": {
+        "6c3c51488871": {
+          "userId": "lo_2a7751747079",
+          "targetUserId": "6c3c51488871",
+          "type": "Social"
+        }
+      },
+      "SocialStats": {
+        "6c3c51488871": {
+          "userId": "6c3c51488871",
+          "usersFollowedCount": 34,
+          "usersFollowedByCount": 101,
+          "type": "SocialStats"
+        }
+      }
+    }
+  },
+  "v": 3,
+  "b": "20260710-1536-root"
+}
