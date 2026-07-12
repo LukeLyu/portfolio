@@ -15,4 +15,8 @@
       document.body.classList.remove('mobile-nav-open');
     });
   });
+
+  document.querySelectorAll('.image-block-outer-wrapper').forEach((el) => {
+    el.classList.add('sqs-text-ready', 'animation-loaded');
+  });
 })();

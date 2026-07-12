@@ -25,6 +25,7 @@
 
   function closeProject() {
     body.classList.remove('index-page-open', 'page-open');
+    projectPages.classList.remove('page-open');
     projects.forEach((p) => p.classList.remove('active-project'));
     thumbs.forEach((t) => t.classList.remove('active-project'));
     setLoading(false);
@@ -35,8 +36,42 @@
     wrapper.className = 'project-injected-content';
     wrapper.innerHTML = html;
     projectEl.querySelectorAll('.project-injected-content').forEach((n) => n.remove());
-    projectEl.appendChild(wrapper);
+    const source = projectEl.querySelector('.project-content-source');
+    if (source) {
+      projectEl.insertBefore(wrapper, source);
+    } else {
+      projectEl.appendChild(wrapper);
+    }
     projectEl.classList.add('sqs-dynamic-data-ready');
+    wrapper.querySelectorAll('.image-block-outer-wrapper').forEach((el) => {
+      el.classList.add('sqs-text-ready', 'animation-loaded');
+    });
+  }
+
+  function updateProjectNav(url) {
+    const nav = projectPages.querySelector('#projectNav');
+    if (!nav) return;
+
+    const idx = projects.findIndex((p) => p.getAttribute('data-url') === url);
+    const prevSpan = nav.querySelector('.prev-project');
+    const nextSpan = nav.querySelector('.next-project');
+    if (!prevSpan || !nextSpan) return;
+
+    if (idx > 0) {
+      prevSpan.classList.remove('disabled');
+      prevSpan.dataset.url = projects[idx - 1].getAttribute('data-url');
+    } else {
+      prevSpan.classList.add('disabled');
+      delete prevSpan.dataset.url;
+    }
+
+    if (idx >= 0 && idx < projects.length - 1) {
+      nextSpan.classList.remove('disabled');
+      nextSpan.dataset.url = projects[idx + 1].getAttribute('data-url');
+    } else {
+      nextSpan.classList.add('disabled');
+      delete nextSpan.dataset.url;
+    }
   }
 
   async function loadProjectContent(projectEl) {
@@ -81,10 +116,12 @@
     if (thumb) thumb.classList.add('active-project');
 
     body.classList.add('index-page-open', 'page-open');
+    projectPages.classList.add('page-open');
+    updateProjectNav(url);
     setLoading(false);
 
     if (scrollTop) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'instant' in document.documentElement.style ? 'instant' : 'auto' });
     }
   }
 
@@ -94,7 +131,8 @@
       closeProject();
       return;
     }
-    openProject(url, false);
+    const switchingProject = body.classList.contains('page-open');
+    openProject(url, switchingProject);
   }
 
   thumbs.forEach((thumb) => {
@@ -103,6 +141,32 @@
       const url = thumb.getAttribute('href');
       window.location.hash = url;
     });
+  });
+
+  projectPages.addEventListener('click', (e) => {
+    const backLink = e.target.closest('.back-to-work');
+    if (backLink) {
+      e.preventDefault();
+      if (window.location.hash) {
+        window.location.hash = '';
+      } else {
+        closeProject();
+      }
+      return;
+    }
+
+    const prev = e.target.closest('.prev-project:not(.disabled)');
+    if (prev?.dataset.url) {
+      e.preventDefault();
+      window.location.hash = prev.dataset.url;
+      return;
+    }
+
+    const next = e.target.closest('.next-project:not(.disabled)');
+    if (next?.dataset.url) {
+      e.preventDefault();
+      window.location.hash = next.dataset.url;
+    }
   });
 
   window.addEventListener('hashchange', openFromHash);

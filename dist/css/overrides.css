@@ -1,19 +1,37 @@
-/* Site-wide Helvetica typography */
+/* Site typography */
 html,
-body,
-body * {
-  font-family: Helvetica, Arial, sans-serif !important;
+body {
+  font-family: source-serif-pro, "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-#canvas {
-  width: 1200px;
-  max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 75px;
-  box-sizing: border-box;
+html:lang(zh-CN),
+html:lang(zh-CN) body,
+html:lang(zh-CN) body * {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif !important;
+}
+
+[lang="zh-CN"],
+[lang="zh"],
+.lang-zh {
+  font-family: PingFang SC, HarmonyOS_Regular, Helvetica Neue, Microsoft YaHei, sans-serif !important;
+}
+
+[lang="zh-CN"] *,
+[lang="zh"] *,
+.lang-zh * {
+  font-family: inherit !important;
+}
+
+[lang="en"],
+[lang="en-US"],
+.lang-en {
+  font-family: source-serif-pro, "Source Serif Pro", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+[lang="en"] *,
+[lang="en-US"] *,
+.lang-en * {
+  font-family: inherit;
 }
 
 .sqs-spin {
@@ -90,6 +108,7 @@ body.collection-type-index.index-loading .sqs-spin {
   }
 
   #canvas {
+    margin: 0 auto;
     padding: 20px;
   }
 }
@@ -176,28 +195,25 @@ body.collection-type-index.index-loading .sqs-spin {
 }
 
 /* About page header banner */
-.extra-wrapper.page-header .sqs-block-image .image-block-wrapper {
+.extra-wrapper.page-header .sqs-block-image .sqs-image-shape-container-element {
   position: relative;
-  height: 0 !important;
-  padding-bottom: 29.75% !important;
+  padding-bottom: 29.75%;
   overflow: hidden;
 }
 
-.extra-wrapper.page-header .sqs-block-image .sqs-image-shape-container-element {
-  position: absolute;
-  inset: 0;
-  padding-bottom: 0 !important;
-}
-
-.extra-wrapper.page-header .sqs-block-image .image-block-wrapper img {
+.extra-wrapper.page-header .sqs-block-image .sqs-image-shape-container-element img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0 !important;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
   object-position: 50% 50%;
-  max-width: none;
+}
+
+.about-page .sqs-html-content p {
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
 .project-controls .back-to-work {
@@ -209,106 +225,75 @@ body.collection-type-index.index-loading .sqs-spin {
   color: #111;
 }
 
-/* Homepage: direct siblings under #canvas, all full width */
+/* Static site: Squarespace hides image card text until sqs-text-ready JS runs */
+.image-block-outer-wrapper:not(.sqs-text-ready) .sqs-dynamic-text {
+  visibility: visible;
+}
+
+.image-block-outer-wrapper .sqs-dynamic-text-container {
+  opacity: 1;
+  transform: none;
+}
+
+body.collection-type-index #projectPages .project-controls > div {
+  padding-top: 0;
+}
+
+/* Homepage layout */
 body.collection-type-index #header,
 body.collection-type-index .page-header,
-body.collection-type-index #projectPages,
-body.collection-type-index #projectThumbs,
-body.collection-type-index .all-projects {
+body.collection-type-index section#page,
+body.collection-type-index .extra-wrapper.page-footer {
   display: block;
   clear: both;
   width: 100%;
-  box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
 }
 
-#projectThumbs > .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+body.collection-type-index #projectPages {
+  display: none;
+  clear: both;
   width: 100%;
-  margin: 0;
-  padding: 50px 0 50px;
-  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-#projectThumbs a.project {
-  float: none !important;
-  width: 100%;
-  margin: 0 !important;
-  padding: 0;
-  box-sizing: border-box;
+body.collection-type-index.index-page-open #projectPages,
+body.collection-type-index.page-open #projectPages {
+  display: block;
 }
 
-body.collection-type-index #projectThumbs {
-  height: fit-content;
-  overflow: visible;
-  padding: 0;
-  margin: 0;
+body.collection-type-index .project-injected-content {
+  margin-bottom: 50px;
 }
 
-body.collection-type-index #projectThumbs .project > div {
-  margin: 0;
-  padding: 0;
+body.collection-type-page #page .content .sqs-html-content p,
+body.collection-type-page #page .content .sqs-html-content li,
+body.collection-type-index #projectPages .project-injected-content .sqs-html-content p,
+body.collection-type-index #projectPages .project-injected-content .sqs-html-content li {
+  font-size: 15px;
 }
 
-body.collection-type-index #projectThumbs .project .project-image {
-  margin: 0 !important;
-  padding: 0;
+body.collection-type-index #projectPages .project.active-project {
+  margin-bottom: 0;
 }
 
-body.collection-type-index #projectThumbs .project .project-image .intrinsic {
-  margin: 0;
-  padding-bottom: 64%;
-}
-
-body.collection-type-index #projectThumbs .project .project-title {
-  margin: 0;
-  padding: 0.5em 0 0;
-}
-
-@media (max-width: 750px) {
-  #projectThumbs > .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-body.collection-type-index .all-projects {
+body.collection-type-index .extra-wrapper.page-footer {
   margin-top: 0;
   padding: 0;
 }
 
-body.collection-type-index .all-projects h1 {
-  margin: 0 0 32px;
+body.index-page-open .extra-wrapper.page-footer {
+  display: none;
 }
 
-body.collection-type-index .all-projects .year-groups {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
-}
-
-body.collection-type-index .all-projects .year {
-  margin: 1.5em 0 0.75em;
-}
-
-body.collection-type-index .all-projects .year-group .year:first-of-type {
-  margin-top: 0;
-}
-
-body.collection-type-index .all-projects .project {
-  margin: 0 0 0.3em;
-  line-height: 1.6;
-}
-
-@media (max-width: 750px) {
-  body.collection-type-index .all-projects .year-groups {
-    grid-template-columns: 1fr;
-  }
-}
-
-body.index-page-open .all-projects {
+body.collection-type-index.index-page-open .page-header,
+body.collection-type-index.index-page-open .extra-wrapper.page-header {
   display: none;
 }
 

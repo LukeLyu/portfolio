@@ -4,6 +4,7 @@
 import json
 import re
 from pathlib import Path
+from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "content.json").read_text())
@@ -86,42 +87,101 @@ OTHER_PROJECTS_2014 = [
     "CGB Data Management Platform",
 ]
 
+OTHER_PROJECTS_CN_2015 = [
+    "太平洋保险集团客户经理移动平台",
+    "太平洋保险客户资源共享平台",
+    "强生中国内网门户",
+    "中国民生银行项目管理门户",
+    "中国建设银行CRM手机应用",
+    "罗氏eProcess医院价格谈判系统",
+    "文思海辉车联网数据服务平台",
+    "文思海辉知识管理平台",
+    "文思海辉人力资源管理平台",
+    "高通安卓6.0 OS设计规范",
+]
 
-def all_projects_html() -> str:
-    items = ['<h1><strong>Other Projects</strong></h1>', '<div class="year-groups">']
+OTHER_PROJECTS_CN_2014 = [
+    "万达酒店及度假村业务信息服务平台",
+    "上海银行零售信贷系统",
+    "上海银行后台管理系统用户体验规范",
+    "柯尼卡美能达法律文案储存系统优化",
+    "中国光大银行私人银行",
+    "爱立信广播管理平台",
+    "阿里巴巴阿里客邮箱搬迁设计",
+    "索尼智能电视用户体验优化",
+    "广发银行数控管理平台",
+]
 
-    year_2015 = ['<div class="year-group">', '<p class="year"><strong>2015</strong></p>']
-    year_2015.extend(f'<div class="project">{title}</div>' for title in OTHER_PROJECTS_2015)
-    year_2015.append('</div>')
 
-    year_2014 = ['<div class="year-group">', '<p class="year"><strong>2014</strong></p>']
-    year_2014.extend(f'<div class="project">{title}</div>' for title in OTHER_PROJECTS_2014)
-    year_2014.append('</div>')
+def all_projects_html(lang: str = "en") -> str:
+    if lang == "zh-CN":
+        heading = "其他项目"
+        projects_2015 = OTHER_PROJECTS_CN_2015
+        projects_2014 = OTHER_PROJECTS_CN_2014
+    else:
+        heading = "Other Projects"
+        projects_2015 = OTHER_PROJECTS_2015
+        projects_2014 = OTHER_PROJECTS_2014
 
-    items.extend(year_2015)
-    items.extend(year_2014)
-    items.append('</div>')
-    return "\n      ".join(items)
+    def year_column(year: str, titles: list[str]) -> str:
+        items = "".join(
+            f'<p class="" style="white-space:pre-wrap;">{title}</p>' for title in titles
+        )
+        return f"""
+            <div class="col sqs-col-6 span-6">
+              <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+                <div class="sqs-html-content">
+                  <p class="" style="white-space:pre-wrap;"><strong>{year}</strong></p>
+                  {items}
+                </div>
+              </div></div>
+            </div>"""
 
-ABOUT_IMAGE = (
-    "https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/"
-    "1567763625111-50918JYNCX49VNW5Y5CA/Luke.png"
-)
-ABOUT_IMAGE_SRC = f"{ABOUT_IMAGE}?format=2500w"
+    return f"""
+      <div class="sqs-layout sqs-grid-12 columns-12">
+        <div class="row sqs-row"><div class="col sqs-col-12 span-12">
+          <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+            <div class="sqs-html-content">
+              <h1 style="white-space:pre-wrap;"><strong>{heading}</strong></h1>
+            </div>
+          </div></div>
+          <div class="row sqs-row">{year_column("2015", projects_2015)}{year_column("2014", projects_2014)}
+          </div>
+        </div></div>
+      </div>"""
+
+ABOUT_IMAGE = "/images/luke.png"
+ABOUT_IMAGE_SRC = ABOUT_IMAGE
 
 ABOUT_EN = """
 <h1 style="white-space:pre-wrap;">About me</h1>
-<p style="white-space:pre-wrap;">It was 2008 when I took an undergraduate course named IT Management for Business at the University of Manchester and I came across with user experience. Since then I fell in love with UX design and therefore I went to the University of Bath to take the HCI course and completed my master degree there,</p>
-<p style="white-space:pre-wrap;">Now I've committed myself into user experience design for for 10 years and have rich experiences in Business Development, Requirements Analysis, User Research, Data Analysis, IA, Interaction Design, Usability Testing, and Project Management. I have worked closely with clients providing my UX advises and designs for multi-platform products in different industries. I've worked as vendors and designed for different clients and also worked as in-house designer to design our own products. Both experiences have excited me.</p>
-<p style="white-space:pre-wrap;">I also love various activities including dancing, scuba diving, traveling, reading, watching football, etc.</p>
+<p style="white-space:pre-wrap;">My passion for UX began in 2008 during my undergraduate studies at the University of Manchester, which inspired me to pursue a Master's degree in Human-Computer Interaction at the University of Bath. Since then, I have spent more than 10 years designing user-centered digital products across music streaming, fintech, education, e-commerce, and enterprise platforms.</p>
+<p style="white-space:pre-wrap;">Currently, I am a Lead UX Designer at NetEase Cloud Music, leading the podcast experience from user research and interaction design to usability testing and mentoring junior designers. My work has contributed to significant user growth and engagement through data-driven, end-to-end design.</p>
+<p style="white-space:pre-wrap;">Having worked in both in-house product teams and design agencies, I enjoy solving complex problems while balancing user needs with business goals. Beyond product design, I also deliver UX training, write design articles, and actively share knowledge with the design community. Outside work, I enjoy traveling, scuba diving, dancing, reading, and football, all of which continually inspire my creativity and empathy as a designer.</p>
 """
 
 ABOUT_CN = """
 <h1 style="white-space:pre-wrap;">关于我</h1>
-<p style="white-space:pre-wrap;">2008年，我在曼彻斯特大学攻读了商务信息技术管理的本科课程。在那里我第一次了解到了用户体验。 从那以后我便爱上了用户体验和交互设计，因此我选择去巴斯大学继续攻读人机交互课程，并在那里完成了我的硕士学位，</p>
-<p style="white-space:pre-wrap;">现在我已经在用户体验设计领域工作10年了，并且在需求分析、用户研究、数据分析、信息架构、交互设计、可用性测试、业务开发和项目管理等方面拥有丰富的经验。我曾与客户密切合作，为不同行业的多平台产品提供用户体验建议和设计。我曾作为供应商工作，为不同的客户设计，也有作为内部设计师设计自己产品的经验。两种经历我都非常享受并受益匪浅。</p>
-<p style="white-space:pre-wrap;">我也喜欢参加各种活动，包括跳舞、潜水、旅游、阅读、看球赛等。</p>
+<p style="white-space:pre-wrap;">对用户体验的热爱是从2008年开始的，当时在曼彻斯特大学攻读本科，这段经历激励我在巴斯大学继续深造，获得了人机交互硕士学位。此后，我花了超过十年的时间，为音乐流媒体、金融科技、教育、电商和企业平台设计以用户为中心的数字产品。</p>
+<p style="white-space:pre-wrap;">目前，我是网易云音乐的高级用户体验设计师，负责播客体验的设计工作，涵盖用户研究、交互设计、可用性测试，以及指导初级设计师。我的设计通过数据驱动帮助产品实现了用户增长和活跃度的明显提升。</p>
+<p style="white-space:pre-wrap;">我既在产品团队内部工作过，也曾在设计机构任职，善于在满足用户需求与实现商业目标之间找到平衡，解决复杂问题。除了产品设计，我也会给团队做UX培训、写写设计文章，平时也喜欢在社区里跟同行分享交流。工作之外，我喜欢旅行、舞蹈、阅读和足球，这些爱好不断激发我的创造力，也让我做设计的时候更能站在用户角度去感受。</p>
 """
+
+HERO_EN = """
+      <h2>Hi! I'm Ke LYU<br>a&nbsp;passionate UX designer</h2>
+      <h3>I like solving problems through design</h3>"""
+
+HERO_CN = """
+      <h2 style="white-space:pre-wrap;">你好！我叫吕可<br>是一名充满热情的用户体验设计师</h2>
+      <h3 style="white-space:pre-wrap;">我希望通过设计解决各种问题</h3>"""
+
+
+def page_header_hero(content: str, lang: Optional[str] = None) -> str:
+    lang_attr = f' lang="{lang}"' if lang else ""
+    return f"""
+    <div class="extra-wrapper page-header"{lang_attr}>
+      {content}
+    </div>"""
 
 
 def about_header_image() -> str:
@@ -133,12 +193,10 @@ def about_header_image() -> str:
             <div class="image-block-outer-wrapper layout-caption-below design-layout-inline">
               <figure class="sqs-block-image-figure intrinsic" style="max-width:100%;">
                 <div class="image-block-wrapper">
-                  <div class="sqs-image-shape-container-element has-aspect-ratio"
-                    style="position:relative;padding-bottom:29.75%;overflow:hidden;">
+                  <div class="sqs-image-shape-container-element has-aspect-ratio">
                     <img src="{ABOUT_IMAGE_SRC}" alt="Ke Lyu" loading="lazy" decoding="async"
                       width="1920" height="594"
-                      sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw"
-                      style="display:block;object-fit:cover;width:100%;height:100%;object-position:50% 50%;" />
+                      sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" />
                   </div>
                 </div>
               </figure>
@@ -149,9 +207,9 @@ def about_header_image() -> str:
     </div>"""
 
 
-def about_text_column(content: str) -> str:
+def about_text_column(content: str, lang: str = "en") -> str:
     return f"""
-            <div class="col sqs-col-6 span-6">
+            <div class="col sqs-col-6 span-6" lang="{lang}">
               <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
                 <div class="sqs-html-content">{content}</div>
               </div></div>
@@ -189,20 +247,32 @@ def nav(active: str) -> str:
         external = item[3] if len(item) > 3 else False
         cls = "active-link" if key == active else ""
         target = ' target="_blank"' if external else ""
-        lis.append(f'<li class="index-collection {cls}"><a href="{href}"{target}>{label}</a></li>')
+        lang_attr = ' lang="zh-CN"' if key == "workcn" else ""
+        lis.append(f'<li class="index-collection {cls}"{lang_attr}><a href="{href}"{target}>{label}</a></li>')
     ul = "\n".join(lis)
     return f"""<nav class="main-nav"><ul>{ul}</ul></nav>"""
 
 
-def shell(title: str, body_class: str, active_nav: str, main: str, extra_scripts: str = "") -> str:
+def page_lang(*, nav: Optional[str] = None, slug: Optional[str] = None) -> str:
+    if nav == "workcn":
+        return "zh-CN"
+    if slug and (slug.endswith("-cn") or slug.endswith("-z85lh")):
+        return "zh-CN"
+    return "en-US"
+
+
+def shell(title: str, body_class: str, active_nav: str, main: str, extra_scripts: str = "", lang: str = "en-US") -> str:
     return f"""<!doctype html>
-<html lang="en-US">
+<html lang="{lang}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{title}</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="preconnect" href="https://images.squarespace-cdn.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" />
   <link rel="stylesheet" href="/css/site.css" />
   <link rel="stylesheet" href="/css/overrides.css" />
 </head>
@@ -240,7 +310,7 @@ def thumb_grid(thumbs, prefix: str) -> str:
             <div class="project-title">{title}</div>
           </div>
         </a>""")
-    return f'<div id="projectThumbs"><div class="container">{"".join(cards)}</div></div>'
+    return f'<div id="projectThumbs"><div class="wrapper">{"".join(cards)}</div></div>'
 
 
 def clean_project_content(html: str) -> str:
@@ -248,17 +318,25 @@ def clean_project_content(html: str) -> str:
     section_match = re.match(r"\s*<section[^>]*>(.*)</section>\s*", html, re.S)
     if section_match:
         html = section_match.group(1).strip()
-    html = re.sub(r"\s*</section>\s*$", "", html)
     html = re.sub(
         r'<div class="extra-wrapper page-footer">.*?</div>\s*$',
         "",
         html,
         flags=re.S,
     )
+    html = re.sub(r"</section>\s*$", "", html.strip())
+    html = re.sub(r"</?section[^>]*>", "", html)
     return html.strip()
 
 
-def project_controls_nav(slugs: list[str], current_slug: str, back_href: str, back_label: str) -> str:
+def project_controls_nav(
+    slugs: list[str],
+    current_slug: str,
+    back_href: str,
+    back_label: str,
+    *,
+    index_overlay: bool = False,
+) -> str:
     idx = slugs.index(current_slug) if current_slug in slugs else -1
     prev_html = (
         f'<a href="/{slugs[idx - 1]}/">prev</a>' if idx > 0 else '<span class="disabled">prev</span>'
@@ -268,8 +346,9 @@ def project_controls_nav(slugs: list[str], current_slug: str, back_href: str, ba
         if 0 <= idx < len(slugs) - 1
         else '<span class="disabled">next</span>'
     )
+    classes = "project-controls" if index_overlay else "project-controls project-page-controls"
     return f"""
-  <div class="project-controls project-page-controls">
+  <div class="{classes}">
     <div>
       <div id="projectNav">{prev_html} / {next_html}</div>
       <a href="{back_href}" class="back-to-work">{back_label}</a>
@@ -277,7 +356,17 @@ def project_controls_nav(slugs: list[str], current_slug: str, back_href: str, ba
   </div>"""
 
 
-def project_pages(thumbs, content_key: str) -> str:
+def index_project_controls(back_label: str) -> str:
+    return f"""
+    <div class="project-controls">
+      <div>
+        <div id="projectNav"><span class="prev-project">prev</span> / <span class="next-project">next</span></div>
+        <a href="#" class="back-to-work">{back_label}</a>
+      </div>
+    </div>"""
+
+
+def project_pages(thumbs, content_key: str, back_href: str, back_label: str) -> str:
     content_map = {p["slug"]: p["content"] for p in DATA[content_key]}
     blocks = []
     for slug, title, _ in thumbs:
@@ -287,51 +376,59 @@ def project_pages(thumbs, content_key: str) -> str:
       <div class="project page-project" data-url="{url}">
         <div class="project-content-source" hidden>{content}</div>
       </div>""")
-    return f'<div id="projectPages" data-collection-id="">{"".join(blocks)}</div>'
+    nav = index_project_controls(back_label)
+    return f'<div id="projectPages" data-collection-id="">{"".join(blocks)}{nav}\n    </div>'
 
 
-def index_page(thumbs, content_key: str, active_nav: str, show_hero: bool, show_footer: bool) -> str:
-    hero = ""
-    if show_hero:
-        hero = """
-    <div class="page-header">
-      <h2>Hi! I'm Ke LYU<br>a&nbsp;passionate UX designer</h2>
-      <h3>I like solving problems through design</h3>
-    </div>"""
+def index_page(
+    thumbs,
+    content_key: str,
+    active_nav: str,
+    hero: Optional[str] = None,
+    show_footer: bool = False,
+    back_href: str = "/",
+    back_label: str = "Back to Work",
+    hero_lang: Optional[str] = None,
+    footer_lang: Optional[str] = None,
+) -> str:
+    hero_html = page_header_hero(hero, hero_lang) if hero else ""
     footer = ""
     if show_footer:
+        footer_lang_attr = f' lang="{footer_lang}"' if footer_lang else ""
         footer = f"""
-    <div class="all-projects">
-      {all_projects_html()}
+    <div class="extra-wrapper page-footer"{footer_lang_attr}>
+      {all_projects_html(footer_lang or "en")}
     </div>
     <div class="page-divider"></div>"""
     main = f"""
     <div class="page-divider"></div>
-    {hero}
-    {project_pages(thumbs, content_key)}
+    {hero_html}
+    <section id="page" role="main">
+    {project_pages(thumbs, content_key, back_href, back_label)}
     {thumb_grid(thumbs, content_key)}
+    </section>
     {footer}"""
-    return shell("Ke Lyu", BODY_INDEX, active_nav, main, '<script src="/js/index.js"></script>')
+    return shell("Ke Lyu", BODY_INDEX, active_nav, main, '<script src="/js/index.js"></script>', page_lang(nav=active_nav))
 
 
-def standalone_project_page(title: str, content: str, nav_html: str = "") -> str:
+def standalone_project_page(title: str, content: str, nav_html: str = "", slug: str = "") -> str:
     cleaned = clean_project_content(content)
     main = f"""
     <div class="page-divider"></div>
     <section id="page" role="main"><div class="content">{cleaned}</div>{nav_html}</section>
     <div class="page-divider"></div>"""
     page_title = re.sub(r" — Ke Lyu$", "", title)
-    return shell(f"{page_title} — Ke Lyu", BODY_PAGE, "work", main)
+    return shell(f"{page_title} — Ke Lyu", BODY_PAGE, "work", main, lang=page_lang(slug=slug))
 
 
 def about_page() -> str:
     main = f"""
     <div class="page-divider"></div>
     {about_header_image()}
-    <section id="page" role="main">
+    <section id="page" role="main" class="about-page">
       <div class="content"><div class="sqs-layout sqs-grid-12 columns-12">
         <div class="row sqs-row"><div class="col sqs-col-12 span-12">
-          <div class="row sqs-row">{about_text_column(ABOUT_EN)}{about_text_column(ABOUT_CN)}
+          <div class="row sqs-row">{about_text_column(ABOUT_EN, "en")}{about_text_column(ABOUT_CN, "zh-CN")}
           </div>
         </div></div>
       </div></div>
@@ -396,7 +493,7 @@ def blog_post_page(post: dict) -> str:
       <div class="content"><div class="article-wrapper"><article class="hentry hentry-single">{post["content"]}</article></div>{blog_sidebar(post["fullSlug"])}</div>
     </section>
     <div class="page-divider"></div>"""
-    return shell(f"{title} — Ke Lyu", BODY_BLOG, "blog", main)
+    return shell(f"{title} — Ke Lyu", BODY_BLOG, "blog", main, lang=page_lang(slug=post["fullSlug"]))
 
 
 def write(path: Path, html: str) -> None:
@@ -407,7 +504,7 @@ def write(path: Path, html: str) -> None:
 def copy_assets() -> None:
     import shutil
     public = ROOT / "public"
-    for name in ("css", "js", "favicon.ico", "s"):
+    for name in ("css", "js", "images", "favicon.ico", "s"):
         src = public / name
         dst = DIST / name
         if src.is_dir():
@@ -425,8 +522,8 @@ def main() -> None:
         shutil.rmtree(DIST)
     DIST.mkdir()
 
-    write(DIST / "index.html", index_page(WORK_THUMBS, "work", "work", True, True))
-    write(DIST / "workcn" / "index.html", index_page(WORKCN_THUMBS, "workcn", "workcn", False, False))
+    write(DIST / "index.html", index_page(WORK_THUMBS, "work", "work", HERO_EN, True, "/", "Back to Work"))
+    write(DIST / "workcn" / "index.html", index_page(WORKCN_THUMBS, "workcn", "workcn", HERO_CN, True, "/workcn", "Back to Work", "zh-CN", "zh-CN"))
     write(DIST / "about" / "index.html", about_page())
     write(DIST / "blog" / "index.html", blog_list_page())
 
@@ -444,7 +541,7 @@ def main() -> None:
             nav = project_controls_nav(workcn_slugs, slug, "/workcn", "Back to Work")
         else:
             nav = ""
-        write(DIST / slug / "index.html", standalone_project_page(info["title"], info["content"], nav))
+        write(DIST / slug / "index.html", standalone_project_page(info["title"], info["content"], nav, slug))
 
     copy_assets()
     print(f"Built site to {DIST}")
