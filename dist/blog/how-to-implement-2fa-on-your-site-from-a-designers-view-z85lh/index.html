@@ -1,0 +1,2030 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>从设计师的角度看如何在网站上实现2FA（双因素认证） — Ke Lyu</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://images.squarespace-cdn.com" />
+  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="stylesheet" href="/css/overrides.css" />
+</head>
+<body class="blog-sidebar-display-auto layout-style-left page-borders-none underline-body-links collection-type-blog collection-layout-default mobile-style-available site-title has-primary-nav" id="site-body">
+  <div id="canvas">
+    <div id="mobileNav"><div id="mobileNavWrapper" class="wrapper"><nav class="main-nav"><ul><li class="index-collection "><a href="/workcn">中文案例</a></li>
+<li class="index-collection "><a href="/">Work</a></li>
+<li class="index-collection active-link"><a href="/blog/">Blog</a></li>
+<li class="index-collection "><a href="/about">About</a></li>
+<li class="index-collection "><a href="/s/Ke-Lyu-Resume-tpm4.pdf" target="_blank">Resume</a></li></ul></nav></div></div>
+    <div id="mobileMenuLink"><a>Menu</a></div>
+    <header id="header">
+      <div id="logo"><h1 class="logo"><a href="/">Ke Lyu</a></h1></div>
+      <div id="topNav"><nav class="main-nav"><ul><li class="index-collection "><a href="/workcn">中文案例</a></li>
+<li class="index-collection "><a href="/">Work</a></li>
+<li class="index-collection active-link"><a href="/blog/">Blog</a></li>
+<li class="index-collection "><a href="/about">About</a></li>
+<li class="index-collection "><a href="/s/Ke-Lyu-Resume-tpm4.pdf" target="_blank">Resume</a></li></ul></nav></div>
+    </header>
+    
+    <div class="page-divider"></div>
+    <section id="page" role="main">
+      <div class="content"><div class="article-wrapper"><article class="hentry hentry-single"><!--SPECIAL CONTENT-->
+
+  
+    <div class="special-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Promoted Block" data-type="promoted-block" id="promoted-block-5d70fe0d0a63b90001755e13"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-39552b5921a6a4405e62"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1560px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:50%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png" data-image-dimensions="1560x780" data-image-focal-point="0.5,0.5" alt="" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png" width="1560" height="780" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046559164-TW1KYT42CMNNP8AMSOYW/image-asset.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div></div></div></div></div>
+  
+
+
+  <!--POST HEADER-->
+
+  <header>
+		<h1 class="entry-title">
+      
+        <a href="/blog/how-to-implement-2fa-on-your-site-from-a-designers-view-z85lh" data-content-field="title">从设计师的角度看如何在网站上实现2FA（双因素认证）</a>
+      
+    </h1>
+    <div class="meta">
+      <span class="date"><time class="published" datetime="2018-08-27">August 27, 2018</time></span>
+    </div>
+  </header>
+
+  <!--POST BODY-->
+
+
+  <div class="body entry-content"><div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Post Body" data-type="item" data-updated-on="1567686173543" id="item-5d70fe0d0a63b90001755e13"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-38fe676191a7374de3c1"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">我们最近在网站上完成了2FA验证的设计和部署。在开始设计之前，我研究了很多其他网站，观察他们的2FA是如何设计的。如果你之前没有任何2FA的经验，我会推荐<a href="https://authy.com/guides/" target="_blank">Authy</a>作为初步研究的开始。他们收集了许多使用2FA的网站，并提供了详细的分步指南和截图。</p><p class="" style="white-space:pre-wrap;">不过虽然这些Authy指南都很详尽，但它们都是关于如何在网站上激活并使用2FA的，对于设计师来说只有正确流程并不足以满足设计的要求。在实际试用过一些2FA流程后，我总结了一下设计师在实施2FA时应该考虑的地方。</p><ol data-rte-list="default"><li><p class="" style="white-space:pre-wrap;">在哪里激活和停用2FA？</p></li><li><p class="" style="white-space:pre-wrap;">2FA的设置流程是怎样的？</p></li><li><p class="" style="white-space:pre-wrap;">关于认证码和密钥。</p></li><li><p class="" style="white-space:pre-wrap;">关于备份码。</p></li><li><p class="" style="white-space:pre-wrap;">在哪里使用2FA？</p></li><li><p class="" style="white-space:pre-wrap;">在哪里提示2FA？</p></li></ol><h1 style="white-space:pre-wrap;"><strong>1. 在哪里激活和停用2FA？</strong></h1><p class="" style="white-space:pre-wrap;">这个问题的答案很简单。2FA通常位于“设置”或“个人中心”里的“安全”部分。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-aspect-ratio="44.315789473684205" data-block-type="5" data-sqsp-block="image-classic" id="block-b5190f43e9f2f4beb84e"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:996px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:44.31578826904297%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png" data-image-dimensions="996x449" data-image-focal-point="0.5,0.5" alt="在Dropbox上开启2FA" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png" width="996" height="449" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046412513-IZ9ISC8GWUQRFHG4NN8V/Enable+2FA+in+Dropbox.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">在Dropbox上开启2FA</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-92b38bec5363e2262fdd"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1448px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:61.602210998535156%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png" data-image-dimensions="1448x892" data-image-focal-point="0.5,0.5" alt="在Google上开启2FA" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png" width="1448" height="892" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046439482-XWM7VP8H8OFW9S0QQNF1/Enable+2FA+in+Google.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">在Google上开启2FA</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-5011486f77a4e03215ec"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">你可以简单地添加一个开关样式（或其他形式）的2FA设置。你也可以像Google一样在这里添加一段关于2FA的解释及其他信息。</p><h1 style="white-space:pre-wrap;"><strong>2. 2FA的设置流程是怎样的？</strong></h1><p class="" style="white-space:pre-wrap;">你可以在Authy的指南中找到各种2FA设置过程。通常包括以下3个步骤：</p><p class="" style="white-space:pre-wrap;"><em>1. 帐户验证（短信/语音通话/账户密码等）</em></p><p class="" style="white-space:pre-wrap;">启用2FA的第一步是验证身份。 如果其他人获得了你的2FA密钥并通过他们的手机进行身份验证，那么你永远都不能通过自己账户的2FA验证。因此，在实际启用2FA之前验证身份非常重要。</p><p class="" style="white-space:pre-wrap;">你可以通过发送短信到手机或者使用语音电话来获取验证码或者直接使用账户的密码进行验证。</p><p class="" style="white-space:pre-wrap;"><em>2. 获取验证码（短信/第三方验证器）</em></p><p class="" style="white-space:pre-wrap;">一般来说，第二步我们需要为第三方验证器提供密钥。更好的方法是提供一个包含密钥的二维码。 第三方身份验证器（您可以使用Google身份验证器或者Authy验证器）生成验证码。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-9db7e8f4b90e41449a0f"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1193px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:59.765296936035156%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png" data-image-dimensions="1193x713" data-image-focal-point="0.5,0.5" alt="密钥验证示例 (BABB)" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png" width="1193" height="713" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046624707-ZFJTYLCDZNIV4KK6HOA5/Authentication+Example+%28BABB%29.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">密钥验证示例 (BABB)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-74e326341e0da50e1c31"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">一些网站也会提供通过短信的方式发送验证码。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-72e596e1d3b842411239"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:713px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:64.51612854003906%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png" data-image-dimensions="713x460" data-image-focal-point="0.5,0.5" alt="选择适合你的方式接收验证码 (Slack)" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png" width="713" height="460" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046758725-0Q57DWNV2G0THP1NF5I5/Choose+your+preferable+way+to+receive+authentication+code+%28Slack%29.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">选择适合你的方式接收验证码 (Slack)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-26dc93137afae73ae979"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;"><em>3. 备份码/恢复码</em><br>在确定了验证码之后。有些网站会直接提供备份码或者有些网站称为恢复码的一串数字给用户。当用户无法访问身份验证码，甚至手机丢了的时候，用户可以使用备份码登录。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-ea696b22b3c55278f85c"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:476px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:70.7983169555664%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png" data-image-dimensions="476x337" data-image-focal-point="0.5,0.5" alt="Twitter的备份码" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png" width="476" height="337" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046812610-EDCIFGBKB4FFLYYV61EB/Backup+code+from+Twitter..png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">Twitter的备份码</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-5e3401ef2b413c5ff159"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">很多网站会同时提供多个备份码。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-2289ca483793e4dbde69"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:467px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:87.79443359375%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png" data-image-dimensions="467x410" data-image-focal-point="0.5,0.5" alt="Slack一次性会提供多个备份码" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png" width="467" height="410" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046846512-TNRRK44FPLXSORVZVEOA/Multiple+backup+codes+from+Slack.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">Slack一次性会提供多个备份码</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-869abc1107298e995c99"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">备份码是存储在数据库中的。如果下一次进入备份码的页面，Google会检测哪些备份码已经被使用并显示“已使用”而不是继续显示该代码。</p><h1 style="white-space:pre-wrap;"><strong>3. 关于认证码和密钥</strong></h1><p class="" style="white-space:pre-wrap;">验证码一般是通过第三方应用程序生成的。应用程序需要拥有服务器提供的密钥来产生验证码，这需要后端支持才能提供密钥。数据库只存储一个密钥，因此如果用户想要更换电话或使用其他应用程序，则需要获取新的密钥。 在设置好2FA后，我们可以提供一个链接，为用户产生新的密钥。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-2a6e797a02a57d8d6e79"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:1340px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:51.94029998779297%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png" data-image-dimensions="1340x696" data-image-focal-point="0.5,0.5" alt="获取新的密钥 (Google)" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png" width="1340" height="696" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567046891758-0RL2U6IVR4BCXVZTA1LT/Get+a+new+key+%28Google%29.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">获取新的密钥 (Google)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-b126ae7583702ff1f830"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">这里为大家提供几个技术方面创建2FA密钥的参考：<br><a href="https://techblog.bozho.net/enabling-two-factor-authentication-web-application/?source=post_page-----3b64241fc144----------------------" target="_blank">Enabling Two-Factor Authentication For Your Web Application — Bozho’s tech blog</a></p><p class="" style="white-space:pre-wrap;"><a href="https://github.com/simontabor/2fa?source=post_page-----3b64241fc144----------------------" target="_blank">Simontabor/2fa</a></p><p class="" style="white-space:pre-wrap;"><a href="http://www.ruanyifeng.com/blog/2017/11/2fa-tutorial.html?source=post_page-----3b64241fc144----------------------" target="_blank">双因素认证（2FA）教程 — 阮一峰的网络日志</a></p><h1 style="white-space:pre-wrap;"><strong>4. 关于备份码</strong></h1><p class="" style="white-space:pre-wrap;">在任何请求验证码的时候用户都可以选择使用备份码。每个备份码只能使用一次。 所以我们需要有一个地方为用户生成新的备份码。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-2405122b1bb631b7b8fd"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:678px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:108.4070816040039%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png" data-image-dimensions="678x735" data-image-focal-point="0.5,0.5" alt="在Facebook上获取备份码" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png" width="678" height="735" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047138134-ASZZGEKK43N0EOZJU4DT/You+can+get+codes+here+%28Facebook%29.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">在Facebook上获取备份码</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-876425ec4b05ed44759e"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">我喜欢Google为用户提供备份码的方式。 他们很贴心地在每个备份码前面放了一个复选框，用户可以打印下来并勾选哪些备份码已经被使用了。还有虚线及剪刀提示用户如何剪裁。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-b239ce0923c50aeb0e56"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:838px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:129.116943359375%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png" data-image-dimensions="838x1082" data-image-focal-point="0.5,0.5" alt="谷歌的备份码页面" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png" width="838" height="1082" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047166350-Z1VOY12P6W04DS8ZLCFO/image-asset.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">谷歌的备份码页面</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-7382c324181471194181"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <h1 style="white-space:pre-wrap;"><strong>5. 在哪里使用2FA？</strong></h1><p class="" style="white-space:pre-wrap;">大多数网站一般会把2FA放在用户登录流程来保护用户在网站的资金、敏感数据和其他重要事项。 所以我们可以在输入密码后添加额外的2FA验证步骤。 但是我们的网站用了不一样的方法。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-ed9f7c067f47396f6adb"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:700px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:57.142860412597656%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif" data-image-dimensions="700x400" data-image-focal-point="0.5,0.5" alt="在登录流程里嵌入2FA验证 (GoSquared)" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif" width="700" height="400" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567047262971-2MLCHPGY4YDMZOYDW814/Having+2FA+in+login+process+%28GoSquared%29.gif?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">在登录流程里嵌入2FA验证 (GoSquared)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-0350843b6315393ce973"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">我们的平台会有各个行业的从业者、专家和资深人士向其他用户分享他们的观点和分析。 一个典型的用户群体是在我们平台上阅读分析文章的一般用户。 他们不会经常使用我们的电子钱包功能，因此要通过2FA才能看到内容对他们而言会过于复杂。</p><p class="" style="white-space:pre-wrap;">总之，在哪里应用2FA是一个UX问题。</p><h1 style="white-space:pre-wrap;">6. 在哪里提示2FA？</h1><p class="" style="white-space:pre-wrap;">什么时候提示用户使用2FA也是一个用户体验相关的考虑。 特别是在有敏感或重要数据的时候，我们更应该主动地提示用户使用2FA。 Binance会在注册过程中建议用户启用2FA，如果用户没有启用，每次进行交易的时候Binance也会提醒用户。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block image-block sqs-block-image" data-block-type="5" data-sqsp-block="image-classic" id="block-yui_3_17_2_1_1567686288378_21047"><div class="sqs-block-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+    
+  
+    <div
+        class="
+          image-block-outer-wrapper
+          layout-caption-below
+          design-layout-inline
+          combination-animation-none
+          individual-animation-none
+          individual-text-animation-none
+        "
+        data-test="image-block-inline-outer-wrapper"
+        data-sqsp-image-classic-block-layout="inline"
+    >
+
+      
+
+      
+        <figure
+            class="
+              sqs-block-image-figure
+              intrinsic
+            "
+            style="max-width:824px;"
+        >
+          
+        
+        
+
+        
+          
+            
+          <div
+              
+              
+              class="image-block-wrapper"
+              data-animation-role="image"
+              
+  
+
+          >
+            <div data-sqsp-image-classic-block-image-container class="sqs-image-shape-container-element
+              
+          
+        
+              has-aspect-ratio
+            " style="
+                position: relative;
+                
+                  padding-bottom:65.89806365966797%;
+                
+                overflow: hidden;-webkit-mask-image: -webkit-radial-gradient(white, black);
+              "
+              >
+                
+                
+                
+                
+                
+                
+                
+                <img data-stretch="false" data-src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png" data-image="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png" data-image-dimensions="824x543" data-image-focal-point="0.5,0.5" alt="提示开启2FA的弹窗 (Binance)" data-load="false" elementtiming="system-image-block" data-sqsp-image-classic-block-image src="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png" width="824" height="543" alt="" sizes="(max-width: 640px) 100vw, (max-width: 767px) 100vw, 100vw" style="display:block;object-fit: cover; width: 100%; height: 100%; object-position: 50% 50%" onload="this.classList.add(&quot;loaded&quot;)" srcset="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=100w 100w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=300w 300w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=500w 500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=750w 750w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=1000w 1000w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=1500w 1500w, https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567686604259-YB32YJRNGDIE6T2O3SPT/Binance+2FA+Prompt.png?format=2500w 2500w" loading="lazy" decoding="async" data-loader="sqs">
+
+            </div>
+          </div>
+        
+          
+        
+
+        
+          
+          <figcaption data-sqsp-image-classic-block-caption-container class="image-caption-wrapper">
+            <div class="image-caption"><p class="">提示开启2FA的弹窗 (Binance)</p></div>
+          </figcaption>
+        
+      
+        </figure>
+      
+
+    </div>
+  
+
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-yui_3_17_2_1_1567686288378_22100"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;">以上这些这就是我在自己实现2FA的时候考虑到的内容。 如果你在其他地方只找到2FA的设置过程，我希望这篇文章可以作为一份快速指南了解到应用2FA需要考虑到的其他事项。</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div><div class="sqs-block website-component-block sqs-block-website-component sqs-block-horizontalrule horizontalrule-block" data-block-css="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/3d5e9414-4448-42c4-b1a9-6b71dab0bcc4_104/website.components.horizontalrule.styles.css&quot;]" data-block-scripts="[&quot;https://definitions.sqspcdn.com/website-component-definition/static-assets/website.components.horizontalrule/3d5e9414-4448-42c4-b1a9-6b71dab0bcc4_104/website.components.horizontalrule.visitor.js&quot;]" data-block-type="1337" data-definition-name="website.components.horizontalrule" data-sqsp-block="line" data-website-component-id="2ad96c74119dd7bf1364" id="block-2ad96c74119dd7bf1364"><div class="sqs-block-content"><hr />
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" data-sqsp-block="text" id="block-96e7da79a83893dbb839"><div class="sqs-block-content">
+
+<div class="sqs-html-content" data-sqsp-text-block-content>
+  <p class="" style="white-space:pre-wrap;"><em>Original posted at </em><a href="https://medium.com/@lukeleeco/%E4%BB%8E%E8%AE%BE%E8%AE%A1%E5%B8%88%E7%9A%84%E8%A7%92%E5%BA%A6%E7%9C%8B%E5%A6%82%E4%BD%95%E5%9C%A8%E7%BD%91%E7%AB%99%E4%B8%8A%E5%AE%9E%E7%8E%B02fa-%E5%8F%8C%E5%9B%A0%E7%B4%A0%E8%AE%A4%E8%AF%81-62c98395d65d" target="_blank">Medium</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></div></div></div></div>
+  
+
+
+  <!--POST FOOTER-->
+
+  <footer>
+    <div class="meta">
+
+      
+
+      <div class="first meta-row">
+        
+        
+      </div>
+
+      <div class="second meta-row">
+        
+  <span class="sqs-simple-like" data-item-id="5d70fe0d0a63b90001755e13" data-like-count="0">
+    <span class="like-icon"></span>
+    <span class="like-count"></span>
+  </span>
+
+        <span class="squarespace-social-buttons inline-style" data-system-data-id="1567045059079-T8LUWDVYTLF3UBWGLML7" data-asset-url="https://images.squarespace-cdn.com/content/v1/5d4545b5bba29f00015bbc6d/1567045059079-T8LUWDVYTLF3UBWGLML7/How+to+implement+2FA+on+your+site+from+a+designer%E2%80%99s+view.png" data-record-type="1" data-full-url="/blog/how-to-implement-2fa-on-your-site-from-a-designers-view-z85lh" data-title="从设计师的角度看如何在网站上实现2FA（双因素认证）"></span>
+      </div>
+
+    </div>
+  </footer></article></div>
+    <aside id="sidebar" data-content-field="Sidebar">
+      <div class="sqs-layout sqs-grid-1 columns-1" id="sidebarBlocks">
+        <div class="row sqs-row"><div class="col sqs-col-1 span-1">
+          <div class="sqs-block html-block sqs-block-html"><div class="sqs-block-content">
+            <div class="sqs-html-content"><h2 style="white-space:pre-wrap;">Latest Posts</h2></div>
+          </div></div>
+          <div class="sqs-block summary-block summary-v2-block"><div class="sqs-block-content">
+            <div class="summary-block"><div class="summary-item-list">
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2020-08-24</time>
+            <div class="summary-title"><a href="/blog/how-to-generate-leads-on-your-sitedisplay-cta-button-at-the-rightplace/" class="summary-title-link">How to Generate Leads on Your Site - Where Should the CTA Be?</a></div>
+          </div>
+        </article>
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2020-08-24</time>
+            <div class="summary-title"><a href="/blog/how-to-generate-leads-on-your-site-display-cta-button-at-the-right-place-cn/" class="summary-title-link">如何让你的网站获得潜在客户-在正确的地点展示CTA按钮</a></div>
+          </div>
+        </article>
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2018-08-27</time>
+            <div class="summary-title"><a href="/blog/how-to-implement-2fa-on-your-site-from-a-designers-view/" class="summary-title-link">How to implement 2FA on your site from a designer’s view</a></div>
+          </div>
+        </article>
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2018-08-27</time>
+            <div class="summary-title"><a href="/blog/how-to-implement-2fa-on-your-site-from-a-designers-view-z85lh/" class="summary-title-link active-link">从设计师的角度看如何在网站上实现2FA（双因素认证）</a></div>
+          </div>
+        </article>
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2015-08-11</time>
+            <div class="summary-title"><a href="/blog/a-case-of-design-psychology-the-tricks-that-we-use-in-the-design/" class="summary-title-link">A Case of Design Psychology, the Tricks that We Use in the Design</a></div>
+          </div>
+        </article>
+        <article class="summary-item summary-item-record-type-text">
+          <div class="summary-content">
+            <time class="summary-metadata-item summary-metadata-item--date timestamp">2015-07-31</time>
+            <div class="summary-title"><a href="/blog/a-case-of-design-psychology-the-tricks-that-we-use-in-the-design-cn/" class="summary-title-link">洞悉用户心理，设计中的“诱导”和“欺骗”把戏</a></div>
+          </div>
+        </article></div></div>
+          </div></div>
+        </div></div>
+      </div>
+    </aside></div>
+    </section>
+    <div class="page-divider"></div>
+    <footer id="footer"><div class="sqs-layout sqs-grid-1 columns-1 empty"></div></footer>
+  </div>
+  <div class="sqs-spin" aria-hidden="true"></div>
+  <script src="/js/main.js"></script>
+  
+</body>
+</html>

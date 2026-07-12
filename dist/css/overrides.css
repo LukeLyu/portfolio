@@ -1,0 +1,359 @@
+/* Site-wide Helvetica typography */
+html,
+body,
+body * {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+#canvas {
+  width: 1200px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 75px;
+  box-sizing: border-box;
+}
+
+.sqs-spin {
+  display: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-top-color: #111;
+  border-radius: 50%;
+  animation: sqs-spin 0.8s linear infinite;
+  z-index: 9999;
+}
+
+body.collection-type-index.index-loading {
+  overflow: hidden;
+}
+
+body.collection-type-index.index-loading #projectPages,
+body.collection-type-index.index-loading #projectThumbs {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+body.collection-type-index.index-loading .sqs-spin {
+  display: block;
+  position: fixed;
+  top: calc(50% - 11px);
+  left: calc(50% - 11px);
+}
+
+@keyframes sqs-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#mobileNav {
+  display: none;
+}
+
+#mobileNav.open {
+  display: block;
+}
+
+@media (max-width: 750px) {
+  #topNav {
+    display: none;
+  }
+
+  #mobileMenuLink {
+    display: block;
+    cursor: pointer;
+  }
+
+  #mobileNav.open {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+  }
+
+  #mobileNav .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  #mobileNav .main-nav li {
+    margin: 0.5em 0;
+  }
+
+  #canvas {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 751px) {
+  #mobileMenuLink {
+    display: none;
+  }
+}
+
+#blogList article,
+.article-list article {
+  margin-bottom: 2.5em;
+}
+
+#blogList .meta,
+.article-list .meta {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 0.25em;
+}
+
+#blogList .entry-title,
+.article-list .entry-title {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+}
+
+#blogList .entry-title a,
+.article-list .entry-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#blogList .entry-title a:hover,
+.article-list .entry-title a:hover {
+  color: #0085bd;
+}
+
+/* Blog sidebar: Latest Posts directory */
+#sidebar h2 {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0 0 1em;
+}
+
+#sidebar .summary-item {
+  margin-bottom: 1.25em;
+}
+
+#sidebar .summary-title {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+#sidebar .summary-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#sidebar .summary-title a:hover,
+#sidebar .summary-title a.active-link {
+  color: #0085bd;
+}
+
+#sidebar .timestamp {
+  display: block;
+  color: #999;
+  font-size: 11px;
+  margin-bottom: 0.25em;
+  text-transform: none;
+}
+
+@media (max-width: 750px) {
+  body.collection-type-blog #sidebar {
+    display: none;
+  }
+
+  body.collection-type-blog.layout-style-left.blog-sidebar-display-auto .article-list,
+  body.collection-type-blog.layout-style-left.blog-sidebar-display-auto .article-wrapper {
+    margin-right: 0;
+  }
+}
+
+/* About page header banner */
+.extra-wrapper.page-header .sqs-block-image .image-block-wrapper {
+  position: relative;
+  height: 0 !important;
+  padding-bottom: 29.75% !important;
+  overflow: hidden;
+}
+
+.extra-wrapper.page-header .sqs-block-image .sqs-image-shape-container-element {
+  position: absolute;
+  inset: 0;
+  padding-bottom: 0 !important;
+}
+
+.extra-wrapper.page-header .sqs-block-image .image-block-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  max-width: none;
+}
+
+.project-controls .back-to-work {
+  color: #575757;
+  text-decoration: none;
+}
+
+.project-controls .back-to-work:hover {
+  color: #111;
+}
+
+/* Homepage: direct siblings under #canvas, all full width */
+body.collection-type-index #header,
+body.collection-type-index .page-header,
+body.collection-type-index #projectPages,
+body.collection-type-index #projectThumbs,
+body.collection-type-index .all-projects {
+  display: block;
+  clear: both;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#projectThumbs > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 50px 0 50px;
+  box-sizing: border-box;
+}
+
+#projectThumbs a.project {
+  float: none !important;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.collection-type-index #projectThumbs {
+  height: fit-content;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+}
+
+body.collection-type-index #projectThumbs .project > div {
+  margin: 0;
+  padding: 0;
+}
+
+body.collection-type-index #projectThumbs .project .project-image {
+  margin: 0 !important;
+  padding: 0;
+}
+
+body.collection-type-index #projectThumbs .project .project-image .intrinsic {
+  margin: 0;
+  padding-bottom: 64%;
+}
+
+body.collection-type-index #projectThumbs .project .project-title {
+  margin: 0;
+  padding: 0.5em 0 0;
+}
+
+@media (max-width: 750px) {
+  #projectThumbs > .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body.collection-type-index .all-projects {
+  margin-top: 0;
+  padding: 0;
+}
+
+body.collection-type-index .all-projects h1 {
+  margin: 0 0 32px;
+}
+
+body.collection-type-index .all-projects .year-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+body.collection-type-index .all-projects .year {
+  margin: 1.5em 0 0.75em;
+}
+
+body.collection-type-index .all-projects .year-group .year:first-of-type {
+  margin-top: 0;
+}
+
+body.collection-type-index .all-projects .project {
+  margin: 0 0 0.3em;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  body.collection-type-index .all-projects .year-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.index-page-open .all-projects {
+  display: none;
+}
+
+body.collection-type-index .page-open #projectPages .project.page-project.active-project .sqs-block-image img,
+body.collection-type-index .page-open #projectPages .project.page-project.active-project .sqs-block-image-figure img,
+body.collection-type-page #page .content img,
+body.collection-type-page #page .content .sqs-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Thumbnail images: fill container responsively */
+#projectThumbs .project .project-image .content-fill img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Standalone project page navigation */
+body.collection-type-page .project-page-controls {
+  display: block;
+  clear: both;
+  margin-top: 50px;
+}
+
+body.collection-type-page .project-page-controls #projectNav {
+  float: right;
+}
+
+body.collection-type-page .project-page-controls #projectNav a,
+body.collection-type-page .project-page-controls #projectNav span {
+  cursor: pointer;
+  color: #575757;
+  text-decoration: none;
+}
+
+body.collection-type-page .project-page-controls #projectNav a:hover {
+  color: #111;
+}
+
+body.collection-type-page .project-page-controls #projectNav .disabled {
+  cursor: default;
+  color: rgba(87, 87, 87, 0.5);
+}
