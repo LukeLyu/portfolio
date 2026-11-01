@@ -8,7 +8,7 @@ from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "data" / "content.json").read_text())
-DIST = ROOT / "dist"
+DOCS = ROOT / "docs"
 
 WORK_THUMBS = [
     ("cloud-music-player-landscape-mode", "Cloud Music Player Landscape Mode",
@@ -506,7 +506,7 @@ def copy_assets() -> None:
     public = ROOT / "public"
     for name in ("css", "js", "images", "favicon.ico", "s"):
         src = public / name
-        dst = DIST / name
+        dst = DOCS / name
         if src.is_dir():
             if dst.exists():
                 shutil.rmtree(dst)
@@ -517,18 +517,26 @@ def copy_assets() -> None:
 
 
 def main() -> None:
-    if DIST.exists():
-        import shutil
-        shutil.rmtree(DIST)
-    DIST.mkdir()
+    import shutil
 
-    write(DIST / "index.html", index_page(WORK_THUMBS, "work", "work", HERO_EN, True, "/", "Back to Work"))
-    write(DIST / "workcn" / "index.html", index_page(WORKCN_THUMBS, "workcn", "workcn", HERO_CN, True, "/workcn", "Back to Work", "zh-CN", "zh-CN"))
-    write(DIST / "about" / "index.html", about_page())
-    write(DIST / "blog" / "index.html", blog_list_page())
+    if DOCS.exists():
+        for path in DOCS.iterdir():
+            if path.name == "CNAME":
+                continue
+            if path.is_dir():
+                shutil.rmtree(path)
+            else:
+                path.unlink()
+    else:
+        DOCS.mkdir()
+
+    write(DOCS / "index.html", index_page(WORK_THUMBS, "work", "work", HERO_EN, True, "/", "Back to Work"))
+    write(DOCS / "workcn" / "index.html", index_page(WORKCN_THUMBS, "workcn", "workcn", HERO_CN, True, "/workcn", "Back to Work", "zh-CN", "zh-CN"))
+    write(DOCS / "about" / "index.html", about_page())
+    write(DOCS / "blog" / "index.html", blog_list_page())
 
     for post in DATA["blog"]:
-        write(DIST / post["fullSlug"] / "index.html", blog_post_page(post))
+        write(DOCS / post["fullSlug"] / "index.html", blog_post_page(post))
 
     work_slugs = [slug for slug, _, _ in WORK_THUMBS]
     workcn_slugs = [slug for slug, _, _ in WORKCN_THUMBS]
@@ -541,10 +549,10 @@ def main() -> None:
             nav = project_controls_nav(workcn_slugs, slug, "/workcn", "Back to Work")
         else:
             nav = ""
-        write(DIST / slug / "index.html", standalone_project_page(info["title"], info["content"], nav, slug))
+        write(DOCS / slug / "index.html", standalone_project_page(info["title"], info["content"], nav, slug))
 
     copy_assets()
-    print(f"Built site to {DIST}")
+    print(f"Built site to {DOCS}")
 
 
 if __name__ == "__main__":
